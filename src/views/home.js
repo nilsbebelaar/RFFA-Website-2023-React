@@ -18,7 +18,7 @@ const Home = (props) => {
       </Helmet>
       <section className="home-hero">
         <video
-          src="/assets/vid/RFFA-2023-Website-Background.mp4"
+          src="https://rffa-website-2023-react.pages.dev//assets/vid/RFFA-2023-Website-Background.mp4"
           loop
           muted
           poster="/assets/vid/RFFA-2023-Website-Background.jpg"
@@ -30,7 +30,7 @@ const Home = (props) => {
         <header data-thq="thq-navbar" className="home-navbar">
           <img
             alt="image"
-            src="/playground_assets/logo.svg"
+            src="/playground_assets/logo%20rffa.svg"
             className="home-branding"
           />
           <div data-thq="thq-burger-menu" className="home-burger-menu">
@@ -93,24 +93,21 @@ const Home = (props) => {
           <div className="home-header-container">
             <div className="home-header">
               <h1 className="home-heading">
-                <span>Face-to-face met </span>
-                <span className="home-text06">atletiek</span>
-                <br></br>
+                <span className="home-text05">Beleef atletiek</span>
+                <span className="home-text06">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+                <span className="home-text07">op het</span>
+                <br className="home-text08"></br>
+                <span className="home-text09">
+                  Rotterdam Festival For Athletics
+                </span>
               </h1>
             </div>
-            <p className="home-caption">
-              <span>
-                Beleef de atletiek tijden het
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
-              <span className="home-text09">
-                Rotterdam Festival for Athletics
-              </span>
-            </p>
           </div>
           <button className="button home-button">
             <span>
@@ -121,7 +118,7 @@ const Home = (props) => {
         </div>
       </section>
       <section className="home-note">
-        <h2 className="home-caption01">
+        <h2 className="home-caption">
           The most comprehensive lorem ipsum dolor sit amet, consectetur
           adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna.
@@ -131,7 +128,7 @@ const Home = (props) => {
         <div className="home-content">
           <div className="home-stat">
             <h3 className="home-header01">$1.69M</h3>
-            <span className="home-caption02">
+            <span className="home-caption01">
               Consectetur adipiscing
               <span
                 dangerouslySetInnerHTML={{
@@ -142,11 +139,11 @@ const Home = (props) => {
           </div>
           <div className="home-stat1">
             <h3 className="home-header02">Multiverse</h3>
-            <span className="home-caption03">Unde omnis iste</span>
+            <span className="home-caption02">Unde omnis iste</span>
           </div>
           <div className="home-stat2">
             <h3 className="home-header03">500K</h3>
-            <span className="home-caption04">Accusantium doloremque</span>
+            <span className="home-caption03">Accusantium doloremque</span>
           </div>
         </div>
       </section>
@@ -166,7 +163,7 @@ const Home = (props) => {
           </h2>
         </div>
         <div className="home-selector">
-          <p className="home-caption05">
+          <p className="home-caption04">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
             <span
@@ -205,7 +202,7 @@ const Home = (props) => {
                   <div className="home-content01">
                     <div className="home-header05">
                       <h3 className="home-heading02">Metaverse</h3>
-                      <p className="home-caption06">
+                      <p className="home-caption05">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua.
@@ -217,7 +214,7 @@ const Home = (props) => {
                       </p>
                     </div>
                     <div className="home-more">
-                      <span className="home-caption07">Read More</span>
+                      <span className="home-caption06">Read More</span>
                       <svg viewBox="0 0 1024 1024" className="home-icon09">
                         <path d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
                       </svg>
@@ -233,7 +230,7 @@ const Home = (props) => {
                   <div className="home-content02">
                     <div className="home-header06">
                       <h3 className="home-heading03">Ecosystems</h3>
-                      <p className="home-caption08">
+                      <p className="home-caption07">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua.
@@ -245,7 +242,7 @@ const Home = (props) => {
                       </p>
                     </div>
                     <div className="home-more1">
-                      <span className="home-caption09">Read More</span>
+                      <span className="home-caption08">Read More</span>
                       <svg viewBox="0 0 1024 1024" className="home-icon11">
                         <path d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
                       </svg>
@@ -261,7 +258,7 @@ const Home = (props) => {
                   <div className="home-content03">
                     <div className="home-header07">
                       <h3 className="home-heading04">Development</h3>
-                      <p className="home-caption10">
+                      <p className="home-caption09">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua.
@@ -273,7 +270,7 @@ const Home = (props) => {
                       </p>
                     </div>
                     <div className="home-more2">
-                      <span className="home-caption11">Read More</span>
+                      <span className="home-caption10">Read More</span>
                       <svg viewBox="0 0 1024 1024" className="home-icon13">
                         <path d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
                       </svg>
@@ -289,7 +286,7 @@ const Home = (props) => {
                   <div className="home-content04">
                     <div className="home-header08">
                       <h3 className="home-heading05">Integration</h3>
-                      <p className="home-caption12">
+                      <p className="home-caption11">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua.
@@ -301,7 +298,7 @@ const Home = (props) => {
                       </p>
                     </div>
                     <div className="home-more3">
-                      <span className="home-caption13">Read More</span>
+                      <span className="home-caption12">Read More</span>
                       <svg viewBox="0 0 1024 1024" className="home-icon15">
                         <path d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
                       </svg>
@@ -354,7 +351,7 @@ new BlazeSlider(el, {
               Companies will dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore veniam and more opportunities.
             </h2>
-            <p className="home-caption14">
+            <p className="home-caption13">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
               <span
@@ -436,7 +433,7 @@ new BlazeSlider(el, {
                 <br></br>
               </h2>
             </div>
-            <p className="home-caption15">
+            <p className="home-caption14">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
               <span
@@ -445,7 +442,7 @@ new BlazeSlider(el, {
                 }}
               />
             </p>
-            <p className="home-caption16">
+            <p className="home-caption15">
               Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               <span
                 dangerouslySetInnerHTML={{
@@ -506,7 +503,7 @@ new BlazeSlider(el, {
                   <span className="home-text34">experience</span>
                 </h2>
               </div>
-              <p className="home-caption17">
+              <p className="home-caption16">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
                 eiusmod.
               </p>
@@ -612,7 +609,7 @@ new BlazeSlider(el, {
               <br></br>
             </h2>
           </div>
-          <p className="home-caption18">
+          <p className="home-caption17">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
             eiusmod.
           </p>
@@ -782,7 +779,7 @@ new BlazeSlider(el, {
               </h2>
             </div>
           </div>
-          <p className="home-caption19">
+          <p className="home-caption18">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
             <span
