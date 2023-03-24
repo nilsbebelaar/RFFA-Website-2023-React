@@ -16,14 +16,18 @@
   padding-left: var(--dl-space-space-fiveunits);
   flex-direction: column;
   justify-content: flex-start;
+  background-color: #101010;
 }
 .home-video {
   top: 0px;
   left: 0px;
+  right: 0px;
   width: 100%;
   filter: opacity(0.8);
   height: 100%;
+  margin: auto;
   position: absolute;
+  max-width: 1920px;
   object-fit: cover;
 }
 .home-navbar {
@@ -2487,6 +2491,11 @@
   width: 21px;
   object-fit: cover;
 }
+@media(max-width: 1600px) {
+  .home-heading {
+    font-size: 70px;
+  }
+}
 @media(max-width: 1200px) {
   .home-heading {
     font-size: 60px;
@@ -2498,6 +2507,9 @@
   }
   .home-hero-content {
     padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .home-heading {
+    font-size: 50px;
   }
   .home-content {
     padding-top: var(--dl-space-space-oneandhalfunits);
@@ -2988,11 +3000,14 @@
   }
 }
 @media(max-width: 767px) {
+  .home-hero {
+    max-height: 150vw;
+  }
   .home-burger-menu {
     display: flex;
   }
   .home-heading {
-    font-size: 40px;
+    font-size: 28px;
   }
   .home-note {
     align-items: flex-start;
@@ -3608,9 +3623,10 @@
   }
   .home-hero-content {
     gap: var(--dl-space-space-threeunits);
+    height: auto;
   }
   .home-heading {
-    font-size: 28px;
+    font-size: 22px;
   }
   .home-text05 {
     font-style: italic;

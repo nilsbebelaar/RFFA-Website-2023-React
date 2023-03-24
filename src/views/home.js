@@ -18,10 +18,10 @@ const Home = (props) => {
       </Helmet>
       <section className="home-hero">
         <video
-          src="https://rffa-website-2023-react.pages.dev//assets/vid/RFFA-2023-Website-Background.mp4"
+          src="https://rffa-website-2023-react.pages.dev/assets/vid/RFFA-2023-Website-Background.mp4"
           loop
           muted
-          poster="/assets/vid/RFFA-2023-Website-Background.jpg"
+          poster="https://rffa-website-2023-react.pages.dev/assets/vid/RFFA-2023-Website-Background.jpg"
           preload="auto"
           autoPlay
           playsInline
