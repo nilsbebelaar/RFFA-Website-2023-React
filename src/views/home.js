@@ -13,8 +13,20 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>RFFA-Website-2023</title>
-        <meta property="og:title" content="RFFA-Website-2023" />
+        <title>Rotterdam Festival For Athletics</title>
+        <meta
+          name="description"
+          content="Kom op zaterdag 9 september 2023 naar het Rotterdam Festival For Athletics en beleef atletiek zoals nooit tevoren!"
+        />
+        <meta property="og:title" content="Rotterdam Festival For Athletics" />
+        <meta
+          property="og:description"
+          content="Kom op zaterdag 9 september 2023 naar het Rotterdam Festival For Athletics en beleef atletiek zoals nooit tevoren!"
+        />
+        <meta
+          property="og:image"
+          content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/e1e5ddc2-2ace-48ef-b801-2d2d7b336274/b09ad99e-e5b7-4899-8cf0-069267cca844?org_if_sml=1"
+        />
       </Helmet>
       <section className="home-hero">
         <video
@@ -30,7 +42,7 @@ const Home = (props) => {
         <header data-thq="thq-navbar" className="home-navbar">
           <img
             alt="image"
-            src="/playground_assets/logo%20rffa.svg"
+            src="/playground_assets/logo%20rffa_white_border.svg"
             className="home-branding"
           />
           <div data-thq="thq-burger-menu" className="home-burger-menu">
@@ -51,7 +63,7 @@ const Home = (props) => {
               <div className="home-container1">
                 <img
                   alt="image"
-                  src="/playground_assets/logo.svg"
+                  src="/playground_assets/logo%20rffa_white_border.svg"
                   className="home-image"
                 />
                 <div data-thq="thq-close-menu" className="home-menu-close">
@@ -109,12 +121,12 @@ const Home = (props) => {
               </h1>
             </div>
           </div>
-          <button className="button home-button">
+          <a href="#read-more" className="home-link button">
             <span>
               <span>sssssssssss</span>
               <br></br>
             </span>
-          </button>
+          </a>
         </div>
       </section>
       <section className="home-note">
@@ -147,7 +159,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="home-slider">
+      <section id="read-more" className="home-slider">
         <div className="home-header04">
           <h2 className="home-heading01">
             <span>The first all-in-one verse </span>
@@ -361,7 +373,7 @@ new BlazeSlider(el, {
               />
             </p>
           </div>
-          <div className="home-button1">
+          <div className="home-button">
             <button className="button">
               <span>Get started today</span>
             </button>
@@ -592,7 +604,7 @@ new BlazeSlider(el, {
               <br></br>
             </h2>
           </div>
-          <button className="home-button3 button">
+          <button className="home-button2 button">
             <span>
               <span>Get started today</span>
               <br></br>
@@ -1019,7 +1031,7 @@ new BlazeSlider(el, {
               <path d="M481.835 243.499l225.835 225.835h-494.336c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667h494.336l-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l298.667-298.667c3.925-3.925 7.083-8.619 9.259-13.824 4.309-10.453 4.309-22.229 0-32.683-2.091-5.035-5.163-9.728-9.259-13.824l-298.667-298.667c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"></path>
             </svg>
           </button>
-          <button className="button home-button4">
+          <button className="button home-button3">
             <span>
               <span>View all cases</span>
               <br></br>
@@ -1216,7 +1228,7 @@ new BlazeSlider(el, {
             <span className="home-text82">
               © 2022 togthr - All rights reserved
             </span>
-            <button data-role="scroll-top" className="home-button5 button">
+            <button data-role="scroll-top" className="home-button4 button">
               <img
                 alt="image"
                 src="/playground_assets/arrow.svg"
