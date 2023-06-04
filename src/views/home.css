@@ -219,6 +219,12 @@
   padding-bottom: 120px;
   justify-content: flex-start;
 }
+.home-text13 {
+  color: var(--dl-color-gray-white);
+  align-self: center;
+  text-align: center;
+  margin-bottom: var(--dl-space-space-twounits);
+}
 .home-caption {
   color: var(--dl-color-gray-white);
   font-size: 40px;
@@ -347,7 +353,7 @@
   font-style: normal;
   font-weight: 400;
 }
-.home-text21 {
+.home-text22 {
   font-style: italic;
   font-family: Playfair Display;
   font-weight: 500;
@@ -384,14 +390,14 @@
   flex-direction: column;
   justify-content: center;
 }
-.home-text23 {
+.home-text24 {
   color: var(--dl-color-gray-white);
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 5%;
   text-transform: uppercase;
 }
-.home-text24 {
+.home-text25 {
   color: rgb(255, 255, 255);
   font-style: italic;
   font-family: Playfair Display;
@@ -537,7 +543,7 @@
   font-style: normal;
   font-weight: 400;
 }
-.home-text26 {
+.home-text27 {
   font-family: Playfair Display;
 }
 .home-caption6 {
@@ -575,7 +581,7 @@
   width: 12px;
   height: 12px;
 }
-.home-text27 {
+.home-text28 {
   color: rgb(255, 255, 255);
   line-height: 24px;
 }
@@ -600,7 +606,7 @@
   width: 12px;
   height: 12px;
 }
-.home-text28 {
+.home-text29 {
   color: rgb(255, 255, 255);
   line-height: 24px;
 }
@@ -625,7 +631,7 @@
   width: 12px;
   height: 12px;
 }
-.home-text29 {
+.home-text30 {
   color: rgb(255, 255, 255);
   line-height: 24px;
 }
@@ -650,7 +656,7 @@
   width: 12px;
   height: 12px;
 }
-.home-text30 {
+.home-text31 {
   color: rgb(255, 255, 255);
   line-height: 24px;
 }
@@ -669,14 +675,14 @@
   flex-direction: column;
   justify-content: center;
 }
-.home-text31 {
+.home-text32 {
   color: var(--dl-color-gray-white);
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 5%;
   text-transform: uppercase;
 }
-.home-text32 {
+.home-text33 {
   color: rgb(255, 255, 255);
   font-style: italic;
   font-family: Playfair Display;
@@ -887,7 +893,7 @@
   width: var(--dl-size-size-xlarge);
   object-fit: cover;
 }
-.home-text38 {
+.home-text39 {
   color: var(--dl-color-gray-white);
   line-height: 24px;
 }
@@ -931,13 +937,13 @@
   align-self: center;
   margin-right: var(--dl-space-space-halfunit);
 }
-.home-text39 {
+.home-text40 {
   cursor: pointer;
   font-size: 16px;
   transition: 0.3s;
   line-height: 32px;
 }
-.home-text39:hover {
+.home-text40:hover {
   opacity: .5;
 }
 .home-link5 {
@@ -956,13 +962,13 @@
   align-self: center;
   margin-right: var(--dl-space-space-halfunit);
 }
-.home-text40 {
+.home-text41 {
   cursor: pointer;
   font-size: 16px;
   transition: 0.3s;
   line-height: 32px;
 }
-.home-text40:hover {
+.home-text41:hover {
   opacity: .5;
 }
 .home-bottom {
@@ -972,12 +978,12 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.home-text41 {
+.home-text42 {
   color: var(--dl-color-gray-white);
   font-size: 14px;
   line-height: 21px;
 }
-.home-button {
+.home-link6 {
   display: flex;
   padding-top: var(--dl-space-space-unit);
   padding-left: var(--dl-space-space-fiveunits);
@@ -985,6 +991,7 @@
   padding-right: var(--dl-space-space-fiveunits);
   flex-direction: row;
   padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
 }
 .home-image4 {
   width: 21px;
@@ -1048,7 +1055,7 @@
   .home-testimonial {
     padding-bottom: var(--dl-space-space-threeunits);
   }
-  .home-text24 {
+  .home-text25 {
     max-width: 560px;
   }
   .home-images {
@@ -1131,13 +1138,7 @@
     line-height: 23px;
     margin-right: 0px;
   }
-  .home-text13 {
-    font-size: 18px;
-    max-width: 90%;
-    line-height: 23px;
-    margin-right: 0px;
-  }
-  .home-text15 {
+  .home-text14 {
     font-size: 18px;
     max-width: 90%;
     line-height: 23px;
@@ -1150,6 +1151,12 @@
     margin-right: 0px;
   }
   .home-text17 {
+    font-size: 18px;
+    max-width: 90%;
+    line-height: 23px;
+    margin-right: 0px;
+  }
+  .home-text18 {
     font-size: 18px;
     max-width: 90%;
     line-height: 23px;
@@ -1217,7 +1224,7 @@
     line-height: 24px;
     padding-bottom: var(--dl-space-space-oneandhalfunits);
   }
-  .home-text23 {
+  .home-text24 {
     font-size: 12px;
     line-height: 18px;
   }
@@ -1266,7 +1273,7 @@
     font-size: 16px;
     line-height: 24px;
   }
-  .home-text31 {
+  .home-text32 {
     font-size: 12px;
     line-height: 18px;
   }
@@ -1396,7 +1403,7 @@
   .home-heading2 {
     color: rgb(255, 255, 255);
   }
-  .home-text26 {
+  .home-text27 {
     font-style: italic;
     font-family: Playfair Display;
     font-weight: 500;
@@ -1415,7 +1422,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  .home-button {
+  .home-link6 {
     justify-content: center;
   }
 }
