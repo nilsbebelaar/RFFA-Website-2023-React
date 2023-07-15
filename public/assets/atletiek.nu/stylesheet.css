@@ -1,0 +1,218 @@
+/* RFFA atletiek.nu */
+:root {
+	--green: rgb(143, 199, 62);
+	--pink: rgb(237, 19, 94);
+	--pink-a-hover: rgb(255, 20, 85);
+	--blue: rgb(30, 33, 80);
+	--blue-alt: rgb(44, 48, 118);
+	--btn-blue-hover: rgb(34, 42, 151);
+	--yellow: rgb(254, 232, 0);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400|Josefin+Sans:700");
+
+#header {
+	background: var(--yellow);
+}
+
+.toptopnav li a,
+.toptopnav li a span {
+	color: var(--blue) !important;
+	text-shadow: none !important;
+}
+
+#headerpic {
+	background-image: url("https://rffa.nl/assets/atletiek.nu/background.webp");
+	background-position-y: 0;
+	margin-bottom: 0;
+}
+
+#menubottom {
+	background: none;
+}
+
+@media (max-width: 1162px) {
+	#headerpic {
+		background-position-y: 40px;
+	}
+}
+
+#headerpic .pageTitle {
+	font-weight: 700 !important;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#outer {
+	background-color: #fff;
+}
+
+@media only screen and (max-width: 580px) {
+	#outer {
+		width: auto;
+		min-width: auto;
+	}
+}
+
+.heading {
+	border-bottom: 5px solid var(--green);
+}
+
+.top-heading {
+	border-top: 5px solid var(--green);
+	font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--blue);
+	font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Josefin Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+#primarycontent a,
+a {
+	color: var(--pink);
+}
+
+.eventboxes .fa-clock-o,
+.eventboxes .fa-calendar-o,
+.eventboxes .fa-home,
+.eventboxes .fa-map-marker,
+.eventboxes .fa-envelope-o,
+.eventboxes .fa-users {
+	color: var(--pink);
+}
+
+#menu {
+	background: var(--yellow);
+	margin-bottom: 0;
+}
+
+#menu ul li a {
+	color: var(--blue);
+}
+
+#menu ul li.active a,
+#menu ul li a:hover {
+	color: var(--pink);
+	background: rgb(0, 0, 0, 0.05);
+	border-radius: 3px;
+}
+
+#mobileMenuHolder {
+	background: var(--yellow)
+}
+
+.nav-icon {
+	background: var(--blue);
+	border-radius: 5px;
+	color: #fff;
+	border-bottom: 0;
+	margin: 5px 1%;
+}
+
+.btn-warning {
+	background-image: none;
+	background-color: var(--pink);
+	border: none;
+}
+
+.btn-warning:hover {
+	background-color: var(--pink-a-hover);
+}
+
+.eventboxes h3 {
+	color: var(--blue);
+}
+
+.eventboxes div {
+	color: var(--blue);
+}
+
+.categorieenonderdelenpakket .onderdelen span {
+	color: var(--pink) !important;
+}
+
+#footer {
+	background: var(--green);
+	color: var(--blue);
+}
+
+#footer h3 {
+	color: var(--blue);
+}
+
+#footer .sitemap>ul>li>a {
+	color: var(--blue);
+}
+
+#footer .social-icon {
+	background: var(--blue);
+	color: #ffffff;
+}
+
+#copyright {
+	background: #212121;
+}
+
+table:not(.table) thead td,
+table:not(.table) thead th,
+#nu {
+	background: var(--green);
+	color:var(--blue);
+}
+
+
+#primarycontent a i,
+div#resultateninvoer a i {
+	color: #fff;
+}
+
+.btn-success {
+	background: var(--blue);
+}
+
+.btn-success:hover,
+.btn-greenhover:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+	background: var(--btn-blue-hover);
+}
+
+.btn {
+	background-image: none;
+	background: var(--blue);
+	color: #fff !important;
+	border: none;
+	text-shadow: none;
+}
+
+.btn:hover {
+	background: var(--btn-blue-hover);
+}
+
+tr.serieBreak {
+	background: var(--blue) !important;
+}
+
+.roundsContainer a.btn:not(.btn-success),
+.roundsContainer a.btn:not(.btn-success) i {
+	color: #fff !important;
+}
+
+#menuHolder a {
+	background: var(--blue);
+}
