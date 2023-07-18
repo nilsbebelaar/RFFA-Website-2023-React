@@ -9,15 +9,15 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Rotterdam Festival For Athletics</title>
+        <title>Rotterdam Festival for Athletics</title>
         <meta
           name="description"
-          content="Kom op zaterdag 9 september 2023 naar het Rotterdam Festival For Athletics en beleef atletiek zoals nooit tevoren!"
+          content="Kom op zaterdag 9 september 2023 naar het Rotterdam Festival for Athletics en beleef atletiek zoals nooit tevoren!"
         />
-        <meta property="og:title" content="Rotterdam Festival For Athletics" />
+        <meta property="og:title" content="Rotterdam Festival for Athletics" />
         <meta
           property="og:description"
-          content="Kom op zaterdag 9 september 2023 naar het Rotterdam Festival For Athletics en beleef atletiek zoals nooit tevoren!"
+          content="Kom op zaterdag 9 september 2023 naar het Rotterdam Festival for Athletics en beleef atletiek zoals nooit tevoren!"
         />
         <meta
           property="og:image"
@@ -119,8 +119,8 @@ const Home = (props) => {
     animation: navbar-slide-down 1s both;
     background-color: var(--dl-color-primary-300);
   }
-  .navbar-top {
-    animation: navbar-background-fade 1s both;
+  .navbar-scrolled .home-branding {
+    width: var(--dl-size-size-xlarge);
   }
 
   @keyframes navbar-slide-down {
@@ -129,27 +129,6 @@ const Home = (props) => {
       transform: translateY(-100%);
       visibility: visible;
     }
-    100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-  }
-  @keyframes navbar-background-fade {
-    0% {
-      background-color: var(--dl-color-primary-300);
-    }
-    100% {
-      background-color: transparent;
-    }
-  }
-
-  @keyframes navbar-image-size {
-    0% {
-      -webkit-transform: translateY(-100%);
-      transform: translateY(-100%);
-      visibility: visible;
-    }
-
     100% {
       -webkit-transform: translateY(0);
       transform: translateY(0);
@@ -252,7 +231,7 @@ const Home = (props) => {
                 <span className="home-text17">op het</span>
                 <br className="home-text18"></br>
                 <span className="home-text19">
-                  Rotterdam Festival For Athletics
+                  Rotterdam Festival for Athletics
                 </span>
               </h1>
             </div>
