@@ -36,6 +36,16 @@ const Home = (props) => {
           playsInline
           className="home-video"
         ></video>
+        <div>
+          <Script
+            html={`<style>
+  .navbar-container .button {
+    padding: 2px;
+  }
+</style>
+`}
+          ></Script>
+        </div>
         <div id="navbar-container" className="home-container1">
           <header data-thq="thq-navbar" className="home-navbar-interactive">
             <Link to="/" className="home-navlink">
@@ -47,13 +57,13 @@ const Home = (props) => {
             </Link>
             <div data-thq="thq-navbar-nav" className="home-desktop-menu">
               <nav className="home-links">
-                <a href="#read-more" className="home-link">
-                  About
+                <a href="#read-more" className="navbar-button home-link">
+                  Festival
                 </a>
-                <span className="home-text">Features</span>
-                <span className="home-text01">Pricing</span>
-                <span className="home-text02">Team</span>
-                <span className="home-text03">Blog</span>
+                <span className="navbar-button">Meedoen</span>
+                <span className="navbar-button">Tijdschema</span>
+                <span className="navbar-button">Meet &amp; Greet</span>
+                <span className="navbar-button">Meehelpen</span>
               </nav>
               <div className="home-buttons">
                 <button className="home-login button">Login</button>
@@ -81,12 +91,12 @@ const Home = (props) => {
                 </div>
                 <nav className="home-links1">
                   <a href="#read-more" className="home-link01">
-                    About
+                    Festival
                   </a>
-                  <span className="home-text04">Features</span>
-                  <span className="home-text05">Pricing</span>
-                  <span className="home-text06">Team</span>
-                  <span className="home-text07">Blog</span>
+                  <span className="home-text04">Meedoen</span>
+                  <span className="home-text05">Tijdschema</span>
+                  <span className="home-text06">Meet &amp; Greet</span>
+                  <span className="home-text07">Meehelpen</span>
                 </nav>
               </div>
               <div className="home-icon-group">
@@ -250,28 +260,22 @@ const Home = (props) => {
               </h1>
             </div>
           </div>
-          <a href="#read-more" className="home-link04 button">
-            <span>
-              <span>Lees meer</span>
-              <br></br>
-            </span>
-          </a>
         </div>
       </section>
       <section id="read-more" className="home-note">
-        <h1 className="home-text21 Header-1">9 september 2023</h1>
+        <h1 className="home-text18 Header-1">9 september 2023</h1>
         <h2 className="home-caption">
-          <span className="home-text22">
+          <span className="home-text19">
             Hét atletiekfeest van Rotterdam waarbij atletiek en de sfeer van een
             festival ultiem samenkomen.
           </span>
           <br></br>
-          <br className="home-text24"></br>
-          <span className="home-text25">
+          <br className="home-text21"></br>
+          <span className="home-text22">
             Doe zelf mee, kijk naar nationale topatleten of leer de fijne
             kneepjes van de beste trainers van het land!
           </span>
-          <br className="home-text26"></br>
+          <br className="home-text23"></br>
         </h2>
       </section>
       <section className="home-statistics">
@@ -310,7 +314,7 @@ const Home = (props) => {
                     }}
                   />
                 </span>
-                <span className="home-text30">growth.</span>
+                <span className="home-text27">growth.</span>
                 <br></br>
               </h2>
             </div>
@@ -334,8 +338,8 @@ const Home = (props) => {
           </div>
           <div className="home-testimonial">
             <div className="home-content02">
-              <span className="home-text32">Testimonial</span>
-              <p className="home-text33">
+              <span className="home-text29">Testimonial</span>
+              <p className="home-text30">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.”
               </p>
@@ -373,7 +377,7 @@ const Home = (props) => {
               <div className="home-header07">
                 <h2 className="home-heading2">
                   <span>A worlds class </span>
-                  <span className="home-text35">experience</span>
+                  <span className="home-text32">experience</span>
                 </h2>
               </div>
               <p className="home-caption6">
@@ -388,7 +392,7 @@ const Home = (props) => {
                     <path d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"></path>
                   </svg>
                 </div>
-                <span className="home-text36">
+                <span className="home-text33">
                   Duis aute irure dolor in reprehenderit
                 </span>
               </div>
@@ -398,7 +402,7 @@ const Home = (props) => {
                     <path d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"></path>
                   </svg>
                 </div>
-                <span className="home-text37">Lorem ipsum dolor sit amet</span>
+                <span className="home-text34">Lorem ipsum dolor sit amet</span>
               </div>
               <div className="home-check2">
                 <div className="home-mark2">
@@ -406,7 +410,7 @@ const Home = (props) => {
                     <path d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"></path>
                   </svg>
                 </div>
-                <span className="home-text38">
+                <span className="home-text35">
                   Voluptate velit esse cillum dolore eu fugiat nulla
                 </span>
               </div>
@@ -416,7 +420,7 @@ const Home = (props) => {
                     <path d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"></path>
                   </svg>
                 </div>
-                <span className="home-text39">
+                <span className="home-text36">
                   Excepteur sint occaecat cupidatat non proident sunt in culpa
                 </span>
               </div>
@@ -424,8 +428,8 @@ const Home = (props) => {
           </div>
           <div className="home-testimonial1">
             <div className="home-content04">
-              <span className="home-text40">Testimonial</span>
-              <p className="home-text41">
+              <span className="home-text37">Testimonial</span>
+              <p className="home-text38">
                 “Excepteur sint occaecat cupidatat non proident, sunt in culpa
                 qui officia deserunt mollit anim id est laborum.”
               </p>
@@ -466,7 +470,7 @@ const Home = (props) => {
                   href="https://www.instagram.com/rffa_rotterdam/"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-link05"
+                  className="home-link04"
                 >
                   Instagram
                 </a>
@@ -482,7 +486,7 @@ const Home = (props) => {
                   href="https://www.facebook.com/rffarotterdam/"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-link06"
+                  className="home-link05"
                 >
                   Facebook
                   <span
@@ -511,7 +515,7 @@ const Home = (props) => {
                   href="https://www.instagram.com/rffa_rotterdam/"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-link07"
+                  className="home-link06"
                 >
                   Instagram
                   <span
@@ -544,7 +548,7 @@ const Home = (props) => {
                 src="/logo%20rffa_white_border.svg"
                 className="home-image3"
               />
-              <span className="home-text47">
+              <span className="home-text44">
                 Het Rotterdam Festival for Athletics is een initiatief voor een
                 jaarlijks atletiekfeest van PAC Rotterdam en Rotterdam Atletiek.
               </span>
@@ -557,7 +561,7 @@ const Home = (props) => {
                     href="https://www.instagram.com/rffa_rotterdam/"
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="home-link08"
+                    className="home-link07"
                   >
                     <div className="home-container4">
                       <svg
@@ -566,14 +570,14 @@ const Home = (props) => {
                       >
                         <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
                       </svg>
-                      <span className="home-text48">Instagram</span>
+                      <span className="home-text45">Instagram</span>
                     </div>
                   </a>
                   <a
                     href="https://www.facebook.com/rffarotterdam/"
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="home-link09"
+                    className="home-link08"
                   >
                     <div className="home-container5">
                       <svg
@@ -582,7 +586,7 @@ const Home = (props) => {
                       >
                         <path d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"></path>
                       </svg>
-                      <span className="home-text49">Facebook</span>
+                      <span className="home-text46">Facebook</span>
                     </div>
                   </a>
                 </div>
@@ -590,13 +594,13 @@ const Home = (props) => {
             </div>
           </div>
           <div className="home-bottom">
-            <span className="home-text50">
+            <span className="home-text47">
               © 2023 Rotterdam Festival for Athletics - All rights reserved
             </span>
             <a
               href="#top"
               data-role="scroll-top"
-              className="home-link10 button"
+              className="home-link09 button"
             >
               <img alt="image" src="/arrow.svg" className="home-image4" />
             </a>
