@@ -141,7 +141,7 @@ const Home = (props) => {
 </style>
 
 <script>
-  const myNav = document.getElementById("#navbar-container");
+  const myNav = document.getElementById("navbar-container");
   window.onscroll = function () {
     if (document.body.scrollTop >= 200) {
       myNav.classList.add("navbar-scrolled");
