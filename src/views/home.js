@@ -141,16 +141,28 @@ const Home = (props) => {
 </style>
 
 <script>
-  const myNav = document.getElementById("navbar-container");
-  window.onscroll = function () {
-    if (document.body.scrollTop >= 200) {
-      myNav.classList.add("navbar-scrolled");
-      myNav.classList.remove("navbar-top");
+  const nav = document.getElementById("navbar-container");
+  const header = document.querySelector(".home-hero");
+  const navHeight = nav.getBoundingClientRect().height;
+
+  function updateNavColor(entries) {
+    const [entry] = entries;
+    if (!entry.isIntersecting) {
+      nav.classList.add("navbar-scrolled");
+      nav.classList.remove("navbar-top");
     } else {
-      myNav.classList.add("navbar-top");
-      myNav.classList.remove("navbar-scrolled");
+      nav.classList.add("navbar-top");
+      nav.classList.remove("navbar-scrolled");
     }
-  };
+  }
+
+  const headerObserver = new IntersectionObserver(updateNavColor, {
+    root: null,
+    threshold: 0,
+    rootMargin: \`-\${navHeight}px\`,
+  });
+
+  headerObserver.observe(header);
 </script>
 `}
           ></Script>
