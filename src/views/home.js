@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
@@ -37,11 +38,13 @@ const Home = (props) => {
         ></video>
         <div id="navbar-container" className="home-container1">
           <header data-thq="thq-navbar" className="home-navbar-interactive">
-            <img
-              alt="image"
-              src="/logo%20rffa_white_border.svg"
-              className="home-branding"
-            />
+            <Link to="/" className="home-navlink">
+              <img
+                alt="image"
+                src="/logo%20rffa_white_border.svg"
+                className="home-branding"
+              />
+            </Link>
             <div data-thq="thq-navbar-nav" className="home-desktop-menu">
               <nav className="home-links">
                 <span className="home-text">About</span>
