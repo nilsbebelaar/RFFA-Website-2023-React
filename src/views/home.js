@@ -141,14 +141,14 @@ const Home = (props) => {
 </style>
 
 <script>
-  const nav = document.getElementById("#navbar-container");
+  const navbar = document.getElementById("#navbar-container");
   window.onscroll = function () {
     if (document.body.scrollTop >= 200) {
-      myNav.classList.add("navbar-scrolled");
-      myNav.classList.remove("navbar-top");
+      navbar.classList.add("navbar-scrolled");
+      navbar.classList.remove("navbar-top");
     } else {
-      myNav.classList.add("navbar-top");
-      myNav.classList.remove("navbar-scrolled");
+      navbar.classList.add("navbar-top");
+      navbar.classList.remove("navbar-scrolled");
     }
   };
 </script>
