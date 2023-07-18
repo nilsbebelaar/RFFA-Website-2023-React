@@ -31,10 +31,14 @@
   object-fit: cover;
 }
 .home-container1 {
+  top: 0px;
+  right: 0px;
   width: 100%;
   height: 150.6875px;
   display: flex;
-  max-width: var(--dl-size-size-maxwidth);
+  z-index: 200;
+  position: absolute;
+  align-self: center;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
@@ -46,14 +50,15 @@
   display: flex;
   padding: 0px;
   z-index: 200;
-  max-width: auto;
+  max-width: var(--dl-size-size-maxwidth);
   align-items: center;
   justify-content: space-between;
 }
 .home-branding {
   width: var(--dl-size-size-xxlarge);
   object-fit: cover;
-  padding-top: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-halfunit);
 }
 .home-desktop-menu {
   flex: 1;

@@ -113,15 +113,32 @@ const Home = (props) => {
           <Script
             html={`<!-- Style for sticky navbar -->
 <style>
-  .navbar-fixed {
+  .navbar-scrolled {
     position: -webkit-fixed;
-    position: fixed;
-    animation: navbar-background-fade 1s both;
+    position: fixed !important;
+    animation: navbar-slide-down 1s both;
     background-color: var(--dl-color-primary-300);
   }
+  .navbar-top {
+    animation: navbar-background-fade 1s both;
+  }
 
+  @keyframes navbar-slide-down {
+    0% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
   @keyframes navbar-background-fade {
     0% {
+      background-color: var(--dl-color-primary-300);
+    }
+    100% {
       background-color: transparent;
     }
   }
