@@ -122,6 +122,11 @@ const Home = (props) => {
   .navbar-scrolled .home-branding {
     width: var(--dl-size-size-xlarge);
   }
+  @media (max-width: 479px) {
+    .navbar-scrolled .home-branding {
+      width: var(--dl-size-size-large);
+    }
+  }
 
   @keyframes navbar-slide-down {
     0% {

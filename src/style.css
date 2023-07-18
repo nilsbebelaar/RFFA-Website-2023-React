@@ -86,7 +86,7 @@
 }
 .teleport-show {
   display: flex !important;
-  transform: translateX(0%) !important;
+  transform: translateY(0%) !important;
 }
 .slide-title {
   color: white;
@@ -192,6 +192,7 @@
 .slider {
   -slides-to-show: 3;
 }
+
 
 .Header-1 {
   font-size: 62px;
