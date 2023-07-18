@@ -1,5 +1,5 @@
 {
-  "name": "rffa-website-2023",
+  "name": "rffa-website",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -7,7 +7,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
-    "dangerous-html": "0.1.12",
+    "dangerous-html": "0.1.13",
     "react-helmet": "^6.1.0",
     "prop-types": "15.7.2"
   },
