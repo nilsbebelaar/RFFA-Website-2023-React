@@ -498,8 +498,9 @@
   padding-bottom: var(--dl-space-space-fiveunits);
 }
 .home-container04 {
-  width: 1140px;
+  width: 100%;
   display: flex;
+  max-width: 1140px;
   align-items: center;
   flex-direction: row;
 }
@@ -1753,6 +1754,19 @@
     width: 100%;
     padding-top: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .home-container04 {
+    flex-direction: column;
+  }
+  .home-timetable-menu {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: var(--dl-space-space-twounits);
+    flex-direction: row;
+    justify-content: center;
+  }
+  .home-timetables {
+    width: 100%;
   }
   .home-growth {
     flex-direction: column;

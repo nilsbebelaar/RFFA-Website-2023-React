@@ -335,7 +335,7 @@ const Home = (props) => {
       setTimeout(() => {
         elements[index].style.opacity = 1;
         elements[index].style.display = "block";
-      }, 100); // 150 milliseconds, matching the fade duration
+      }, 150); // 150 milliseconds, matching the fade duration
     });
   });
 
