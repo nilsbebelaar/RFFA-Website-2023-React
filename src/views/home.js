@@ -311,24 +311,22 @@ const Home = (props) => {
   const elements = document.querySelectorAll(".timetable");
 
   buttons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-      elements.forEach((element) => {
-        element.style.opacity = "0";
+    button.addEventListener('click', () => {
+      elements.forEach(element => {
+        element.style.opacity = '0';
         setTimeout(() => {
-          element.style.display = "none";
+          element.style.display = 'none';
         }, 150);
       });
 
-      elements[index].style.display = "flex";
+      elements[index].style.display = 'block';
       setTimeout(() => {
-        elements[index].style.opacity = "1";
+        elements[index].style.opacity = '1';
       }, 0);
 
-      buttons.forEach((btn) => {
-        btn.classList.remove("active");
+      buttons.forEach(btn => {
+        btn.blur(); // Remove focus to reset :active state
       });
-
-      button.classList.add("active");
     });
   });
 
