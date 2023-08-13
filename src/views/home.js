@@ -307,7 +307,7 @@ const Home = (props) => {
         <div>
           <Script
             html={`<style>
-  .timetable-menu-button.active{
+  .timetable-menu-button.active {
     color: var(--dl-color-primary-500);
     background-color: var(--dl-color-primary-300);
   }
@@ -318,17 +318,22 @@ const Home = (props) => {
   const elements = document.querySelectorAll(".timetable");
 
   buttons.forEach((button, index) => {
-      button.addEventListener('click', () => {
-        // Remove active class from all buttons and elements
-        buttons.forEach(btn => btn.classList.remove('active'));
-        elements.forEach(el => el.classList.remove('active'));
+    button.addEventListener("click", () => {
+      // Remove active class from all buttons and elements
+      buttons.forEach((btn) => btn.classList.remove("active"));
 
-        // Add active class to the clicked button and corresponding element
-        button.classList.add('active');
-        elements[index].classList.add('active');
-      });
+      // Add active class to the clicked button
+      button.classList.add("active");
+
+      // Wait for the fade-out animation to complete before hiding inactive elements
+      setTimeout(() => {
+        elements.forEach((el) => el.classList.remove("active"));
+        elements[index].classList.add("active");
+      }, 150); // 150 milliseconds, matching the fade duration
     });
-</script>`}
+  });
+</script>
+`}
           ></Script>
         </div>
         <div className="home-container04">
