@@ -544,7 +544,6 @@
   flex-direction: column;
 }
 .home-hoofdprogramma1 {
-  display: flex;
   align-items: center;
   flex-direction: column;
 }

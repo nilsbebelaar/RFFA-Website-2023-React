@@ -307,25 +307,38 @@ const Home = (props) => {
         <div>
           <Script
             html={`<script>
-  const buttons = document.querySelectorAll('.timetable-menu-button');
-  const elements = document.querySelectorAll('.timetable');
+  const buttons = document.querySelectorAll(".timetable-menu-button");
+  const elements = document.querySelectorAll(".timetable");
+
+  buttons[0].classList.add("active"); // Preselect the first button
+  elements[0].style.display = "flex"; // Preselect the first element
+  setTimeout(() => {
+    elements[0].style.opacity = "1";
+  }, 0);
 
   buttons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-      elements.forEach(element => {
-        element.style.display = 'none';
+    button.addEventListener("click", () => {
+      elements.forEach((element) => {
+        element.style.opacity = "0";
+        setTimeout(() => {
+          element.style.display = "none";
+        }, 150);
       });
 
-      elements[index].style.display = 'block';
+      elements[index].style.display = "flex";
+      setTimeout(() => {
+        elements[index].style.opacity = "1";
+      }, 0);
 
-      buttons.forEach(btn => {
-        btn.classList.remove('active');
+      buttons.forEach((btn) => {
+        btn.classList.remove("active");
       });
 
-      button.classList.add('active');
+      button.classList.add("active");
     });
   });
-</script>`}
+</script>
+`}
           ></Script>
         </div>
         <div className="home-container04">
