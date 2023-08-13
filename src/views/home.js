@@ -333,19 +333,19 @@ const Home = (props) => {
         </div>
         <div className="home-container04">
           <div className="home-timetable-menu">
-            <div className="home-hoofdprogramma timetable-menu-button">
+            <div className="home-knop-1 timetable-menu-button">
               <h1>Heading</h1>
               <span>Text</span>
             </div>
-            <div className="home-rffa-cups timetable-menu-button">
+            <div className="home-knop-2 timetable-menu-button">
               <h1>Heading</h1>
               <span>Text</span>
             </div>
-            <div className="home-rffa-clinics timetable-menu-button">
+            <div className="home-knop-3 timetable-menu-button">
               <h1>Heading</h1>
               <span>Text</span>
             </div>
-            <div className="home-estafette-run-day timetable-menu-button">
+            <div className="home-knop-4 timetable-menu-button">
               <h1>Heading</h1>
               <span>Text</span>
             </div>
@@ -410,7 +410,7 @@ const Home = (props) => {
                 </div>
               </div>
             </div>
-            <div id="timetable-2" className="home-rffa-cups1 timetable">
+            <div id="timetable-2" className="home-tab-2 timetable">
               <div className="home-row3 timetable-row">
                 <img
                   src="/events/sports_polshoog.svg"
@@ -469,7 +469,7 @@ const Home = (props) => {
                 </div>
               </div>
             </div>
-            <div id="timetable-3" className="home-rffa-clinics1 timetable">
+            <div id="timetable-3" className="home-tab-3 timetable">
               <div className="home-row6 timetable-row">
                 <img
                   src="/events/sports_clinic.svg"

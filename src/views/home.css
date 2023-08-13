@@ -508,28 +508,28 @@
   align-items: center;
   flex-direction: column;
 }
-.home-hoofdprogramma {
+.home-knop-1 {
   flex: 0 0 auto;
   width: 200px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.home-rffa-cups {
+.home-knop-2 {
   flex: 0 0 auto;
   width: 200px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.home-rffa-clinics {
+.home-knop-3 {
   flex: 0 0 auto;
   width: 200px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.home-estafette-run-day {
+.home-knop-4 {
   flex: 0 0 auto;
   width: 200px;
   display: flex;
@@ -597,7 +597,7 @@
   align-items: flex-start;
   flex-direction: row;
 }
-.home-rffa-cups1 {
+.home-tab-2 {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -656,7 +656,7 @@
   align-items: flex-start;
   flex-direction: row;
 }
-.home-rffa-clinics1 {
+.home-tab-3 {
   display: flex;
   align-items: center;
   flex-direction: column;
