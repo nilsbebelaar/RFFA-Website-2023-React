@@ -333,7 +333,7 @@ const Home = (props) => {
         </div>
         <div className="home-container04">
           <div className="home-timetable-menu">
-            <div className="home-knop-1 timetable-menu-button">
+            <div className="home-knop-1 timetable-menu-button active">
               <h1>Heading</h1>
               <span>Text</span>
             </div>
@@ -410,7 +410,7 @@ const Home = (props) => {
                 </div>
               </div>
             </div>
-            <div id="timetable-2" className="home-tab-2 timetable">
+            <div id="timetable-2" className="timetable">
               <div className="home-row3 timetable-row">
                 <img
                   src="/events/sports_polshoog.svg"
@@ -469,7 +469,7 @@ const Home = (props) => {
                 </div>
               </div>
             </div>
-            <div id="timetable-3" className="home-tab-3 timetable">
+            <div id="timetable-3" className="timetable">
               <div className="home-row6 timetable-row">
                 <img
                   src="/events/sports_clinic.svg"
