@@ -262,7 +262,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section id="read-more" className="home-note">
+      <section id="festival" className="home-note">
         <h1 className="home-text18 Header-1">9 september 2023</h1>
         <h2 className="home-caption">
           <span className="home-text19">

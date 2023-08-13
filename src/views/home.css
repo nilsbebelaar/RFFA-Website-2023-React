@@ -479,7 +479,7 @@
 }
 .home-growth {
   width: 100%;
-  display: none;
+  display: flex;
   max-width: var(--dl-size-size-maxwidth);
   align-items: flex-start;
   padding-top: var(--dl-space-space-fiveunits);

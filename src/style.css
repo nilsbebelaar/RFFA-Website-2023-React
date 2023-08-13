@@ -201,11 +201,11 @@
   font-style: normal;
   transition: 0.3s;
   font-family: Lato, sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   border-width: 0px;
   border-radius: 40px;
   text-transform: uppercase;
-  background-color: var(--dl-color-primary-500);
+  background-color: var(--dl-color-primary-700);
 }
 .navbar-button:hover {
   background-color: var(--dl-color-primary-700);
