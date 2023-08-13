@@ -310,12 +310,6 @@ const Home = (props) => {
   const buttons = document.querySelectorAll(".timetable-menu-button");
   const elements = document.querySelectorAll(".timetable");
 
-  buttons[0].classList.add("active"); // Preselect the first button
-  elements[0].style.display = "flex"; // Preselect the first element
-  setTimeout(() => {
-    elements[0].style.opacity = "1";
-  }, 0);
-
   buttons.forEach((button, index) => {
     button.addEventListener("click", () => {
       elements.forEach((element) => {
@@ -337,6 +331,8 @@ const Home = (props) => {
       button.classList.add("active");
     });
   });
+
+  buttons[0].click(); // Trigger the click event on the first button to preselect it
 </script>
 `}
           ></Script>
