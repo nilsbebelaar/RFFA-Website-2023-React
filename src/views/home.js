@@ -90,10 +90,10 @@ const Home = (props) => {
                   </div>
                 </div>
                 <nav className="home-links1">
-                  <span className="home-text04">Festival</span>
-                  <span className="home-text05">Meedoen</span>
-                  <span className="home-text06">Tijdschema</span>
-                  <span className="home-text07">Meet &amp; Greet</span>
+                  <span className="home-text004">Festival</span>
+                  <span className="home-text005">Meedoen</span>
+                  <span className="home-text006">Tijdschema</span>
+                  <span className="home-text007">Meet &amp; Greet</span>
                   <a href="#meehelpen" className="home-link01">
                     Meehelpen
                   </a>
@@ -216,11 +216,11 @@ const Home = (props) => {
                 data-role="Nav"
                 className="home-nav2"
               >
-                <span className="home-text08">About</span>
-                <span className="home-text09">Features</span>
-                <span className="home-text10">Pricing</span>
-                <span className="home-text11">Team</span>
-                <span className="home-text12">Blog</span>
+                <span className="home-text008">About</span>
+                <span className="home-text009">Features</span>
+                <span className="home-text010">Pricing</span>
+                <span className="home-text011">Team</span>
+                <span className="home-text012">Blog</span>
               </nav>
               <div className="home-container03">
                 <button className="home-login1 button">Login</button>
@@ -244,17 +244,17 @@ const Home = (props) => {
           <div className="home-header-container">
             <div className="home-header">
               <h1 className="home-heading">
-                <span className="home-text13">Beleef atletiek</span>
-                <span className="home-text14">
+                <span className="home-text013">Beleef atletiek</span>
+                <span className="home-text014">
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
                     }}
                   />
                 </span>
-                <span className="home-text15">op het</span>
-                <br className="home-text16"></br>
-                <span className="home-text17">
+                <span className="home-text015">op het</span>
+                <br className="home-text016"></br>
+                <span className="home-text017">
                   Rotterdam Festival for Athletics
                 </span>
               </h1>
@@ -264,19 +264,19 @@ const Home = (props) => {
       </section>
       <div id="festival" className="home-festival">
         <section className="home-note">
-          <h1 className="home-text18 Header-1 heading-1">9 september 2023</h1>
+          <h1 className="home-text018 Header-1 heading-1">9 september 2023</h1>
           <h2 className="home-caption">
-            <span className="home-text19">
+            <span className="home-text019">
               Hét atletiekfeest van Rotterdam waarbij atletiek en de sfeer van
               een festival ultiem samenkomen.
             </span>
             <br></br>
-            <br className="home-text21"></br>
-            <span className="home-text22">
+            <br className="home-text021"></br>
+            <span className="home-text022">
               Doe zelf mee, kijk naar nationale topatleten of leer de fijne
               kneepjes van de beste trainers van het land!
             </span>
-            <br className="home-text23"></br>
+            <br className="home-text023"></br>
           </h2>
         </section>
         <section className="home-statistics">
@@ -318,106 +318,226 @@ const Home = (props) => {
   const elements = document.querySelectorAll(".timetable");
 
   buttons.forEach((button, index) => {
-      button.addEventListener('click', () => {
-        // Remove active class from all buttons
-        buttons.forEach(btn => btn.classList.remove('active'));
+    button.addEventListener("click", () => {
+      // Remove active class from all buttons
+      buttons.forEach((btn) => btn.classList.remove("active"));
 
-        // Add active class to the clicked button
-        button.classList.add('active');
+      // Add active class to the clicked button
+      button.classList.add("active");
 
-        // Hide all elements
-        elements.forEach(el => {
-          el.style.opacity = 0;
-          el.style.display = 'none';
-        });
-
-        // Show the clicked element with a delay
-        setTimeout(() => {
-          elements[index].style.display = 'block';
-          elements[index].style.opacity = 1;
-        }, 150); // 150 milliseconds, matching the fade duration
+      // Hide all elements
+      elements.forEach((el) => {
+        el.style.opacity = 0;
+        el.style.display = "none";
       });
-    });
 
-    // Initialize by showing the first element on load
-    elements[0].style.display = 'block';
-    elements[0].style.opacity = 1;
-  </script>
+      // Show the clicked element with a delay
+      setTimeout(() => {
+        elements[index].style.opacity = 1;
+        elements[index].style.display = "block";
+      }, 100); // 150 milliseconds, matching the fade duration
+    });
+  });
+
+  // Initialize by showing the first element on load
+  elements[0].style.display = "block";
+  elements[0].style.opacity = 1;
+</script>
 `}
           ></Script>
         </div>
         <div className="home-container04">
           <div className="home-timetable-menu">
             <div className="home-knop-1 timetable-menu-button active">
-              <h1>Heading</h1>
-              <span>Text</span>
+              <h1 className="home-text026 TimetableMenuTitle">
+                Hoofdprogramma
+              </h1>
+              <span className="TimetableMenuSubtitle">
+                Met nationale topatleten
+              </span>
             </div>
             <div className="home-knop-2 timetable-menu-button">
-              <h1>Heading</h1>
-              <span>Text</span>
+              <h1 className="home-text028 TimetableMenuTitle">RFFA Cups</h1>
+              <span>Wedstrijden voor iedereen</span>
             </div>
             <div className="home-knop-3 timetable-menu-button">
-              <h1>Heading</h1>
-              <span>Text</span>
+              <h1 className="home-text030 TimetableMenuTitle">RFFA Clinics</h1>
+              <span>Leer van topatleten</span>
             </div>
             <div className="home-knop-4 timetable-menu-button">
-              <h1>Heading</h1>
-              <span>Text</span>
+              <h1 className="home-text032 TimetableMenuTitle">
+                Estafette &amp; Run2Day
+              </h1>
+              <span>4x800m &amp; 5000m</span>
             </div>
           </div>
           <div className="home-timetables">
             <div id="timetable-1" className="timetable">
               <div className="home-row timetable-row">
                 <img
-                  src="/events/sports_clinic.svg"
+                  src="/events/sports_sprint.svg"
                   alt="image"
                   className="timetable-image"
                 />
                 <div className="home-container05">
                   <span className="timetable-time">Time</span>
                   <div className="home-container06">
-                    <h4 className="timetable-title">Title</h4>
+                    <h4 className="timetable-title">100 Meter</h4>
                     <button type="button" className="timetable-button">
                       <span>
-                        <span>Link</span>
+                        <span>Mannen</span>
                         <br></br>
                       </span>
                     </button>
                   </div>
                 </div>
               </div>
-              <div className="home-row1 timetable-row">
+              <div className="home-row01 timetable-row">
                 <img
-                  src="/events/sports_cup.svg"
+                  src="/events/sports_sprint.svg"
                   alt="image"
                   className="timetable-image"
                 />
                 <div className="home-container07">
                   <span className="timetable-time">Time</span>
                   <div className="home-container08">
-                    <h4 className="timetable-title">Title</h4>
+                    <h4 className="timetable-title">100 Meter</h4>
                     <button type="button" className="timetable-button">
                       <span>
-                        <span>Link</span>
+                        <span>Vrouwen</span>
                         <br></br>
                       </span>
                     </button>
                   </div>
                 </div>
               </div>
-              <div className="home-row2 timetable-row">
+              <div className="home-row02 timetable-row">
                 <img
-                  src="/events/sports_hoog.svg"
+                  src="/events/sports_horden.svg"
                   alt="image"
                   className="timetable-image"
                 />
                 <div className="home-container09">
                   <span className="timetable-time">Time</span>
                   <div className="home-container10">
-                    <h4 className="timetable-title">Title</h4>
+                    <h4 className="timetable-title">110 Meter Horden</h4>
                     <button type="button" className="timetable-button">
                       <span>
-                        <span>Link</span>
+                        <span>Mannen</span>
+                        <br></br>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="home-row03 timetable-row">
+                <img
+                  src="/events/sports_horden.svg"
+                  alt="image"
+                  className="timetable-image"
+                />
+                <div className="home-container11">
+                  <span className="timetable-time">Time</span>
+                  <div className="home-container12">
+                    <h4 className="timetable-title">100 Meter Horden</h4>
+                    <button type="button" className="timetable-button">
+                      <span>
+                        <span>Vrouwen</span>
+                        <br></br>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="home-row04 timetable-row">
+                <img
+                  src="/events/sports_sprint.svg"
+                  alt="image"
+                  className="timetable-image"
+                />
+                <div className="home-container13">
+                  <span className="timetable-time">Time</span>
+                  <div className="home-container14">
+                    <h4 className="timetable-title">300 Meter</h4>
+                    <button type="button" className="timetable-button">
+                      <span>
+                        <span>Mixed</span>
+                        <br></br>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="home-row05 timetable-row">
+                <img
+                  src="/events/sports_hoog.svg"
+                  alt="image"
+                  className="timetable-image"
+                />
+                <div className="home-container15">
+                  <span className="timetable-time">Time</span>
+                  <div className="home-container16">
+                    <h4 className="timetable-title">Hoogspringen</h4>
+                    <button type="button" className="timetable-button">
+                      <span>
+                        <span>Mixed</span>
+                        <br></br>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="home-row06 timetable-row">
+                <img
+                  src="/events/sports_polshoog.svg"
+                  alt="image"
+                  className="timetable-image"
+                />
+                <div className="home-container17">
+                  <span className="timetable-time">Time</span>
+                  <div className="home-container18">
+                    <h4 className="timetable-title">Polsstokhoogspringen</h4>
+                    <button type="button" className="timetable-button">
+                      <span>
+                        <span>Mixed</span>
+                        <br></br>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="home-row07 timetable-row">
+                <img
+                  src="/events/sports_estafette.svg"
+                  alt="image"
+                  className="timetable-image"
+                />
+                <div className="home-container19">
+                  <span className="timetable-time">Time</span>
+                  <div className="home-container20">
+                    <h4 className="timetable-title">Zweedse Estafette</h4>
+                    <button type="button" className="timetable-button">
+                      <span>
+                        <span>Mixed</span>
+                        <br></br>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="home-row08 timetable-row">
+                <img
+                  src="/events/sports_kogel.svg"
+                  alt="image"
+                  className="timetable-image"
+                />
+                <div className="home-container21">
+                  <span className="timetable-time">Time</span>
+                  <div className="home-container22">
+                    <h4 className="timetable-title">Kogelstoten</h4>
+                    <button type="button" className="timetable-button">
+                      <span>
+                        <span>Mixed</span>
                         <br></br>
                       </span>
                     </button>
@@ -426,16 +546,16 @@ const Home = (props) => {
               </div>
             </div>
             <div id="timetable-2" className="timetable">
-              <div className="home-row3 timetable-row">
+              <div className="home-row09 timetable-row">
                 <img
-                  src="/events/sports_polshoog.svg"
+                  src="/events/sports_ver.svg"
                   alt="image"
                   className="timetable-image"
                 />
-                <div className="home-container11">
+                <div className="home-container23">
                   <span className="timetable-time">Time</span>
-                  <div className="home-container12">
-                    <h4 className="timetable-title">Title</h4>
+                  <div className="home-container24">
+                    <h4 className="timetable-title">RFFA jumpCUP - Group A</h4>
                     <button type="button" className="timetable-button">
                       <span>
                         <span>Link</span>
@@ -445,16 +565,16 @@ const Home = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="home-row4 timetable-row">
+              <div className="home-row10 timetable-row">
                 <img
-                  src="/events/sports_clinic.svg"
+                  src="/events/sports_ver.svg"
                   alt="image"
                   className="timetable-image"
                 />
-                <div className="home-container13">
+                <div className="home-container25">
                   <span className="timetable-time">Time</span>
-                  <div className="home-container14">
-                    <h4 className="timetable-title">Title</h4>
+                  <div className="home-container26">
+                    <h4 className="timetable-title">RFFA jumpCUP - Group B</h4>
                     <button type="button" className="timetable-button">
                       <span>
                         <span>Link</span>
@@ -464,16 +584,111 @@ const Home = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="home-row5 timetable-row">
+              <div className="home-row11 timetable-row">
                 <img
                   src="/events/sports_sprint.svg"
                   alt="image"
                   className="timetable-image"
                 />
-                <div className="home-container15">
+                <div className="home-container27">
                   <span className="timetable-time">Time</span>
-                  <div className="home-container16">
-                    <h4 className="timetable-title">Title</h4>
+                  <div className="home-container28">
+                    <h4 className="timetable-title">RFFA sprintCUP - Series</h4>
+                    <button type="button" className="timetable-button">
+                      <span>
+                        <span>Link</span>
+                        <br></br>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="home-row12 timetable-row">
+                <img
+                  src="/events/sports_sprint.svg"
+                  alt="image"
+                  className="timetable-image"
+                />
+                <div className="home-container29">
+                  <span className="timetable-time">Time</span>
+                  <div className="home-container30">
+                    <h4 className="timetable-title">RFFA sprintCUP - Finale</h4>
+                    <button type="button" className="timetable-button">
+                      <span>
+                        <span>Link</span>
+                        <br></br>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="home-row13 timetable-row">
+                <img
+                  src="/events/sports_sprint.svg"
+                  alt="image"
+                  className="timetable-image"
+                />
+                <div className="home-container31">
+                  <span className="timetable-time">Time</span>
+                  <div className="home-container32">
+                    <h4 className="timetable-title">RFFA runCUP - Group A</h4>
+                    <button type="button" className="timetable-button">
+                      <span>
+                        <span>Link</span>
+                        <br></br>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="home-row14 timetable-row">
+                <img
+                  src="/events/sports_sprint.svg"
+                  alt="image"
+                  className="timetable-image"
+                />
+                <div className="home-container33">
+                  <span className="timetable-time">Time</span>
+                  <div className="home-container34">
+                    <h4 className="timetable-title">RFFA runCUP - Group B</h4>
+                    <button type="button" className="timetable-button">
+                      <span>
+                        <span>Link</span>
+                        <br></br>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="home-row15 timetable-row">
+                <img
+                  src="/events/sports_kogel.svg"
+                  alt="image"
+                  className="timetable-image"
+                />
+                <div className="home-container35">
+                  <span className="timetable-time">Time</span>
+                  <div className="home-container36">
+                    <h4 className="timetable-title">RFFA throwCUP - Group A</h4>
+                    <button type="button" className="timetable-button">
+                      <span>
+                        <span>Link</span>
+                        <br></br>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="home-row16 timetable-row">
+                <img
+                  src="/events/sports_kogel.svg"
+                  alt="image"
+                  className="timetable-image"
+                />
+                <div className="home-container37">
+                  <span className="timetable-time">Time</span>
+                  <div className="home-container38">
+                    <h4 className="timetable-title">RFFA throwCUP - Group B</h4>
                     <button type="button" className="timetable-button">
                       <span>
                         <span>Link</span>
@@ -485,16 +700,16 @@ const Home = (props) => {
               </div>
             </div>
             <div id="timetable-3" className="timetable">
-              <div className="home-row6 timetable-row">
+              <div className="home-row17 timetable-row">
                 <img
                   src="/events/sports_clinic.svg"
                   alt="image"
                   className="timetable-image"
                 />
-                <div className="home-container17">
-                  <span className="timetable-time">Time</span>
-                  <div className="home-container18">
-                    <h4 className="timetable-title">Title</h4>
+                <div className="home-container39">
+                  <span className="timetable-time">13:05</span>
+                  <div className="home-container40">
+                    <h4 className="timetable-title">Clinic ronde #1</h4>
                     <button type="button" className="timetable-button">
                       <span>
                         <span>Link</span>
@@ -504,16 +719,16 @@ const Home = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="home-row7 timetable-row">
+              <div className="home-row18 timetable-row">
                 <img
-                  src="/events/sports_ver.svg"
+                  src="/events/sports_clinic.svg"
                   alt="image"
                   className="timetable-image"
                 />
-                <div className="home-container19">
-                  <span className="timetable-time">Time</span>
-                  <div className="home-container20">
-                    <h4 className="timetable-title">Title</h4>
+                <div className="home-container41">
+                  <span className="timetable-time">14:05</span>
+                  <div className="home-container42">
+                    <h4 className="timetable-title">Clinic ronde #2</h4>
                     <button type="button" className="timetable-button">
                       <span>
                         <span>Link</span>
@@ -523,16 +738,35 @@ const Home = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="home-row8 timetable-row">
+              <div className="home-row19 timetable-row">
                 <img
                   src="/events/sports_clinic.svg"
                   alt="image"
                   className="timetable-image"
                 />
-                <div className="home-container21">
-                  <span className="timetable-time">Time</span>
-                  <div className="home-container22">
-                    <h4 className="timetable-title">Title</h4>
+                <div className="home-container43">
+                  <span className="timetable-time">15:05</span>
+                  <div className="home-container44">
+                    <h4 className="timetable-title">Clinic ronde #3</h4>
+                    <button type="button" className="timetable-button">
+                      <span>
+                        <span>Link</span>
+                        <br></br>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="home-row20 timetable-row">
+                <img
+                  src="/events/sports_clinic.svg"
+                  alt="image"
+                  className="timetable-image"
+                />
+                <div className="home-container45">
+                  <span className="timetable-time">16:05</span>
+                  <div className="home-container46">
+                    <h4 className="timetable-title">Clinic ronde #4</h4>
                     <button type="button" className="timetable-button">
                       <span>
                         <span>Link</span>
@@ -543,10 +777,52 @@ const Home = (props) => {
                 </div>
               </div>
             </div>
+            <div id="timetable-3" className="timetable">
+              <div className="home-row21 timetable-row">
+                <img
+                  src="/events/sports_clinic.svg"
+                  alt="image"
+                  className="timetable-image"
+                />
+                <div className="home-container47">
+                  <span className="timetable-time">Time</span>
+                  <div className="home-container48">
+                    <h4 className="timetable-title">4x800m</h4>
+                    <button type="button" className="timetable-button">
+                      <span>
+                        <span>Teams</span>
+                        <br></br>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="home-row22 timetable-row">
+                <img
+                  src="/events/sports_ver.svg"
+                  alt="image"
+                  className="timetable-image"
+                />
+                <div className="home-container49">
+                  <span className="timetable-time">Time</span>
+                  <div className="home-container50">
+                    <h4 className="timetable-title">
+                      5000m Finale Run2Day Baancircuit 2023
+                    </h4>
+                    <button type="button" className="timetable-button">
+                      <span>
+                        <span>Mixed</span>
+                        <br></br>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="home-container23">
+      <div className="home-container51">
         <section className="home-growth">
           <div className="home-content01">
             <div className="home-header04">
@@ -560,7 +836,7 @@ const Home = (props) => {
                       }}
                     />
                   </span>
-                  <span className="home-text62">growth.</span>
+                  <span className="home-text104">growth.</span>
                   <br></br>
                 </h2>
               </div>
@@ -585,8 +861,8 @@ const Home = (props) => {
             </div>
             <div className="home-testimonial">
               <div className="home-content02">
-                <span className="home-text64">Testimonial</span>
-                <p className="home-text65">
+                <span className="home-text106">Testimonial</span>
+                <p className="home-text107">
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna
                   aliqua.”
@@ -607,7 +883,7 @@ const Home = (props) => {
           </div>
           <div className="home-images">
             <div className="home-square"></div>
-            <img alt="image" src="/growth-1400w.png" className="home-image10" />
+            <img alt="image" src="/growth-1400w.png" className="home-image24" />
           </div>
         </section>
       </div>
@@ -617,7 +893,7 @@ const Home = (props) => {
           <img
             alt="image"
             src="/experience-1400w.png"
-            className="home-image11"
+            className="home-image25"
           />
         </div>
         <div className="home-content03">
@@ -626,7 +902,7 @@ const Home = (props) => {
               <div className="home-header07">
                 <h2 className="home-heading2">
                   <span>A worlds class </span>
-                  <span className="home-text67">experience</span>
+                  <span className="home-text109">experience</span>
                 </h2>
               </div>
               <p className="home-caption6">
@@ -641,7 +917,7 @@ const Home = (props) => {
                     <path d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"></path>
                   </svg>
                 </div>
-                <span className="home-text68">
+                <span className="home-text110">
                   Duis aute irure dolor in reprehenderit
                 </span>
               </div>
@@ -651,7 +927,7 @@ const Home = (props) => {
                     <path d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"></path>
                   </svg>
                 </div>
-                <span className="home-text69">Lorem ipsum dolor sit amet</span>
+                <span className="home-text111">Lorem ipsum dolor sit amet</span>
               </div>
               <div className="home-check2">
                 <div className="home-mark2">
@@ -659,7 +935,7 @@ const Home = (props) => {
                     <path d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"></path>
                   </svg>
                 </div>
-                <span className="home-text70">
+                <span className="home-text112">
                   Voluptate velit esse cillum dolore eu fugiat nulla
                 </span>
               </div>
@@ -669,7 +945,7 @@ const Home = (props) => {
                     <path d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"></path>
                   </svg>
                 </div>
-                <span className="home-text71">
+                <span className="home-text113">
                   Excepteur sint occaecat cupidatat non proident sunt in culpa
                 </span>
               </div>
@@ -677,8 +953,8 @@ const Home = (props) => {
           </div>
           <div className="home-testimonial1">
             <div className="home-content04">
-              <span className="home-text72">Testimonial</span>
-              <p className="home-text73">
+              <span className="home-text114">Testimonial</span>
+              <p className="home-text115">
                 “Excepteur sint occaecat cupidatat non proident, sunt in culpa
                 qui officia deserunt mollit anim id est laborum.”
               </p>
@@ -703,9 +979,9 @@ const Home = (props) => {
           src="/jury-600w.webp"
           alt="image"
           loading="lazy"
-          className="home-image12"
+          className="home-image26"
         />
-        <div className="home-container24">
+        <div className="home-container52">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSdnJjYTOCFjt-RaE2ZVklgpf5a1C7eCsnynX_MOnzpN-ib48A/viewform?embedded=true"
             frameborder="0"
@@ -737,7 +1013,7 @@ const Home = (props) => {
                   href="https://www.instagram.com/rffa_rotterdam/"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-link13"
+                  className="home-link27"
                 >
                   Instagram
                 </a>
@@ -753,7 +1029,7 @@ const Home = (props) => {
                   href="https://www.facebook.com/rffarotterdam/"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-link14"
+                  className="home-link28"
                 >
                   Facebook
                   <span
@@ -782,7 +1058,7 @@ const Home = (props) => {
                   href="https://www.instagram.com/rffa_rotterdam/"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-link15"
+                  className="home-link29"
                 >
                   Instagram
                   <span
@@ -806,7 +1082,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <div className="home-container25">
+      <div className="home-container53">
         <div className="home-footer">
           <div className="home-content09">
             <div className="home-main">
@@ -814,9 +1090,9 @@ const Home = (props) => {
                 <img
                   alt="image"
                   src="/logo%20rffa_white_border.svg"
-                  className="home-image13"
+                  className="home-image27"
                 />
-                <span className="home-text79">
+                <span className="home-text121">
                   Het Rotterdam Festival for Athletics is een initiatief voor
                   een jaarlijks atletiekfeest van PAC Rotterdam en Rotterdam
                   Atletiek.
@@ -830,32 +1106,32 @@ const Home = (props) => {
                       href="https://www.instagram.com/rffa_rotterdam/"
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="home-link16"
+                      className="home-link30"
                     >
-                      <div className="home-container26">
+                      <div className="home-container54">
                         <svg
                           viewBox="0 0 877.7142857142857 1024"
                           className="home-icon27"
                         >
                           <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
                         </svg>
-                        <span className="home-text80">Instagram</span>
+                        <span className="home-text122">Instagram</span>
                       </div>
                     </a>
                     <a
                       href="https://www.facebook.com/rffarotterdam/"
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="home-link17"
+                      className="home-link31"
                     >
-                      <div className="home-container27">
+                      <div className="home-container55">
                         <svg
                           viewBox="0 0 877.7142857142857 1024"
                           className="home-icon29"
                         >
                           <path d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"></path>
                         </svg>
-                        <span className="home-text81">Facebook</span>
+                        <span className="home-text123">Facebook</span>
                       </div>
                     </a>
                   </div>
@@ -863,15 +1139,15 @@ const Home = (props) => {
               </div>
             </div>
             <div className="home-bottom">
-              <span className="home-text82">
+              <span className="home-text124">
                 © 2023 Rotterdam Festival for Athletics - All rights reserved
               </span>
               <a
                 href="#top"
                 data-role="scroll-top"
-                className="home-link18 button"
+                className="home-link32 button"
               >
-                <img alt="image" src="/arrow.svg" className="home-image14" />
+                <img alt="image" src="/arrow.svg" className="home-image28" />
               </a>
             </div>
           </div>
