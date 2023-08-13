@@ -318,21 +318,31 @@ const Home = (props) => {
   const elements = document.querySelectorAll(".timetable");
 
   buttons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-      // Remove active class from all buttons and elements
-      buttons.forEach((btn) => btn.classList.remove("active"));
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        buttons.forEach(btn => btn.classList.remove('active'));
 
-      // Add active class to the clicked button
-      button.classList.add("active");
+        // Add active class to the clicked button
+        button.classList.add('active');
 
-      // Wait for the fade-out animation to complete before hiding inactive elements
-      setTimeout(() => {
-        elements.forEach((el) => el.classList.remove("active"));
-        elements[index].classList.add("active");
-      }, 150); // 150 milliseconds, matching the fade duration
+        // Hide all elements
+        elements.forEach(el => {
+          el.style.opacity = 0;
+          el.style.display = 'none';
+        });
+
+        // Show the clicked element with a delay
+        setTimeout(() => {
+          elements[index].style.display = 'block';
+          elements[index].style.opacity = 1;
+        }, 150); // 150 milliseconds, matching the fade duration
+      });
     });
-  });
-</script>
+
+    // Initialize by showing the first element on load
+    elements[0].style.display = 'block';
+    elements[0].style.opacity = 1;
+  </script>
 `}
           ></Script>
         </div>
@@ -356,7 +366,7 @@ const Home = (props) => {
             </div>
           </div>
           <div className="home-timetables">
-            <div id="timetable-1" className="timetable active">
+            <div id="timetable-1" className="timetable">
               <div className="home-row timetable-row">
                 <img
                   src="/events/sports_clinic.svg"
