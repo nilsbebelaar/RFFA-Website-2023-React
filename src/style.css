@@ -225,6 +225,53 @@
   text-decoration: none;
   border-bottom-width: 1px;
 }
+.timetable {
+  width: 100%;
+  padding: 0px 20px;
+}
+.timetable-row {
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px solid var(--dl-color-gray-900);
+  border-radius: var(--dl-radius-radius-radius4);
+  background-color: var(--dl-color-gray-white);
+}
+.timetable-menu-button {
+  color: var(--dl-color-primary-700);
+  padding: 20px;
+  background-color: var(--dl-color-gray-white);
+}
+.timetable-menu-button:active {
+  color: var(--dl-color-primary-500);
+  background-color: var(--dl-color-primary-300);
+}
+.timetable-menu-button:hover {
+  color: var(--dl-color-primary-500);
+}
+.timetable-image {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+.timetable-time {
+  color: var(--dl-color-primary-500);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.timetable-title {
+  font-size: 18px;
+}
+.timetable-button {
+  color: var(--dl-color-gray-white);
+  padding: 2px 5px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+  border-radius: 4px;
+  vertical-align: middle;
+  background-color: var(--dl-color-primary-700);
+}
 .Header-1 {
   font-size: 62px;
   font-family: Montserrat;
