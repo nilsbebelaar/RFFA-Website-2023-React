@@ -57,7 +57,7 @@ const Home = (props) => {
             </Link>
             <div data-thq="thq-navbar-nav" className="home-desktop-menu">
               <nav className="home-links">
-                <a href="#read-more" className="navbar-button home-link">
+                <a href="#festival" className="navbar-button home-link">
                   Festival
                 </a>
                 <span className="navbar-button">Meedoen</span>
@@ -90,7 +90,7 @@ const Home = (props) => {
                   </div>
                 </div>
                 <nav className="home-links1">
-                  <a href="#read-more" className="home-link01">
+                  <a href="#festival" className="home-link01">
                     Festival
                   </a>
                   <span className="home-text04">Meedoen</span>
@@ -262,106 +262,112 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section id="festival" className="home-note">
-        <h1 className="home-text18 Header-1">9 september 2023</h1>
-        <h2 className="home-caption">
-          <span className="home-text19">
-            Hét atletiekfeest van Rotterdam waarbij atletiek en de sfeer van een
-            festival ultiem samenkomen.
-          </span>
-          <br></br>
-          <br className="home-text21"></br>
-          <span className="home-text22">
-            Doe zelf mee, kijk naar nationale topatleten of leer de fijne
-            kneepjes van de beste trainers van het land!
-          </span>
-          <br className="home-text23"></br>
-        </h2>
-      </section>
-      <section className="home-statistics">
-        <div className="home-content">
-          <div className="home-stat">
-            <h3 className="home-header01 Header-1">Beleef</h3>
-            <span className="home-caption1">
-              <span>Strijd om een Cup, volg een clinic!</span>
-              <br></br>
+      <div className="home-container4">
+        <section id="festival" className="home-note">
+          <h1 className="home-text18 Header-1">9 september 2023</h1>
+          <h2 className="home-caption">
+            <span className="home-text19">
+              Hét atletiekfeest van Rotterdam waarbij atletiek en de sfeer van
+              een festival ultiem samenkomen.
             </span>
-          </div>
-          <div className="home-stat1">
-            <h3 className="home-header02 Header-1">Kijk</h3>
-            <span className="home-caption2">
-              Nationale top, foto&apos;s en handtekening!
+            <br></br>
+            <br className="home-text21"></br>
+            <span className="home-text22">
+              Doe zelf mee, kijk naar nationale topatleten of leer de fijne
+              kneepjes van de beste trainers van het land!
             </span>
-          </div>
-          <div className="home-stat2">
-            <h3 className="home-header03 Header-1">Geniet</h3>
-            <span className="home-caption3">
-              Hapjes en drankjes op het middenveld!
-            </span>
-          </div>
-        </div>
-      </section>
-      <section className="home-growth">
-        <div className="home-content01">
-          <div className="home-header04">
-            <div className="home-header05">
-              <h2 className="home-heading1">
-                <span>
-                  Multiverse optimized for
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span className="home-text27">growth.</span>
+            <br className="home-text23"></br>
+          </h2>
+        </section>
+        <section className="home-statistics">
+          <div className="home-content">
+            <div className="home-stat">
+              <h3 className="home-header01 Header-1">Beleef</h3>
+              <span className="home-caption1">
+                <span>Strijd om een Cup, volg een clinic!</span>
                 <br></br>
-              </h2>
+              </span>
             </div>
-            <p className="home-caption4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: ' ',
-                }}
-              />
-            </p>
-            <p className="home-caption5">
-              Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: ' ',
-                }}
-              />
-            </p>
+            <div className="home-stat1">
+              <h3 className="home-header02 Header-1">Kijk</h3>
+              <span className="home-caption2">
+                Nationale top, foto&apos;s en handtekening!
+              </span>
+            </div>
+            <div className="home-stat2">
+              <h3 className="home-header03 Header-1">Geniet</h3>
+              <span className="home-caption3">
+                Hapjes en drankjes op het middenveld!
+              </span>
+            </div>
           </div>
-          <div className="home-testimonial">
-            <div className="home-content02">
-              <span className="home-text29">Testimonial</span>
-              <p className="home-text30">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+        </section>
+      </div>
+      <div className="home-container5">
+        <section className="home-growth">
+          <div className="home-content01">
+            <div className="home-header04">
+              <div className="home-header05">
+                <h2 className="home-heading1">
+                  <span>
+                    Multiverse optimized for
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                  <span className="home-text27">growth.</span>
+                  <br></br>
+                </h2>
+              </div>
+              <p className="home-caption4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
+              </p>
+              <p className="home-caption5">
+                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
               </p>
             </div>
-            <div className="home-information">
-              <div className="home-author">
-                <img
-                  alt="image"
-                  src="https://images.unsplash.com/photo-1552234994-66ba234fd567?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDN8fHBvdHJhaXR8ZW58MHx8fHwxNjcxMDU2MzMz&amp;ixlib=rb-4.0.3&amp;w=200"
-                  className="home-icon17"
-                />
-                <span className="home-name">Andrew Gonzales</span>
+            <div className="home-testimonial">
+              <div className="home-content02">
+                <span className="home-text29">Testimonial</span>
+                <p className="home-text30">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.”
+                </p>
               </div>
-              <img alt="image" src="/logoipsum.svg" className="home-from" />
+              <div className="home-information">
+                <div className="home-author">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1552234994-66ba234fd567?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDN8fHBvdHJhaXR8ZW58MHx8fHwxNjcxMDU2MzMz&amp;ixlib=rb-4.0.3&amp;w=200"
+                    className="home-icon17"
+                  />
+                  <span className="home-name">Andrew Gonzales</span>
+                </div>
+                <img alt="image" src="/logoipsum.svg" className="home-from" />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="home-images">
-          <div className="home-square"></div>
-          <img alt="image" src="/growth-1400w.png" className="home-image1" />
-        </div>
-      </section>
+          <div className="home-images">
+            <div className="home-square"></div>
+            <img alt="image" src="/growth-1400w.png" className="home-image1" />
+          </div>
+        </section>
+      </div>
       <section className="home-experience">
         <div className="home-images1">
           <div className="home-square1"></div>
@@ -539,77 +545,79 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <div className="home-footer">
-        <div className="home-content09">
-          <div className="home-main">
-            <div className="home-branding1">
-              <img
-                alt="image"
-                src="/logo%20rffa_white_border.svg"
-                className="home-image3"
-              />
-              <span className="home-text44">
-                Het Rotterdam Festival for Athletics is een initiatief voor een
-                jaarlijks atletiekfeest van PAC Rotterdam en Rotterdam Atletiek.
-              </span>
-            </div>
-            <div className="home-links2">
-              <div className="home-column1">
-                <span className="home-header12">Social</span>
-                <div className="home-list">
-                  <a
-                    href="https://www.instagram.com/rffa_rotterdam/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="home-link07"
-                  >
-                    <div className="home-container4">
-                      <svg
-                        viewBox="0 0 877.7142857142857 1024"
-                        className="home-icon27"
-                      >
-                        <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
-                      </svg>
-                      <span className="home-text45">Instagram</span>
-                    </div>
-                  </a>
-                  <a
-                    href="https://www.facebook.com/rffarotterdam/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="home-link08"
-                  >
-                    <div className="home-container5">
-                      <svg
-                        viewBox="0 0 877.7142857142857 1024"
-                        className="home-icon29"
-                      >
-                        <path d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"></path>
-                      </svg>
-                      <span className="home-text46">Facebook</span>
-                    </div>
-                  </a>
+      <div className="home-container6">
+        <div className="home-footer">
+          <div className="home-content09">
+            <div className="home-main">
+              <div className="home-branding1">
+                <img
+                  alt="image"
+                  src="/logo%20rffa_white_border.svg"
+                  className="home-image3"
+                />
+                <span className="home-text44">
+                  Het Rotterdam Festival for Athletics is een initiatief voor
+                  een jaarlijks atletiekfeest van PAC Rotterdam en Rotterdam
+                  Atletiek.
+                </span>
+              </div>
+              <div className="home-links2">
+                <div className="home-column1">
+                  <span className="home-header12">Social</span>
+                  <div className="home-list">
+                    <a
+                      href="https://www.instagram.com/rffa_rotterdam/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="home-link07"
+                    >
+                      <div className="home-container7">
+                        <svg
+                          viewBox="0 0 877.7142857142857 1024"
+                          className="home-icon27"
+                        >
+                          <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
+                        </svg>
+                        <span className="home-text45">Instagram</span>
+                      </div>
+                    </a>
+                    <a
+                      href="https://www.facebook.com/rffarotterdam/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="home-link08"
+                    >
+                      <div className="home-container8">
+                        <svg
+                          viewBox="0 0 877.7142857142857 1024"
+                          className="home-icon29"
+                        >
+                          <path d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"></path>
+                        </svg>
+                        <span className="home-text46">Facebook</span>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="home-bottom">
-            <span className="home-text47">
-              © 2023 Rotterdam Festival for Athletics - All rights reserved
-            </span>
-            <a
-              href="#top"
-              data-role="scroll-top"
-              className="home-link09 button"
-            >
-              <img alt="image" src="/arrow.svg" className="home-image4" />
-            </a>
+            <div className="home-bottom">
+              <span className="home-text47">
+                © 2023 Rotterdam Festival for Athletics - All rights reserved
+              </span>
+              <a
+                href="#top"
+                data-role="scroll-top"
+                className="home-link09 button"
+              >
+                <img alt="image" src="/arrow.svg" className="home-image4" />
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <Script
-          html={`<script>
+        <div>
+          <Script
+            html={`<script>
 document.addEventListener("DOMContentLoaded", function() {
   // get the element with the "scroll-top" data-role
   const scrollTopBtn = document.querySelector('[data-role="scroll-top"]');
@@ -625,7 +633,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 `}
-        ></Script>
+          ></Script>
+        </div>
       </div>
     </div>
   )
