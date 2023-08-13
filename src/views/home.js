@@ -307,9 +307,9 @@ const Home = (props) => {
         <div>
           <Script
             html={`<style>
-  .active {
-    display: block;
-    opacity: 1;
+  .timetable-menu-button.active{
+    color: var(--dl-color-primary-500);
+    background-color: var(--dl-color-primary-300);
   }
 </style>
 
@@ -351,7 +351,7 @@ const Home = (props) => {
             </div>
           </div>
           <div className="home-timetables">
-            <div id="timetable-1" className="home-hoofdprogramma1 timetable">
+            <div id="timetable-1" className="timetable active">
               <div className="home-row timetable-row">
                 <img
                   src="/events/sports_clinic.svg"
