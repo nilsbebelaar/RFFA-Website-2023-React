@@ -311,26 +311,25 @@ const Home = (props) => {
   const elements = document.querySelectorAll(".timetable");
 
   buttons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-      elements.forEach(element => {
-        element.style.opacity = '0';
-        setTimeout(() => {
-          element.style.display = 'none';
-        }, 150);
-      });
-
-      elements[index].style.display = 'block';
-      setTimeout(() => {
-        elements[index].style.opacity = '1';
-      }, 0);
-
-      buttons.forEach(btn => {
-        btn.blur(); // Remove focus to reset :active state
+    button.addEventListener("click", () => {
+      elements.forEach((element, elementIndex) => {
+        if (elementIndex === index) {
+          element.style.display = "flex";
+          setTimeout(() => {
+            element.style.opacity = "1";
+          }, 0);
+        } else {
+          element.style.opacity = "0";
+          setTimeout(() => {
+            element.style.display = "none";
+          }, 150);
+        }
       });
     });
   });
 
-  buttons[0].click(); // Trigger the click event on the first button to preselect it
+  // Trigger the click event on the first button to preselect it
+  buttons[0].click();
 </script>
 `}
           ></Script>
