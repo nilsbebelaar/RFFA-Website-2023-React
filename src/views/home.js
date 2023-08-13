@@ -306,32 +306,29 @@ const Home = (props) => {
       <div className="home-tijdschema">
         <div>
           <Script
-            html={`<script>
+            html={`<style>
+  .active {
+    display: block;
+    opacity: 1;
+  }
+</style>
+
+<script>
   const buttons = document.querySelectorAll(".timetable-menu-button");
   const elements = document.querySelectorAll(".timetable");
 
   buttons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-      elements.forEach((element, elementIndex) => {
-        if (elementIndex === index) {
-          element.style.display = "flex";
-          setTimeout(() => {
-            element.style.opacity = "1";
-          }, 0);
-        } else {
-          element.style.opacity = "0";
-          setTimeout(() => {
-            element.style.display = "none";
-          }, 150);
-        }
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons and elements
+        buttons.forEach(btn => btn.classList.remove('active'));
+        elements.forEach(el => el.classList.remove('active'));
+
+        // Add active class to the clicked button and corresponding element
+        button.classList.add('active');
+        elements[index].classList.add('active');
       });
     });
-  });
-
-  // Trigger the click event on the first button to preselect it
-  buttons[0].click();
-</script>
-`}
+</script>`}
           ></Script>
         </div>
         <div className="home-container04">
