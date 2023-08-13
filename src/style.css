@@ -210,6 +210,21 @@
 .navbar-button:hover {
   background-color: var(--dl-color-primary-700);
 }
+.heading-1 {
+  color: var(--dl-color-gray-white);
+  font-size: 62px;
+  font-style: normal;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 73px;
+  border-color: var(--dl-color-gray-white);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom-width: 1px;
+}
 .Header-1 {
   font-size: 62px;
   font-family: Montserrat;
@@ -226,6 +241,8 @@
   text-transform: none;
   text-decoration: none;
 }
+
+
 @media(max-width: 991px) {
   .banner {
     flex-direction: column;
