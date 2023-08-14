@@ -270,7 +270,9 @@ const Home = (props) => {
       </section>
       <div id="festival" className="home-festival">
         <section className="home-note">
-          <h1 className="home-text015 Header-1 heading-1">9 september 2023</h1>
+          <h1 className="home-text015 Header-1 main-header">
+            9 september 2023
+          </h1>
           <h2 className="home-caption">
             <span className="home-text016">
               Hét atletiekfeest van Rotterdam waarbij atletiek en de sfeer van
@@ -310,7 +312,9 @@ const Home = (props) => {
         </section>
       </div>
       <div id="tijdschema" className="home-tijdschema">
-        <h2 className="heading-1">TIJDSCHEMA (ONDER VOORBEHOUD)</h2>
+        <h2 className="home-text023 Header-1 main-header">
+          TIJDSCHEMA (ONDER VOORBEHOUD)
+        </h2>
         <div>
           <Script
             html={`<style>
@@ -384,8 +388,8 @@ const Home = (props) => {
             <div id="timetable-1" className="timetable">
               <div className="home-row timetable-row">
                 <img
-                  src="/events/sports_sprint.svg"
                   alt="image"
+                  src="/events/sports_sprint.svg"
                   className="timetable-image"
                 />
                 <div className="home-container05">
@@ -403,8 +407,8 @@ const Home = (props) => {
               </div>
               <div className="home-row01 timetable-row">
                 <img
-                  src="/events/sports_sprint.svg"
                   alt="image"
+                  src="/events/sports_sprint.svg"
                   className="timetable-image"
                 />
                 <div className="home-container07">
@@ -422,8 +426,8 @@ const Home = (props) => {
               </div>
               <div className="home-row02 timetable-row">
                 <img
-                  src="/events/sports_horden.svg"
                   alt="image"
+                  src="/events/sports_horden.svg"
                   className="timetable-image"
                 />
                 <div className="home-container09">
@@ -441,8 +445,8 @@ const Home = (props) => {
               </div>
               <div className="home-row03 timetable-row">
                 <img
-                  src="/events/sports_horden.svg"
                   alt="image"
+                  src="/events/sports_horden.svg"
                   className="timetable-image"
                 />
                 <div className="home-container11">
@@ -460,8 +464,8 @@ const Home = (props) => {
               </div>
               <div className="home-row04 timetable-row">
                 <img
-                  src="/events/sports_sprint.svg"
                   alt="image"
+                  src="/events/sports_sprint.svg"
                   className="timetable-image"
                 />
                 <div className="home-container13">
@@ -479,8 +483,8 @@ const Home = (props) => {
               </div>
               <div className="home-row05 timetable-row">
                 <img
-                  src="/events/sports_hoog.svg"
                   alt="image"
+                  src="/events/sports_hoog.svg"
                   className="timetable-image"
                 />
                 <div className="home-container15">
@@ -498,8 +502,8 @@ const Home = (props) => {
               </div>
               <div className="home-row06 timetable-row">
                 <img
-                  src="/events/sports_polshoog.svg"
                   alt="image"
+                  src="/events/sports_polshoog.svg"
                   className="timetable-image"
                 />
                 <div className="home-container17">
@@ -517,8 +521,8 @@ const Home = (props) => {
               </div>
               <div className="home-row07 timetable-row">
                 <img
-                  src="/events/sports_estafette.svg"
                   alt="image"
+                  src="/events/sports_estafette.svg"
                   className="timetable-image"
                 />
                 <div className="home-container19">
@@ -536,8 +540,8 @@ const Home = (props) => {
               </div>
               <div className="home-row08 timetable-row">
                 <img
-                  src="/events/sports_kogel.svg"
                   alt="image"
+                  src="/events/sports_kogel.svg"
                   className="timetable-image"
                 />
                 <div className="home-container21">
@@ -557,8 +561,8 @@ const Home = (props) => {
             <div id="timetable-2" className="timetable">
               <div className="home-row09 timetable-row">
                 <img
-                  src="/events/sports_ver.svg"
                   alt="image"
+                  src="/events/sports_ver.svg"
                   className="timetable-image"
                 />
                 <div className="home-container23">
@@ -576,8 +580,8 @@ const Home = (props) => {
               </div>
               <div className="home-row10 timetable-row">
                 <img
-                  src="/events/sports_ver.svg"
                   alt="image"
+                  src="/events/sports_ver.svg"
                   className="timetable-image"
                 />
                 <div className="home-container25">
@@ -595,8 +599,8 @@ const Home = (props) => {
               </div>
               <div className="home-row11 timetable-row">
                 <img
-                  src="/events/sports_sprint.svg"
                   alt="image"
+                  src="/events/sports_sprint.svg"
                   className="timetable-image"
                 />
                 <div className="home-container27">
@@ -614,8 +618,8 @@ const Home = (props) => {
               </div>
               <div className="home-row12 timetable-row">
                 <img
-                  src="/events/sports_sprint.svg"
                   alt="image"
+                  src="/events/sports_sprint.svg"
                   className="timetable-image"
                 />
                 <div className="home-container29">
@@ -633,8 +637,8 @@ const Home = (props) => {
               </div>
               <div className="home-row13 timetable-row">
                 <img
-                  src="/events/sports_sprint.svg"
                   alt="image"
+                  src="/events/sports_sprint.svg"
                   className="timetable-image"
                 />
                 <div className="home-container31">
@@ -652,8 +656,8 @@ const Home = (props) => {
               </div>
               <div className="home-row14 timetable-row">
                 <img
-                  src="/events/sports_sprint.svg"
                   alt="image"
+                  src="/events/sports_sprint.svg"
                   className="timetable-image"
                 />
                 <div className="home-container33">
@@ -671,8 +675,8 @@ const Home = (props) => {
               </div>
               <div className="home-row15 timetable-row">
                 <img
-                  src="/events/sports_kogel.svg"
                   alt="image"
+                  src="/events/sports_kogel.svg"
                   className="timetable-image"
                 />
                 <div className="home-container35">
@@ -690,8 +694,8 @@ const Home = (props) => {
               </div>
               <div className="home-row16 timetable-row">
                 <img
-                  src="/events/sports_kogel.svg"
                   alt="image"
+                  src="/events/sports_kogel.svg"
                   className="timetable-image"
                 />
                 <div className="home-container37">
@@ -711,8 +715,8 @@ const Home = (props) => {
             <div id="timetable-3" className="timetable">
               <div className="home-row17 timetable-row">
                 <img
-                  src="/events/sports_clinic.svg"
                   alt="image"
+                  src="/events/sports_clinic.svg"
                   className="timetable-image"
                 />
                 <div className="home-container39">
@@ -730,8 +734,8 @@ const Home = (props) => {
               </div>
               <div className="home-row18 timetable-row">
                 <img
-                  src="/events/sports_clinic.svg"
                   alt="image"
+                  src="/events/sports_clinic.svg"
                   className="timetable-image"
                 />
                 <div className="home-container41">
@@ -749,8 +753,8 @@ const Home = (props) => {
               </div>
               <div className="home-row19 timetable-row">
                 <img
-                  src="/events/sports_clinic.svg"
                   alt="image"
+                  src="/events/sports_clinic.svg"
                   className="timetable-image"
                 />
                 <div className="home-container43">
@@ -768,8 +772,8 @@ const Home = (props) => {
               </div>
               <div className="home-row20 timetable-row">
                 <img
-                  src="/events/sports_clinic.svg"
                   alt="image"
+                  src="/events/sports_clinic.svg"
                   className="timetable-image"
                 />
                 <div className="home-container45">
@@ -789,8 +793,8 @@ const Home = (props) => {
             <div id="timetable-3" className="timetable">
               <div className="home-row21 timetable-row">
                 <img
-                  src="/events/sports_clinic.svg"
                   alt="image"
+                  src="/events/sports_clinic.svg"
                   className="timetable-image"
                 />
                 <div className="home-container47">
@@ -808,8 +812,8 @@ const Home = (props) => {
               </div>
               <div className="home-row22 timetable-row">
                 <img
-                  src="/events/sports_ver.svg"
                   alt="image"
+                  src="/events/sports_ver.svg"
                   className="timetable-image"
                 />
                 <div className="home-container49">
@@ -833,7 +837,7 @@ const Home = (props) => {
       </div>
       <div className="home-container51">
         <section className="home-growth">
-          <div className="home-content01">
+          <div className="home-content1">
             <div className="home-header04">
               <div className="home-header05">
                 <h2 className="home-heading1">
@@ -869,7 +873,7 @@ const Home = (props) => {
               </p>
             </div>
             <div className="home-testimonial">
-              <div className="home-content02">
+              <div className="home-content2">
                 <span className="home-text104">Testimonial</span>
                 <p className="home-text105">
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -905,7 +909,7 @@ const Home = (props) => {
             className="home-image25"
           />
         </div>
-        <div className="home-content03">
+        <div className="home-content3">
           <div className="home-header06">
             <div className="home-header-container1">
               <div className="home-header07">
@@ -961,7 +965,7 @@ const Home = (props) => {
             </div>
           </div>
           <div className="home-testimonial1">
-            <div className="home-content04">
+            <div className="home-content4">
               <span className="home-text112">Testimonial</span>
               <p className="home-text113">
                 “Excepteur sint occaecat cupidatat non proident, sunt in culpa
@@ -983,10 +987,10 @@ const Home = (props) => {
         </div>
       </section>
       <section id="meehelpen" className="home-vrijwilligersformulier">
-        <h2 className="heading-1">MEEHELPEN</h2>
+        <h2 className="Header-1 main-header">Meehelpen</h2>
         <img
-          src="/jury-600w.webp"
           alt="image"
+          src="/jury-600w.webp"
           loading="lazy"
           className="home-image26"
         />
@@ -994,8 +998,8 @@ const Home = (props) => {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSdnJjYTOCFjt-RaE2ZVklgpf5a1C7eCsnynX_MOnzpN-ib48A/viewform?embedded=true"
             frameborder="0"
-            marginheight="0"
             marginwidth="0"
+            marginheight="0"
             className="home-iframe"
           ></iframe>
         </div>
@@ -1004,11 +1008,11 @@ const Home = (props) => {
         <div className="home-header08">
           <h2 className="home-heading4">Veel gestelde vragen</h2>
         </div>
-        <div className="home-content05">
+        <div className="home-content5">
           <div className="home-column">
             <div className="home-element">
               <h3 className="home-header09">Kan ik me al inschrijven?</h3>
-              <p className="home-content06">
+              <p className="home-content6">
                 <span>
                   Stay tuned! Binnenkort komt op deze website meer informatie.
                   Volg ons ook op
@@ -1054,7 +1058,7 @@ const Home = (props) => {
               <h3 className="home-header10">
                 Welke topsporters komen er naar het RFFA?
               </h3>
-              <p className="home-content07">
+              <p className="home-content7">
                 <span>
                   Dat is nog een verrassing! Hou onze
                   <span
@@ -1081,7 +1085,7 @@ const Home = (props) => {
             </div>
             <div className="home-element2">
               <h3 className="home-header11">Welke onderdelen kan ik doen?</h3>
-              <p className="home-content08">
+              <p className="home-content8">
                 We zijn druk aan het plannen hoe we zo veel mogelijk aan kunnen
                 bieden aan zoveel mogelijk deelnemers. Sowieso zal je kunnen
                 strijden in de Sprintcup (sprint), Werpcup (kogelstoten) of
@@ -1092,75 +1096,6 @@ const Home = (props) => {
         </div>
       </section>
       <div className="home-container53">
-        <div className="home-footer">
-          <div className="home-content09">
-            <div className="home-main">
-              <div className="home-branding1">
-                <img
-                  alt="image"
-                  src="/logo%20rffa_white_border.svg"
-                  className="home-image27"
-                />
-                <span className="home-text119">
-                  Het Rotterdam Festival for Athletics is een initiatief voor
-                  een jaarlijks atletiekfeest van PAC Rotterdam en Rotterdam
-                  Atletiek.
-                </span>
-              </div>
-              <div className="home-links2">
-                <div className="home-column1">
-                  <span className="home-header12">Social</span>
-                  <div className="home-list">
-                    <a
-                      href="https://www.instagram.com/rffa_rotterdam/"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="home-link33"
-                    >
-                      <div className="home-container54">
-                        <svg
-                          viewBox="0 0 877.7142857142857 1024"
-                          className="home-icon27"
-                        >
-                          <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
-                        </svg>
-                        <span className="home-text120">Instagram</span>
-                      </div>
-                    </a>
-                    <a
-                      href="https://www.facebook.com/rffarotterdam/"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="home-link34"
-                    >
-                      <div className="home-container55">
-                        <svg
-                          viewBox="0 0 877.7142857142857 1024"
-                          className="home-icon29"
-                        >
-                          <path d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"></path>
-                        </svg>
-                        <span className="home-text121">Facebook</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="home-bottom">
-              <span className="home-text122">
-                © 2023 Rotterdam Festival for Athletics - All rights reserved
-              </span>
-              <a
-                href="#top"
-                data-role="scroll-top"
-                className="home-link35 button"
-              >
-                <img alt="image" src="/arrow.svg" className="home-image28" />
-              </a>
-            </div>
-          </div>
-        </div>
         <div>
           <Script
             html={`<script>
@@ -1181,6 +1116,59 @@ document.addEventListener("DOMContentLoaded", function() {
 `}
           ></Script>
         </div>
+        <footer className="home-footer">
+          <div className="home-container54">
+            <img
+              alt="image"
+              src="/logo%20rffa_white_border.svg"
+              className="home-image27"
+            />
+            <span className="home-text119">
+              Het Rotterdam Festival for Athletics is een initiatief voor een
+              jaarlijks atletiekfeest van PAC Rotterdam en Rotterdam Atletiek.
+            </span>
+          </div>
+          <span className="home-text120">
+            © 2023 Rotterdam Festival for Athletics - All rights reserved
+          </span>
+          <div className="home-column1">
+            <span className="home-header12">Social</span>
+            <div className="home-list">
+              <a
+                href="https://www.instagram.com/rffa_rotterdam/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link33"
+              >
+                <div className="home-container55">
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    className="home-icon27"
+                  >
+                    <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
+                  </svg>
+                  <span className="home-text121">Instagram</span>
+                </div>
+              </a>
+              <a
+                href="https://www.facebook.com/rffarotterdam/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link34"
+              >
+                <div className="home-container56">
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    className="home-icon29"
+                  >
+                    <path d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"></path>
+                  </svg>
+                  <span className="home-text122">Facebook</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   )

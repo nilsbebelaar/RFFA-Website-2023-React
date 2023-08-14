@@ -210,20 +210,13 @@
 .navbar-button:hover {
   background-color: var(--dl-color-primary-700);
 }
-.heading-1 {
+.main-header {
   color: var(--dl-color-gray-white);
-  font-size: 62px;
-  font-style: normal;
-  font-family: Montserrat;
-  font-weight: 600;
-  line-height: 73px;
   border-color: var(--dl-color-gray-white);
   padding-left: var(--dl-space-space-threeunits);
   margin-bottom: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-halfunit);
-  text-transform: uppercase;
-  text-decoration: none;
   border-bottom-width: 1px;
 }
 .timetable {
@@ -286,12 +279,11 @@
   text-transform: uppercase;
   text-decoration: none;
 }
-.Content {
-  font-size: 16px;
+.TimetableMenuSubtitle {
+  font-size: 14px;
   font-family: Inter;
   font-weight: 400;
   line-height: 1.15;
-  text-transform: none;
   text-decoration: none;
 }
 .TimetableMenuTitle {
@@ -302,11 +294,12 @@
   text-transform: uppercase;
   text-decoration: none;
 }
-.TimetableMenuSubtitle {
-  font-size: 14px;
+.Content {
+  font-size: 16px;
   font-family: Inter;
   font-weight: 400;
   line-height: 1.15;
+  text-transform: none;
   text-decoration: none;
 }
 
