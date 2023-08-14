@@ -92,13 +92,15 @@ const Home = (props) => {
                   </div>
                 </div>
                 <nav className="home-links1">
-                  <span className="home-text003">Festival</span>
-                  <span className="home-text004">Meedoen</span>
-                  <a href="#tijdschema" className="home-link02">
+                  <a href="#festival" className="home-link02">
+                    Festival
+                  </a>
+                  <span className="home-text003">Meedoen</span>
+                  <a href="#tijdschema" className="home-link03">
                     Tijdschema
                   </a>
-                  <span className="home-text005">Meet &amp; Greet</span>
-                  <a href="#meehelpen" className="home-link03">
+                  <span className="home-text004">Meet &amp; Greet</span>
+                  <a href="#meehelpen" className="home-link04">
                     Meehelpen
                   </a>
                 </nav>
@@ -220,11 +222,11 @@ const Home = (props) => {
                 data-role="Nav"
                 className="home-nav2"
               >
-                <span className="home-text006">About</span>
-                <span className="home-text007">Features</span>
-                <span className="home-text008">Pricing</span>
-                <span className="home-text009">Team</span>
-                <span className="home-text010">Blog</span>
+                <span className="home-text005">About</span>
+                <span className="home-text006">Features</span>
+                <span className="home-text007">Pricing</span>
+                <span className="home-text008">Team</span>
+                <span className="home-text009">Blog</span>
               </nav>
               <div className="home-container03">
                 <button className="home-login1 button">Login</button>
@@ -248,17 +250,17 @@ const Home = (props) => {
           <div className="home-header-container">
             <div className="home-header">
               <h1 className="home-heading">
-                <span className="home-text011">Beleef atletiek</span>
-                <span className="home-text012">
+                <span className="home-text010">Beleef atletiek</span>
+                <span className="home-text011">
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
                     }}
                   />
                 </span>
-                <span className="home-text013">op het</span>
-                <br className="home-text014"></br>
-                <span className="home-text015">
+                <span className="home-text012">op het</span>
+                <br className="home-text013"></br>
+                <span className="home-text014">
                   Rotterdam Festival for Athletics
                 </span>
               </h1>
@@ -268,19 +270,19 @@ const Home = (props) => {
       </section>
       <div id="festival" className="home-festival">
         <section className="home-note">
-          <h1 className="home-text016 Header-1 heading-1">9 september 2023</h1>
+          <h1 className="home-text015 Header-1 heading-1">9 september 2023</h1>
           <h2 className="home-caption">
-            <span className="home-text017">
+            <span className="home-text016">
               Hét atletiekfeest van Rotterdam waarbij atletiek en de sfeer van
               een festival ultiem samenkomen.
             </span>
             <br></br>
-            <br className="home-text019"></br>
-            <span className="home-text020">
+            <br className="home-text018"></br>
+            <span className="home-text019">
               Doe zelf mee, kijk naar nationale topatleten of leer de fijne
               kneepjes van de beste trainers van het land!
             </span>
-            <br className="home-text021"></br>
+            <br className="home-text020"></br>
           </h2>
         </section>
         <section className="home-statistics">
@@ -308,6 +310,7 @@ const Home = (props) => {
         </section>
       </div>
       <div id="tijdschema" className="home-tijdschema">
+        <h2 className="heading-1">TIJDSCHEMA (ONDER VOORBEHOUD)</h2>
         <div>
           <Script
             html={`<style>
@@ -332,7 +335,9 @@ const Home = (props) => {
       // Hide all elements
       elements.forEach((el) => {
         el.style.opacity = 0;
-        el.style.display = "none";
+        setTimeout(() => {
+          el.style.display = "none";
+        }, 150);
       });
 
       // Show the clicked element with a delay
@@ -1017,7 +1022,7 @@ const Home = (props) => {
                   href="https://www.instagram.com/rffa_rotterdam/"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-link29"
+                  className="home-link30"
                 >
                   Instagram
                 </a>
@@ -1033,7 +1038,7 @@ const Home = (props) => {
                   href="https://www.facebook.com/rffarotterdam/"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-link30"
+                  className="home-link31"
                 >
                   Facebook
                   <span
@@ -1062,7 +1067,7 @@ const Home = (props) => {
                   href="https://www.instagram.com/rffa_rotterdam/"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-link31"
+                  className="home-link32"
                 >
                   Instagram
                   <span
@@ -1110,7 +1115,7 @@ const Home = (props) => {
                       href="https://www.instagram.com/rffa_rotterdam/"
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="home-link32"
+                      className="home-link33"
                     >
                       <div className="home-container54">
                         <svg
@@ -1126,7 +1131,7 @@ const Home = (props) => {
                       href="https://www.facebook.com/rffarotterdam/"
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="home-link33"
+                      className="home-link34"
                     >
                       <div className="home-container55">
                         <svg
@@ -1149,7 +1154,7 @@ const Home = (props) => {
               <a
                 href="#top"
                 data-role="scroll-top"
-                className="home-link34 button"
+                className="home-link35 button"
               >
                 <img alt="image" src="/arrow.svg" className="home-image28" />
               </a>
