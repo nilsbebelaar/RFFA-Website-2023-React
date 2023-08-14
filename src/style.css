@@ -294,12 +294,30 @@
   max-width: var(--dl-size-size-maxwidth);
   align-self: center;
   align-items: center;
+  padding-left: var(--dl-space-space-unit);
   align-content: center;
+  padding-right: var(--dl-space-space-unit);
   flex-direction: column;
 }
 .bg-green {
   color: var(--dl-color-primary-700);
   background-color: var(--dl-color-primary-100);
+}
+.timetable-menu-title {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: var(--dl-space-space-halfunit);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.timetable-menu-subtitle {
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  text-decoration: none;
 }
 .TimetableMenuSubtitle {
   font-size: 14px;
