@@ -25,6 +25,46 @@ const Home = (props) => {
           content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/e1e5ddc2-2ace-48ef-b801-2d2d7b336274/b09ad99e-e5b7-4899-8cf0-069267cca844?org_if_sml=1"
         />
       </Helmet>
+      <div>
+        <Script
+          html={`<style>
+    .main-header:before {
+        position: absolute;
+        content: '';
+        left: 15px;
+        bottom: 8px;
+        width: 64px;
+        height: 2px;
+        background-color: var(--dl-color-primary-700);
+    }
+
+    .main-header:after {
+        position: absolute;
+        content: '';
+        left: 0px;
+        bottom: 2px;
+        width: 64px;
+        height: 2px;
+        background-color: var(--dl-color-primary-700);
+    }
+
+    .main-header:before,
+    .main-header:after {
+        left: 50%;
+        margin-left: -50px;
+    }
+
+    .main-header:after {
+        margin-left: -30px;
+    }
+
+    .bg-blue .main-header:before,
+    .bg-blue .main-header:after {
+        background-color: var(--dl-color-gray-white);
+    }
+</style>`}
+        ></Script>
+      </div>
       <section id="top" className="home-hero">
         <video
           src="https://rffa.nl/assets/vid/RFFA-2023-Website-Background.mp4"
@@ -268,7 +308,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <div id="festival" className="home-festival">
+      <div id="festival" className="bg-blue section">
         <section className="home-note">
           <h1 className="home-text015 Header-1 main-header">
             9 september 2023
@@ -311,13 +351,14 @@ const Home = (props) => {
           </div>
         </section>
       </div>
-      <div id="tijdschema" className="home-tijdschema">
-        <h2 className="home-text023 Header-1 main-header">
-          TIJDSCHEMA (ONDER VOORBEHOUD)
-        </h2>
-        <div>
-          <Script
-            html={`<style>
+      <div id="tijdschema" className="section bg-blue">
+        <div className="section-container">
+          <h2 className="home-text023 Header-1 main-header">
+            TIJDSCHEMA (ONDER VOORBEHOUD)
+          </h2>
+          <div>
+            <Script
+              html={`<style>
   .timetable-menu-button.active {
     color: var(--dl-color-primary-500);
     background-color: var(--dl-color-primary-300);
@@ -357,477 +398,492 @@ const Home = (props) => {
   elements[0].style.opacity = 1;
 </script>
 `}
-          ></Script>
-        </div>
-        <div className="home-container04">
-          <div className="home-timetable-menu">
-            <div className="home-knop-1 timetable-menu-button active">
-              <h1 className="home-text024 TimetableMenuTitle">
-                Hoofdprogramma
-              </h1>
-              <span className="TimetableMenuSubtitle">
-                Met nationale topatleten
-              </span>
-            </div>
-            <div className="home-knop-2 timetable-menu-button">
-              <h1 className="home-text026 TimetableMenuTitle">RFFA Cups</h1>
-              <span>Wedstrijden voor iedereen</span>
-            </div>
-            <div className="home-knop-3 timetable-menu-button">
-              <h1 className="home-text028 TimetableMenuTitle">RFFA Clinics</h1>
-              <span>Leer van topatleten</span>
-            </div>
-            <div className="home-knop-4 timetable-menu-button">
-              <h1 className="home-text030 TimetableMenuTitle">
-                Estafette &amp; Run2Day
-              </h1>
-              <span>4x800m &amp; 5000m</span>
-            </div>
+            ></Script>
           </div>
-          <div className="home-timetables">
-            <div id="timetable-1" className="timetable">
-              <div className="home-row timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_sprint.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container05">
-                  <span className="timetable-time">Time</span>
+          <div className="home-container05">
+            <div className="home-timetable-menu">
+              <div className="home-knop-1 timetable-menu-button active">
+                <h1 className="home-text024 TimetableMenuTitle">
+                  Hoofdprogramma
+                </h1>
+                <span className="TimetableMenuSubtitle">
+                  Met nationale topatleten
+                </span>
+              </div>
+              <div className="home-knop-2 timetable-menu-button">
+                <h1 className="home-text026 TimetableMenuTitle">RFFA Cups</h1>
+                <span>Wedstrijden voor iedereen</span>
+              </div>
+              <div className="home-knop-3 timetable-menu-button">
+                <h1 className="home-text028 TimetableMenuTitle">
+                  RFFA Clinics
+                </h1>
+                <span>Leer van topatleten</span>
+              </div>
+              <div className="home-knop-4 timetable-menu-button">
+                <h1 className="home-text030 TimetableMenuTitle">
+                  Estafette &amp; Run2Day
+                </h1>
+                <span>4x800m &amp; 5000m</span>
+              </div>
+            </div>
+            <div className="home-timetables">
+              <div id="timetable-1" className="timetable">
+                <div className="home-row timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_sprint.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container06">
-                    <h4 className="timetable-title">100 Meter</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Mannen</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container07">
+                      <h4 className="timetable-title">100 Meter</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Mannen</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row01 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_sprint.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container07">
-                  <span className="timetable-time">Time</span>
+                <div className="home-row01 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_sprint.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container08">
-                    <h4 className="timetable-title">100 Meter</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Vrouwen</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container09">
+                      <h4 className="timetable-title">100 Meter</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Vrouwen</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row02 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_horden.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container09">
-                  <span className="timetable-time">Time</span>
+                <div className="home-row02 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_horden.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container10">
-                    <h4 className="timetable-title">110 Meter Horden</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Mannen</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container11">
+                      <h4 className="timetable-title">110 Meter Horden</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Mannen</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row03 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_horden.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container11">
-                  <span className="timetable-time">Time</span>
+                <div className="home-row03 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_horden.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container12">
-                    <h4 className="timetable-title">100 Meter Horden</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Vrouwen</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container13">
+                      <h4 className="timetable-title">100 Meter Horden</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Vrouwen</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row04 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_sprint.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container13">
-                  <span className="timetable-time">Time</span>
+                <div className="home-row04 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_sprint.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container14">
-                    <h4 className="timetable-title">300 Meter</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Mixed</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container15">
+                      <h4 className="timetable-title">300 Meter</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Mixed</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row05 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_hoog.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container15">
-                  <span className="timetable-time">Time</span>
+                <div className="home-row05 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_hoog.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container16">
-                    <h4 className="timetable-title">Hoogspringen</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Mixed</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container17">
+                      <h4 className="timetable-title">Hoogspringen</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Mixed</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row06 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_polshoog.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container17">
-                  <span className="timetable-time">Time</span>
+                <div className="home-row06 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_polshoog.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container18">
-                    <h4 className="timetable-title">Polsstokhoogspringen</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Mixed</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container19">
+                      <h4 className="timetable-title">Polsstokhoogspringen</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Mixed</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row07 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_estafette.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container19">
-                  <span className="timetable-time">Time</span>
+                <div className="home-row07 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_estafette.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container20">
-                    <h4 className="timetable-title">Zweedse Estafette</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Mixed</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container21">
+                      <h4 className="timetable-title">Zweedse Estafette</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Mixed</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row08 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_kogel.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container21">
-                  <span className="timetable-time">Time</span>
+                <div className="home-row08 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_kogel.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container22">
-                    <h4 className="timetable-title">Kogelstoten</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Mixed</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container23">
+                      <h4 className="timetable-title">Kogelstoten</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Mixed</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="timetable-2" className="timetable">
-              <div className="home-row09 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_ver.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container23">
-                  <span className="timetable-time">Time</span>
+              <div id="timetable-2" className="timetable">
+                <div className="home-row09 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_ver.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container24">
-                    <h4 className="timetable-title">RFFA jumpCUP - Group A</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Link</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container25">
+                      <h4 className="timetable-title">
+                        RFFA jumpCUP - Group A
+                      </h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Link</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row10 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_ver.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container25">
-                  <span className="timetable-time">Time</span>
+                <div className="home-row10 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_ver.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container26">
-                    <h4 className="timetable-title">RFFA jumpCUP - Group B</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Link</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container27">
+                      <h4 className="timetable-title">
+                        RFFA jumpCUP - Group B
+                      </h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Link</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row11 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_sprint.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container27">
-                  <span className="timetable-time">Time</span>
+                <div className="home-row11 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_sprint.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container28">
-                    <h4 className="timetable-title">RFFA sprintCUP - Series</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Link</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container29">
+                      <h4 className="timetable-title">
+                        RFFA sprintCUP - Series
+                      </h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Link</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row12 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_sprint.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container29">
-                  <span className="timetable-time">Time</span>
+                <div className="home-row12 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_sprint.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container30">
-                    <h4 className="timetable-title">RFFA sprintCUP - Finale</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Link</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container31">
+                      <h4 className="timetable-title">
+                        RFFA sprintCUP - Finale
+                      </h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Link</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row13 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_sprint.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container31">
-                  <span className="timetable-time">Time</span>
+                <div className="home-row13 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_sprint.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container32">
-                    <h4 className="timetable-title">RFFA runCUP - Group A</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Link</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container33">
+                      <h4 className="timetable-title">RFFA runCUP - Group A</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Link</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row14 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_sprint.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container33">
-                  <span className="timetable-time">Time</span>
+                <div className="home-row14 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_sprint.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container34">
-                    <h4 className="timetable-title">RFFA runCUP - Group B</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Link</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container35">
+                      <h4 className="timetable-title">RFFA runCUP - Group B</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Link</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row15 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_kogel.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container35">
-                  <span className="timetable-time">Time</span>
+                <div className="home-row15 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_kogel.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container36">
-                    <h4 className="timetable-title">RFFA throwCUP - Group A</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Link</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container37">
+                      <h4 className="timetable-title">
+                        RFFA throwCUP - Group A
+                      </h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Link</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row16 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_kogel.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container37">
-                  <span className="timetable-time">Time</span>
+                <div className="home-row16 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_kogel.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container38">
-                    <h4 className="timetable-title">RFFA throwCUP - Group B</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Link</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container39">
+                      <h4 className="timetable-title">
+                        RFFA throwCUP - Group B
+                      </h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Link</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="timetable-3" className="timetable">
-              <div className="home-row17 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_clinic.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container39">
-                  <span className="timetable-time">13:05</span>
+              <div id="timetable-3" className="timetable">
+                <div className="home-row17 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_clinic.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container40">
-                    <h4 className="timetable-title">Clinic ronde #1</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Link</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">13:05</span>
+                    <div className="home-container41">
+                      <h4 className="timetable-title">Clinic ronde #1</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Link</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row18 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_clinic.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container41">
-                  <span className="timetable-time">14:05</span>
+                <div className="home-row18 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_clinic.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container42">
-                    <h4 className="timetable-title">Clinic ronde #2</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Link</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">14:05</span>
+                    <div className="home-container43">
+                      <h4 className="timetable-title">Clinic ronde #2</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Link</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row19 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_clinic.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container43">
-                  <span className="timetable-time">15:05</span>
+                <div className="home-row19 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_clinic.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container44">
-                    <h4 className="timetable-title">Clinic ronde #3</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Link</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">15:05</span>
+                    <div className="home-container45">
+                      <h4 className="timetable-title">Clinic ronde #3</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Link</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row20 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_clinic.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container45">
-                  <span className="timetable-time">16:05</span>
+                <div className="home-row20 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_clinic.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container46">
-                    <h4 className="timetable-title">Clinic ronde #4</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Link</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">16:05</span>
+                    <div className="home-container47">
+                      <h4 className="timetable-title">Clinic ronde #4</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Link</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="timetable-3" className="timetable">
-              <div className="home-row21 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_clinic.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container47">
-                  <span className="timetable-time">Time</span>
+              <div id="timetable-3" className="timetable">
+                <div className="home-row21 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_clinic.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container48">
-                    <h4 className="timetable-title">4x800m</h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Teams</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container49">
+                      <h4 className="timetable-title">4x800m</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Teams</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="home-row22 timetable-row">
-                <img
-                  alt="image"
-                  src="/events/sports_ver.svg"
-                  className="timetable-image"
-                />
-                <div className="home-container49">
-                  <span className="timetable-time">Time</span>
+                <div className="home-row22 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/sports_ver.svg"
+                    className="timetable-image"
+                  />
                   <div className="home-container50">
-                    <h4 className="timetable-title">
-                      5000m Finale Run2Day Baancircuit 2023
-                    </h4>
-                    <button type="button" className="timetable-button">
-                      <span>
-                        <span>Mixed</span>
-                        <br></br>
-                      </span>
-                    </button>
+                    <span className="timetable-time">Time</span>
+                    <div className="home-container51">
+                      <h4 className="timetable-title">
+                        5000m Finale Run2Day Baancircuit 2023
+                      </h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Mixed</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -835,7 +891,7 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      <div className="home-container51">
+      <div className="home-container52">
         <section className="home-growth">
           <div className="home-content1">
             <div className="home-header04">
@@ -986,116 +1042,120 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section id="meehelpen" className="home-vrijwilligersformulier">
-        <h2 className="Header-1 main-header">Meehelpen</h2>
-        <img
-          alt="image"
-          src="/jury-600w.webp"
-          loading="lazy"
-          className="home-image26"
-        />
-        <div className="home-container52">
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdnJjYTOCFjt-RaE2ZVklgpf5a1C7eCsnynX_MOnzpN-ib48A/viewform?embedded=true"
-            frameborder="0"
-            marginwidth="0"
-            marginheight="0"
-            className="home-iframe"
-          ></iframe>
+      <section id="meehelpen" className="section bg-blue">
+        <div className="section-container">
+          <h2 className="Header-1 main-header">Meehelpen</h2>
+          <img
+            alt="image"
+            src="/jury-600w.webp"
+            loading="lazy"
+            className="home-image26"
+          />
+          <div className="home-container54">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdnJjYTOCFjt-RaE2ZVklgpf5a1C7eCsnynX_MOnzpN-ib48A/viewform?embedded=true"
+              frameborder="0"
+              marginwidth="0"
+              marginheight="0"
+              className="home-iframe"
+            ></iframe>
+          </div>
         </div>
       </section>
-      <section className="home-faq">
-        <div className="home-header08">
-          <h2 className="home-heading4">Veel gestelde vragen</h2>
-        </div>
-        <div className="home-content5">
-          <div className="home-column">
-            <div className="home-element">
-              <h3 className="home-header09">Kan ik me al inschrijven?</h3>
-              <p className="home-content6">
-                <span>
-                  Stay tuned! Binnenkort komt op deze website meer informatie.
-                  Volg ons ook op
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <a
-                  href="https://www.instagram.com/rffa_rotterdam/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="home-link30"
-                >
-                  Instagram
-                </a>
-                <span>
-                  , en
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <a
-                  href="https://www.facebook.com/rffarotterdam/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="home-link31"
-                >
-                  Facebook
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </a>
-                <span>om niks te missen!</span>
-              </p>
-            </div>
-            <div className="home-element1">
-              <h3 className="home-header10">
-                Welke topsporters komen er naar het RFFA?
-              </h3>
-              <p className="home-content7">
-                <span>
-                  Dat is nog een verrassing! Hou onze
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <a
-                  href="https://www.instagram.com/rffa_rotterdam/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="home-link32"
-                >
-                  Instagram
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </a>
-                <span>in de gaten om als eerste op de hoogte te zijn.</span>
-              </p>
-            </div>
-            <div className="home-element2">
-              <h3 className="home-header11">Welke onderdelen kan ik doen?</h3>
-              <p className="home-content8">
-                We zijn druk aan het plannen hoe we zo veel mogelijk aan kunnen
-                bieden aan zoveel mogelijk deelnemers. Sowieso zal je kunnen
-                strijden in de Sprintcup (sprint), Werpcup (kogelstoten) of
-                Springcup (verspringen).
-              </p>
+      <section className="section bg-green">
+        <div className="section-container">
+          <div className="home-header08">
+            <h2 className="home-heading4">Veel gestelde vragen</h2>
+          </div>
+          <div className="home-content5">
+            <div className="home-column">
+              <div className="home-element">
+                <h3 className="home-header09">Kan ik me al inschrijven?</h3>
+                <p className="home-content6">
+                  <span>
+                    Stay tuned! Binnenkort komt op deze website meer informatie.
+                    Volg ons ook op
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                  <a
+                    href="https://www.instagram.com/rffa_rotterdam/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="home-link30"
+                  >
+                    Instagram
+                  </a>
+                  <span>
+                    , en
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                  <a
+                    href="https://www.facebook.com/rffarotterdam/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="home-link31"
+                  >
+                    Facebook
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </a>
+                  <span>om niks te missen!</span>
+                </p>
+              </div>
+              <div className="home-element1">
+                <h3 className="home-header10">
+                  Welke topsporters komen er naar het RFFA?
+                </h3>
+                <p className="home-content7">
+                  <span>
+                    Dat is nog een verrassing! Hou onze
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                  <a
+                    href="https://www.instagram.com/rffa_rotterdam/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="home-link32"
+                  >
+                    Instagram
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </a>
+                  <span>in de gaten om als eerste op de hoogte te zijn.</span>
+                </p>
+              </div>
+              <div className="home-element2">
+                <h3 className="home-header11">Welke onderdelen kan ik doen?</h3>
+                <p className="home-content8">
+                  We zijn druk aan het plannen hoe we zo veel mogelijk aan
+                  kunnen bieden aan zoveel mogelijk deelnemers. Sowieso zal je
+                  kunnen strijden in de Sprintcup (sprint), Werpcup
+                  (kogelstoten) of Springcup (verspringen).
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <div className="home-container53">
+      <div className="home-container56">
         <div>
           <Script
             html={`<script>
@@ -1117,7 +1177,7 @@ document.addEventListener("DOMContentLoaded", function() {
           ></Script>
         </div>
         <footer className="home-footer">
-          <div className="home-container54">
+          <div className="home-container57">
             <img
               alt="image"
               src="/logo%20rffa_white_border.svg"
@@ -1140,7 +1200,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 rel="noreferrer noopener"
                 className="home-link33"
               >
-                <div className="home-container55">
+                <div className="home-container58">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
                     className="home-icon27"
@@ -1156,7 +1216,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 rel="noreferrer noopener"
                 className="home-link34"
               >
-                <div className="home-container56">
+                <div className="home-container59">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
                     className="home-icon29"

@@ -212,12 +212,8 @@
 }
 .main-header {
   color: var(--dl-color-gray-white);
-  border-color: var(--dl-color-gray-white);
   padding-left: var(--dl-space-space-threeunits);
-  margin-bottom: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-threeunits);
-  padding-bottom: var(--dl-space-space-halfunit);
-  border-bottom-width: 1px;
 }
 .timetable {
   width: 100%;
@@ -271,6 +267,29 @@
   background-color: var(--dl-color-primary-700);
 }
 
+.bg-blue {
+  background-color: var(--dl-color-primary-700);
+}
+.section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-fiveunits);
+}
+.section-container {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.bg-green {
+  background-color: var(--dl-color-primary-100);
+}
 .Header-1 {
   font-size: 62px;
   font-family: Montserrat;
