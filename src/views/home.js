@@ -28,17 +28,17 @@ const Home = (props) => {
       <div>
         <Script
           html={`<style>
-    .main-header:before {
+    .section-title:before {
         position: absolute;
         content: '';
         left: 15px;
-        bottom: 8px;
+        bottom: 12px;
         width: 64px;
         height: 2px;
         background-color: var(--dl-color-primary-700);
     }
 
-    .main-header:after {
+    .section-title:after {
         position: absolute;
         content: '';
         left: 0px;
@@ -48,19 +48,23 @@ const Home = (props) => {
         background-color: var(--dl-color-primary-700);
     }
 
-    .main-header:before,
-    .main-header:after {
+    .section-title:before,
+    .section-title:after {
         left: 50%;
         margin-left: -50px;
     }
 
-    .main-header:after {
+    .section-title:after {
         margin-left: -30px;
     }
 
-    .bg-blue .main-header:before,
-    .bg-blue .main-header:after {
+    .bg-blue .section-title:before,
+    .bg-blue .section-title:after {
         background-color: var(--dl-color-gray-white);
+    }
+
+    .bg-green .section-title {
+        color: var(--dl-color-primary-700)
     }
 </style>`}
         ></Script>
@@ -309,53 +313,51 @@ const Home = (props) => {
         </div>
       </section>
       <div id="festival" className="bg-blue section">
-        <section className="home-note">
-          <h1 className="home-text015 Header-1 main-header">
-            9 september 2023
-          </h1>
-          <h2 className="home-caption">
-            <span className="home-text016">
-              Hét atletiekfeest van Rotterdam waarbij atletiek en de sfeer van
-              een festival ultiem samenkomen.
-            </span>
-            <br></br>
-            <br className="home-text018"></br>
-            <span className="home-text019">
-              Doe zelf mee, kijk naar nationale topatleten of leer de fijne
-              kneepjes van de beste trainers van het land!
-            </span>
-            <br className="home-text020"></br>
-          </h2>
-        </section>
-        <section className="home-statistics">
-          <div className="home-content">
-            <div className="home-stat">
-              <h3 className="home-header01 Header-1">Beleef</h3>
-              <span className="home-caption1">
-                <span>Strijd om een Cup, volg een clinic!</span>
-                <br></br>
+        <div className="home-container04 section-container">
+          <section className="home-note">
+            <h1 className="section-title">9 september 2023</h1>
+            <h2 className="home-caption">
+              <span className="home-text016">
+                Hét atletiekfeest van Rotterdam waarbij atletiek en de sfeer van
+                een festival ultiem samenkomen.
               </span>
-            </div>
-            <div className="home-stat1">
-              <h3 className="home-header02 Header-1">Kijk</h3>
-              <span className="home-caption2">
-                Nationale top, foto&apos;s en handtekening!
+              <br></br>
+              <br className="home-text018"></br>
+              <span className="home-text019">
+                Doe zelf mee, kijk naar nationale topatleten of leer de fijne
+                kneepjes van de beste trainers van het land!
               </span>
+              <br className="home-text020"></br>
+            </h2>
+          </section>
+          <section className="home-statistics">
+            <div className="home-content">
+              <div className="home-stat">
+                <h3 className="home-header01">Beleef</h3>
+                <span className="home-caption1">
+                  <span>Strijd om een Cup, volg een clinic!</span>
+                  <br></br>
+                </span>
+              </div>
+              <div className="home-stat1">
+                <h3 className="home-header02">Kijk</h3>
+                <span className="home-caption2">
+                  Nationale top, foto&apos;s en handtekening!
+                </span>
+              </div>
+              <div className="home-stat2">
+                <h3 className="home-header03">Geniet</h3>
+                <span className="home-caption3">
+                  Hapjes en drankjes op het middenveld!
+                </span>
+              </div>
             </div>
-            <div className="home-stat2">
-              <h3 className="home-header03 Header-1">Geniet</h3>
-              <span className="home-caption3">
-                Hapjes en drankjes op het middenveld!
-              </span>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
       <div id="tijdschema" className="section bg-blue">
         <div className="section-container">
-          <h2 className="home-text023 Header-1 main-header">
-            TIJDSCHEMA (ONDER VOORBEHOUD)
-          </h2>
+          <h2 className="section-title">TIJDSCHEMA (ONDER VOORBEHOUD)</h2>
           <div>
             <Script
               html={`<style>
@@ -400,7 +402,7 @@ const Home = (props) => {
 `}
             ></Script>
           </div>
-          <div className="home-container05">
+          <div className="home-container06">
             <div className="home-timetable-menu">
               <div className="home-knop-1 timetable-menu-button active">
                 <h1 className="home-text024 TimetableMenuTitle">
@@ -435,9 +437,9 @@ const Home = (props) => {
                     src="/events/sports_sprint.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container06">
+                  <div className="home-container07">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container07">
+                    <div className="home-container08">
                       <h4 className="timetable-title">100 Meter</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -454,9 +456,9 @@ const Home = (props) => {
                     src="/events/sports_sprint.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container08">
+                  <div className="home-container09">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container09">
+                    <div className="home-container10">
                       <h4 className="timetable-title">100 Meter</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -473,9 +475,9 @@ const Home = (props) => {
                     src="/events/sports_horden.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container10">
+                  <div className="home-container11">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container11">
+                    <div className="home-container12">
                       <h4 className="timetable-title">110 Meter Horden</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -492,9 +494,9 @@ const Home = (props) => {
                     src="/events/sports_horden.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container12">
+                  <div className="home-container13">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container13">
+                    <div className="home-container14">
                       <h4 className="timetable-title">100 Meter Horden</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -511,9 +513,9 @@ const Home = (props) => {
                     src="/events/sports_sprint.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container14">
+                  <div className="home-container15">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container15">
+                    <div className="home-container16">
                       <h4 className="timetable-title">300 Meter</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -530,9 +532,9 @@ const Home = (props) => {
                     src="/events/sports_hoog.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container16">
+                  <div className="home-container17">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container17">
+                    <div className="home-container18">
                       <h4 className="timetable-title">Hoogspringen</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -549,9 +551,9 @@ const Home = (props) => {
                     src="/events/sports_polshoog.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container18">
+                  <div className="home-container19">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container19">
+                    <div className="home-container20">
                       <h4 className="timetable-title">Polsstokhoogspringen</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -568,9 +570,9 @@ const Home = (props) => {
                     src="/events/sports_estafette.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container20">
+                  <div className="home-container21">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container21">
+                    <div className="home-container22">
                       <h4 className="timetable-title">Zweedse Estafette</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -587,9 +589,9 @@ const Home = (props) => {
                     src="/events/sports_kogel.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container22">
+                  <div className="home-container23">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container23">
+                    <div className="home-container24">
                       <h4 className="timetable-title">Kogelstoten</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -608,9 +610,9 @@ const Home = (props) => {
                     src="/events/sports_ver.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container24">
+                  <div className="home-container25">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container25">
+                    <div className="home-container26">
                       <h4 className="timetable-title">
                         RFFA jumpCUP - Group A
                       </h4>
@@ -629,9 +631,9 @@ const Home = (props) => {
                     src="/events/sports_ver.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container26">
+                  <div className="home-container27">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container27">
+                    <div className="home-container28">
                       <h4 className="timetable-title">
                         RFFA jumpCUP - Group B
                       </h4>
@@ -650,9 +652,9 @@ const Home = (props) => {
                     src="/events/sports_sprint.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container28">
+                  <div className="home-container29">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container29">
+                    <div className="home-container30">
                       <h4 className="timetable-title">
                         RFFA sprintCUP - Series
                       </h4>
@@ -671,9 +673,9 @@ const Home = (props) => {
                     src="/events/sports_sprint.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container30">
+                  <div className="home-container31">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container31">
+                    <div className="home-container32">
                       <h4 className="timetable-title">
                         RFFA sprintCUP - Finale
                       </h4>
@@ -692,9 +694,9 @@ const Home = (props) => {
                     src="/events/sports_sprint.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container32">
+                  <div className="home-container33">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container33">
+                    <div className="home-container34">
                       <h4 className="timetable-title">RFFA runCUP - Group A</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -711,9 +713,9 @@ const Home = (props) => {
                     src="/events/sports_sprint.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container34">
+                  <div className="home-container35">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container35">
+                    <div className="home-container36">
                       <h4 className="timetable-title">RFFA runCUP - Group B</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -730,9 +732,9 @@ const Home = (props) => {
                     src="/events/sports_kogel.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container36">
+                  <div className="home-container37">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container37">
+                    <div className="home-container38">
                       <h4 className="timetable-title">
                         RFFA throwCUP - Group A
                       </h4>
@@ -751,9 +753,9 @@ const Home = (props) => {
                     src="/events/sports_kogel.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container38">
+                  <div className="home-container39">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container39">
+                    <div className="home-container40">
                       <h4 className="timetable-title">
                         RFFA throwCUP - Group B
                       </h4>
@@ -774,9 +776,9 @@ const Home = (props) => {
                     src="/events/sports_clinic.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container40">
+                  <div className="home-container41">
                     <span className="timetable-time">13:05</span>
-                    <div className="home-container41">
+                    <div className="home-container42">
                       <h4 className="timetable-title">Clinic ronde #1</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -793,9 +795,9 @@ const Home = (props) => {
                     src="/events/sports_clinic.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container42">
+                  <div className="home-container43">
                     <span className="timetable-time">14:05</span>
-                    <div className="home-container43">
+                    <div className="home-container44">
                       <h4 className="timetable-title">Clinic ronde #2</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -812,9 +814,9 @@ const Home = (props) => {
                     src="/events/sports_clinic.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container44">
+                  <div className="home-container45">
                     <span className="timetable-time">15:05</span>
-                    <div className="home-container45">
+                    <div className="home-container46">
                       <h4 className="timetable-title">Clinic ronde #3</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -831,9 +833,9 @@ const Home = (props) => {
                     src="/events/sports_clinic.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container46">
+                  <div className="home-container47">
                     <span className="timetable-time">16:05</span>
-                    <div className="home-container47">
+                    <div className="home-container48">
                       <h4 className="timetable-title">Clinic ronde #4</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -852,9 +854,9 @@ const Home = (props) => {
                     src="/events/sports_clinic.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container48">
+                  <div className="home-container49">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container49">
+                    <div className="home-container50">
                       <h4 className="timetable-title">4x800m</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -871,9 +873,9 @@ const Home = (props) => {
                     src="/events/sports_ver.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container50">
+                  <div className="home-container51">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container51">
+                    <div className="home-container52">
                       <h4 className="timetable-title">
                         5000m Finale Run2Day Baancircuit 2023
                       </h4>
@@ -891,7 +893,7 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      <div className="home-container52">
+      <div className="home-container53">
         <section className="home-growth">
           <div className="home-content1">
             <div className="home-header04">
@@ -1044,14 +1046,14 @@ const Home = (props) => {
       </section>
       <section id="meehelpen" className="section bg-blue">
         <div className="section-container">
-          <h2 className="Header-1 main-header">Meehelpen</h2>
+          <h2 className="section-title">Meehelpen</h2>
           <img
             alt="image"
             src="/jury-600w.webp"
             loading="lazy"
             className="home-image26"
           />
-          <div className="home-container54">
+          <div className="home-container55">
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSdnJjYTOCFjt-RaE2ZVklgpf5a1C7eCsnynX_MOnzpN-ib48A/viewform?embedded=true"
               frameborder="0"
@@ -1065,7 +1067,7 @@ const Home = (props) => {
       <section className="section bg-green">
         <div className="section-container">
           <div className="home-header08">
-            <h2 className="home-heading4">Veel gestelde vragen</h2>
+            <h2 className="section-title">Veel gestelde vragen</h2>
           </div>
           <div className="home-content5">
             <div className="home-column">
@@ -1155,7 +1157,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <div className="home-container56">
+      <div className="home-container57">
         <div>
           <Script
             html={`<script>
@@ -1177,7 +1179,7 @@ document.addEventListener("DOMContentLoaded", function() {
           ></Script>
         </div>
         <footer className="home-footer">
-          <div className="home-container57">
+          <div className="home-container58">
             <img
               alt="image"
               src="/logo%20rffa_white_border.svg"
@@ -1200,7 +1202,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 rel="noreferrer noopener"
                 className="home-link33"
               >
-                <div className="home-container58">
+                <div className="home-container59">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
                     className="home-icon27"
@@ -1216,7 +1218,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 rel="noreferrer noopener"
                 className="home-link34"
               >
-                <div className="home-container59">
+                <div className="home-container60">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
                     className="home-icon29"
