@@ -217,7 +217,7 @@
   text-align: center;
   font-family: Montserrat;
   font-weight: 600;
-  line-height: 60px;
+  line-height: 1.4;
   padding-left: var(--dl-space-space-threeunits);
   margin-bottom: 20px;
   padding-right: var(--dl-space-space-threeunits);
@@ -229,7 +229,6 @@
   width: 100%;
   display: none;
   opacity: 0;
-  padding: 0px 20px;
   transition: opacity 0.15s linear;
 }
 .timetable-row {
@@ -278,6 +277,7 @@
 }
 
 .bg-blue {
+  color: var(--dl-color-gray-white);
   background-color: var(--dl-color-primary-700);
 }
 .section {
@@ -374,9 +374,19 @@
     padding-top: 0px;
     padding-bottom: var(--dl-space-space-unit);
   }
+  .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding-left: var(--dl-space-space-halfunit);
+    padding-right: var(--dl-space-space-halfunit);
+  }
 }
 @media(max-width: 479px) {
   .button {
     width: 100%;
+  }
+  .section-title {
+    font-size: 24px;
   }
 }
