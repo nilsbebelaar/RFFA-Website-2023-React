@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
 
+import GalleryCard1 from '../components/gallery-card1'
 import './home.css'
 
 const Home = (props) => {
@@ -95,7 +96,7 @@ const Home = (props) => {
             <Link to="/" className="home-navlink">
               <img
                 alt="image"
-                src="/logo%20rffa_white_border.svg"
+                src="/rffa_logo_website.svg"
                 className="home-branding"
               />
             </Link>
@@ -104,12 +105,16 @@ const Home = (props) => {
                 <a href="#festival" className="home-link navbar-button">
                   Festival
                 </a>
-                <span className="navbar-button">Meedoen</span>
-                <a href="#tijdschema" className="home-link01 navbar-button">
+                <a href="#meedoen" className="home-link01 navbar-button">
+                  Meedoen
+                </a>
+                <a href="#tijdschema" className="home-link02 navbar-button">
                   Tijdschema
                 </a>
-                <span className="navbar-button">Meet &amp; Greet</span>
-                <a href="#meehelpen" className="home-link02 navbar-button">
+                <span className="home-text navbar-button">
+                  Meet &amp; Greet
+                </span>
+                <a href="#meehelpen" className="home-link03 navbar-button">
                   Meehelpen
                 </a>
               </nav>
@@ -128,7 +133,7 @@ const Home = (props) => {
                 <div className="home-top">
                   <img
                     alt="image"
-                    src="/logo%20rffa_white_border.svg"
+                    src="/rffa_logo_website.svg"
                     className="home-logo"
                   />
                   <div data-thq="thq-close-menu" className="home-close-menu">
@@ -138,15 +143,17 @@ const Home = (props) => {
                   </div>
                 </div>
                 <nav className="home-links1">
-                  <a href="#festival" className="home-link03">
+                  <a href="#festival" className="home-link04">
                     Festival
                   </a>
-                  <span className="home-text002">Meedoen</span>
-                  <a href="#tijdschema" className="home-link04">
+                  <a href="#meedoen" className="home-link05">
+                    Meedoen
+                  </a>
+                  <a href="#tijdschema" className="home-link06">
                     Tijdschema
                   </a>
-                  <span className="home-text003">Meet &amp; Greet</span>
-                  <a href="#meehelpen" className="home-link05">
+                  <span className="home-text001">Meet &amp; Greet</span>
+                  <a href="#meehelpen" className="home-link07">
                     Meehelpen
                   </a>
                 </nav>
@@ -254,7 +261,7 @@ const Home = (props) => {
               <div className="home-container02">
                 <img
                   alt="image"
-                  src="/logo%20rffa_white_border.svg"
+                  src="/rffa_logo_website.svg"
                   className="home-image"
                 />
                 <div data-thq="thq-close-menu" className="home-menu-close">
@@ -268,11 +275,11 @@ const Home = (props) => {
                 data-role="Nav"
                 className="home-nav2"
               >
-                <span className="home-text004">About</span>
-                <span className="home-text005">Features</span>
-                <span className="home-text006">Pricing</span>
-                <span className="home-text007">Team</span>
-                <span className="home-text008">Blog</span>
+                <span className="home-text002">About</span>
+                <span className="home-text003">Features</span>
+                <span className="home-text004">Pricing</span>
+                <span className="home-text005">Team</span>
+                <span className="home-text006">Blog</span>
               </nav>
               <div className="home-container03">
                 <button className="home-login1 button">Login</button>
@@ -296,17 +303,17 @@ const Home = (props) => {
           <div className="home-header-container">
             <div className="home-header">
               <h1 className="home-heading">
-                <span className="home-text009">Beleef atletiek</span>
-                <span className="home-text010">
+                <span className="home-text007">Beleef atletiek</span>
+                <span className="home-text008">
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
                     }}
                   />
                 </span>
-                <span className="home-text011">op het</span>
-                <br className="home-text012"></br>
-                <span className="home-text013">
+                <span className="home-text009">op het</span>
+                <br className="home-text010"></br>
+                <span className="home-text011">
                   Rotterdam Festival for Athletics
                 </span>
               </h1>
@@ -315,41 +322,40 @@ const Home = (props) => {
         </div>
       </section>
       <div id="festival" className="bg-blue section">
-        <div className="home-container04 section-container">
-          <section className="home-note">
-            <h1 className="home-text014 section-title">9 september 2023</h1>
-            <h2 className="home-caption">
-              <span className="home-text015">
+        <div className="section-container">
+          <section>
+            <h1 className="home-text012 section-title">9 september 2023</h1>
+            <p className="head-content">
+              <span>
                 Hét atletiekfeest van Rotterdam waarbij atletiek en de sfeer van
                 een festival ultiem samenkomen.
               </span>
               <br></br>
-              <br className="home-text017"></br>
-              <span className="home-text018">
+              <br></br>
+              <span>
                 Doe zelf mee, kijk naar nationale topatleten of leer de fijne
                 kneepjes van de beste trainers van het land!
               </span>
-              <br className="home-text019"></br>
-            </h2>
+            </p>
           </section>
           <section className="home-statistics">
             <div className="home-content">
               <div className="home-stat">
                 <h3 className="home-header01">Beleef</h3>
-                <span className="home-caption01">
+                <span className="home-caption">
                   <span>Strijd om een Cup, volg een clinic!</span>
                   <br></br>
                 </span>
               </div>
               <div className="home-stat1">
                 <h3 className="home-header02">Kijk</h3>
-                <span className="home-caption02">
+                <span className="home-caption1">
                   Nationale top, foto&apos;s en handtekening!
                 </span>
               </div>
               <div className="home-stat2">
                 <h3 className="home-header03">Geniet</h3>
-                <span className="home-caption03">
+                <span className="home-caption2">
                   Hapjes en drankjes op het middenveld!
                 </span>
               </div>
@@ -357,45 +363,29 @@ const Home = (props) => {
           </section>
         </div>
       </div>
-      <div id="meedoen" className="section bg-green">
+      <div id="meedoen" className="bg-green section">
         <div className="section-container">
-          <h1 className="home-text022 section-title">ZELF MEEDOEN</h1>
-          <h2 className="home-caption04">
-            <span className="home-text023">
-              Hét atletiekfeest van Rotterdam waarbij atletiek en de sfeer van
-              een festival ultiem samenkomen.
-            </span>
-            <br></br>
-            <br className="home-text025"></br>
-            <span className="home-text026">
-              Doe zelf mee, kijk naar nationale topatleten of leer de fijne
-              kneepjes van de beste trainers van het land!
-            </span>
-            <br className="home-text027"></br>
-          </h2>
-          <section className="home-statistics1">
-            <div className="home-content01">
-              <div className="home-stat3">
-                <h3 className="home-header04">Beleef</h3>
-                <span className="home-caption05">
-                  <span>Strijd om een Cup, volg een clinic!</span>
-                  <br></br>
-                </span>
-              </div>
-              <div className="home-stat4">
-                <h3 className="home-header05">Kijk</h3>
-                <span className="home-caption06">
-                  Nationale top, foto&apos;s en handtekening!
-                </span>
-              </div>
-              <div className="home-stat5">
-                <h3 className="home-header06">Geniet</h3>
-                <span className="home-caption07">
-                  Hapjes en drankjes op het middenveld!
-                </span>
-              </div>
-            </div>
-          </section>
+          <h1 className="home-text020 section-title">ZELF MEEDOEN</h1>
+          <div className="home-gallery">
+            <GalleryCard1
+              title="Strijd mee"
+              subtitle="Doe mee met de sprintCUP, runCUP, jumpCUP of throwCUP. Ontdek wie van jouw vrienden het beste is met 60 meter sprint, verspringen, 600 meter of kogelstoten."
+              image_src="/sprintcup-1500h.webp"
+              rootClassName="rootClassName"
+            ></GalleryCard1>
+            <GalleryCard1
+              title="Atletiekclinics"
+              subtitle="Krijg nieuwe technieken aangeleerd van talenten uit de atletiek. Er zijn 8 verschillende clinics verspreid over 4 blokken van 30 minuten."
+              image_src="/clinic_4-1500h.webp"
+              rootClassName="rootClassName1"
+            ></GalleryCard1>
+            <GalleryCard1
+              title="Estafette"
+              subtitle="Schrijf je als team in voor de 4x800m estafette. Welk team komt na 8 rondes als eerst over de finishlijn?"
+              image_src="/estafette-1500h.webp"
+              rootClassName="rootClassName2"
+            ></GalleryCard1>
+          </div>
         </div>
       </div>
       <div id="tijdschema" className="bg-blue section">
@@ -450,25 +440,31 @@ const Home = (props) => {
               <div className="home-container08">
                 <div className="home-knop-1 timetable-menu-button active">
                   <h1 className="timetable-menu-title">Hoofdprogramma</h1>
-                  <span className="TimetableMenuSubtitle timetable-menu-subtitle">
+                  <span className="timetable-menu-subtitle">
                     Met nationale topatleten
                   </span>
                 </div>
                 <div className="home-knop-2 timetable-menu-button">
                   <h1 className="timetable-menu-title">RFFA Cups</h1>
-                  <span>Wedstrijden voor iedereen</span>
+                  <span className="timetable-menu-subtitle">
+                    Wedstrijden voor iedereen
+                  </span>
                 </div>
               </div>
               <div className="home-container09">
                 <div className="home-knop-3 timetable-menu-button">
                   <h1 className="timetable-menu-title">RFFA Clinics</h1>
-                  <span>Leer van topatleten</span>
+                  <span className="timetable-menu-subtitle">
+                    Leer van topatleten
+                  </span>
                 </div>
                 <div className="home-knop-4 timetable-menu-button">
                   <h1 className="timetable-menu-title">
                     Estafette &amp; Run2Day
                   </h1>
-                  <span>4x800m &amp; 5000m</span>
+                  <span className="timetable-menu-subtitle">
+                    4x800m &amp; 5000m
+                  </span>
                 </div>
               </div>
             </div>
@@ -477,8 +473,8 @@ const Home = (props) => {
                 <div className="home-row timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_sprint.svg"
-                    className="timetable-image"
+                    src="/events/sprint.svg"
+                    className="home-image01 timetable-image"
                   />
                   <div className="home-container10">
                     <span className="timetable-time">Time</span>
@@ -496,7 +492,7 @@ const Home = (props) => {
                 <div className="home-row01 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_sprint.svg"
+                    src="/events/sprint.svg"
                     className="timetable-image"
                   />
                   <div className="home-container12">
@@ -515,7 +511,7 @@ const Home = (props) => {
                 <div className="home-row02 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_horden.svg"
+                    src="/events/horden.svg"
                     className="timetable-image"
                   />
                   <div className="home-container14">
@@ -534,7 +530,7 @@ const Home = (props) => {
                 <div className="home-row03 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_horden.svg"
+                    src="/events/horden.svg"
                     className="timetable-image"
                   />
                   <div className="home-container16">
@@ -553,7 +549,7 @@ const Home = (props) => {
                 <div className="home-row04 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_sprint.svg"
+                    src="/events/sprint.svg"
                     className="timetable-image"
                   />
                   <div className="home-container18">
@@ -572,7 +568,7 @@ const Home = (props) => {
                 <div className="home-row05 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_hoog.svg"
+                    src="/events/hoog.svg"
                     className="timetable-image"
                   />
                   <div className="home-container20">
@@ -591,7 +587,7 @@ const Home = (props) => {
                 <div className="home-row06 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_polshoog.svg"
+                    src="/events/pols.svg"
                     className="timetable-image"
                   />
                   <div className="home-container22">
@@ -610,7 +606,7 @@ const Home = (props) => {
                 <div className="home-row07 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_estafette.svg"
+                    src="/events/estafette.svg"
                     className="timetable-image"
                   />
                   <div className="home-container24">
@@ -629,7 +625,7 @@ const Home = (props) => {
                 <div className="home-row08 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_kogel.svg"
+                    src="/events/kogel.svg"
                     className="timetable-image"
                   />
                   <div className="home-container26">
@@ -650,7 +646,7 @@ const Home = (props) => {
                 <div className="home-row09 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_ver.svg"
+                    src="/events/ver.svg"
                     className="timetable-image"
                   />
                   <div className="home-container28">
@@ -671,7 +667,7 @@ const Home = (props) => {
                 <div className="home-row10 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_ver.svg"
+                    src="/events/ver.svg"
                     className="timetable-image"
                   />
                   <div className="home-container30">
@@ -692,7 +688,7 @@ const Home = (props) => {
                 <div className="home-row11 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_sprint.svg"
+                    src="/events/sprint.svg"
                     className="timetable-image"
                   />
                   <div className="home-container32">
@@ -713,7 +709,7 @@ const Home = (props) => {
                 <div className="home-row12 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_sprint.svg"
+                    src="/events/sprint.svg"
                     className="timetable-image"
                   />
                   <div className="home-container34">
@@ -734,7 +730,7 @@ const Home = (props) => {
                 <div className="home-row13 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_sprint.svg"
+                    src="/events/hardlopen.svg"
                     className="timetable-image"
                   />
                   <div className="home-container36">
@@ -753,7 +749,7 @@ const Home = (props) => {
                 <div className="home-row14 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_sprint.svg"
+                    src="/events/hardlopen.svg"
                     className="timetable-image"
                   />
                   <div className="home-container38">
@@ -772,7 +768,7 @@ const Home = (props) => {
                 <div className="home-row15 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_kogel.svg"
+                    src="/events/kogel.svg"
                     className="timetable-image"
                   />
                   <div className="home-container40">
@@ -793,7 +789,7 @@ const Home = (props) => {
                 <div className="home-row16 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_kogel.svg"
+                    src="/events/kogel.svg"
                     className="timetable-image"
                   />
                   <div className="home-container42">
@@ -811,37 +807,31 @@ const Home = (props) => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div id="timetable-3" className="timetable">
                 <div className="home-row17 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_clinic.svg"
+                    src="/events/rffa_cup.svg"
                     className="timetable-image"
                   />
                   <div className="home-container44">
-                    <span className="timetable-time">13:05</span>
+                    <span className="timetable-time">Time</span>
                     <div className="home-container45">
-                      <h4 className="timetable-title">Clinic ronde #1</h4>
-                      <button type="button" className="timetable-button">
-                        <span>
-                          <span>Link</span>
-                          <br></br>
-                        </span>
-                      </button>
+                      <h4 className="timetable-title">Prijsuitreiking</h4>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div id="timetable-3" className="timetable">
                 <div className="home-row18 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_clinic.svg"
+                    src="/events/rffa_clinic.svg"
                     className="timetable-image"
                   />
                   <div className="home-container46">
-                    <span className="timetable-time">14:05</span>
+                    <span className="timetable-time">13:05</span>
                     <div className="home-container47">
-                      <h4 className="timetable-title">Clinic ronde #2</h4>
+                      <h4 className="timetable-title">Clinic ronde #1</h4>
                       <button type="button" className="timetable-button">
                         <span>
                           <span>Link</span>
@@ -854,13 +844,13 @@ const Home = (props) => {
                 <div className="home-row19 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_clinic.svg"
+                    src="/events/rffa_clinic.svg"
                     className="timetable-image"
                   />
                   <div className="home-container48">
-                    <span className="timetable-time">15:05</span>
+                    <span className="timetable-time">14:05</span>
                     <div className="home-container49">
-                      <h4 className="timetable-title">Clinic ronde #3</h4>
+                      <h4 className="timetable-title">Clinic ronde #2</h4>
                       <button type="button" className="timetable-button">
                         <span>
                           <span>Link</span>
@@ -873,12 +863,31 @@ const Home = (props) => {
                 <div className="home-row20 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_clinic.svg"
+                    src="/events/rffa_clinic.svg"
                     className="timetable-image"
                   />
                   <div className="home-container50">
-                    <span className="timetable-time">16:05</span>
+                    <span className="timetable-time">15:05</span>
                     <div className="home-container51">
+                      <h4 className="timetable-title">Clinic ronde #3</h4>
+                      <button type="button" className="timetable-button">
+                        <span>
+                          <span>Link</span>
+                          <br></br>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div className="home-row21 timetable-row">
+                  <img
+                    alt="image"
+                    src="/events/rffa_clinic.svg"
+                    className="timetable-image"
+                  />
+                  <div className="home-container52">
+                    <span className="timetable-time">16:05</span>
+                    <div className="home-container53">
                       <h4 className="timetable-title">Clinic ronde #4</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -891,15 +900,15 @@ const Home = (props) => {
                 </div>
               </div>
               <div id="timetable-3" className="timetable">
-                <div className="home-row21 timetable-row">
+                <div className="home-row22 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_clinic.svg"
+                    src="/events/estafette.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container52">
+                  <div className="home-container54">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container53">
+                    <div className="home-container55">
                       <h4 className="timetable-title">4x800m</h4>
                       <button type="button" className="timetable-button">
                         <span>
@@ -910,15 +919,15 @@ const Home = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="home-row22 timetable-row">
+                <div className="home-row23 timetable-row">
                   <img
                     alt="image"
-                    src="/events/sports_ver.svg"
+                    src="/events/hardlopen.svg"
                     className="timetable-image"
                   />
-                  <div className="home-container54">
+                  <div className="home-container56">
                     <span className="timetable-time">Time</span>
-                    <div className="home-container55">
+                    <div className="home-container57">
                       <h4 className="timetable-title">
                         5000m Finale Run2Day Baancircuit 2023
                       </h4>
@@ -936,167 +945,91 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      <div className="home-container56">
-        <section className="home-growth">
-          <div className="home-content02">
-            <div className="home-header07">
-              <div className="home-header08">
-                <h2 className="home-heading1">
-                  <span>
-                    Multiverse optimized for
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span className="home-text109">growth.</span>
-                  <br></br>
-                </h2>
-              </div>
-              <p className="home-caption08">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </p>
-              <p className="home-caption09">
-                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </p>
-            </div>
-            <div className="home-testimonial">
-              <div className="home-content03">
-                <span className="home-text111">Testimonial</span>
-                <p className="home-text112">
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.”
+      <div className="home-meet-greet section bg-green">
+        <div className="home-container58 section-container">
+          <section className="home-growth">
+            <div className="home-content1">
+              <div className="home-header04">
+                <div className="home-header05">
+                  <h2 className="home-heading1">
+                    <span>
+                      Multiverse optimized for
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                    <span className="home-text100">growth.</span>
+                    <br></br>
+                  </h2>
+                </div>
+                <p className="home-caption3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </p>
+                <p className="home-caption4">
+                  Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
                 </p>
               </div>
-              <div className="home-information">
-                <div className="home-author">
+              <div className="home-testimonial">
+                <div className="home-content2">
+                  <span className="home-text102">Testimonial</span>
+                  <p className="home-text103">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.”
+                  </p>
+                </div>
+                <div className="home-information">
+                  <div className="home-author">
+                    <img
+                      alt="image"
+                      src="https://images.unsplash.com/photo-1552234994-66ba234fd567?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDN8fHBvdHJhaXR8ZW58MHx8fHwxNjcxMDU2MzMz&amp;ixlib=rb-4.0.3&amp;w=200"
+                      className="home-icon17"
+                    />
+                    <span className="home-name">Andrew Gonzales</span>
+                  </div>
                   <img
                     alt="image"
-                    src="https://images.unsplash.com/photo-1552234994-66ba234fd567?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDN8fHBvdHJhaXR8ZW58MHx8fHwxNjcxMDU2MzMz&amp;ixlib=rb-4.0.3&amp;w=200"
-                    className="home-icon17"
+                    src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
+                    className="home-from"
                   />
-                  <span className="home-name">Andrew Gonzales</span>
                 </div>
-                <img alt="image" src="/logoipsum.svg" className="home-from" />
               </div>
             </div>
-          </div>
-          <div className="home-images">
-            <div className="home-square"></div>
-            <img alt="image" src="/growth-1400w.png" className="home-image24" />
-          </div>
-        </section>
+            <div className="home-images">
+              <div className="home-square"></div>
+              <img
+                alt="image"
+                src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
+                className="home-image25"
+              />
+            </div>
+          </section>
+        </div>
       </div>
-      <section className="home-experience">
-        <div className="home-images1">
-          <div className="home-square1"></div>
-          <img
-            alt="image"
-            src="/experience-1400w.png"
-            className="home-image25"
-          />
-        </div>
-        <div className="home-content04">
-          <div className="home-header09">
-            <div className="home-header-container1">
-              <div className="home-header10">
-                <h2 className="home-heading2">
-                  <span>A worlds class </span>
-                  <span className="home-text114">experience</span>
-                </h2>
-              </div>
-              <p className="home-caption10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                eiusmod.
-              </p>
-            </div>
-            <div className="home-checkmarks">
-              <div className="home-check">
-                <div className="home-mark">
-                  <svg viewBox="0 0 1024 1024" className="home-icon18">
-                    <path d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"></path>
-                  </svg>
-                </div>
-                <span className="home-text115">
-                  Duis aute irure dolor in reprehenderit
-                </span>
-              </div>
-              <div className="home-check1">
-                <div className="home-mark1">
-                  <svg viewBox="0 0 1024 1024" className="home-icon20">
-                    <path d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"></path>
-                  </svg>
-                </div>
-                <span className="home-text116">Lorem ipsum dolor sit amet</span>
-              </div>
-              <div className="home-check2">
-                <div className="home-mark2">
-                  <svg viewBox="0 0 1024 1024" className="home-icon22">
-                    <path d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"></path>
-                  </svg>
-                </div>
-                <span className="home-text117">
-                  Voluptate velit esse cillum dolore eu fugiat nulla
-                </span>
-              </div>
-              <div className="home-check3">
-                <div className="home-mark3">
-                  <svg viewBox="0 0 1024 1024" className="home-icon24">
-                    <path d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"></path>
-                  </svg>
-                </div>
-                <span className="home-text118">
-                  Excepteur sint occaecat cupidatat non proident sunt in culpa
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="home-testimonial1">
-            <div className="home-content05">
-              <span className="home-text119">Testimonial</span>
-              <p className="home-text120">
-                “Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.”
-              </p>
-            </div>
-            <div className="home-information1">
-              <div className="home-author1">
-                <img
-                  alt="image"
-                  src="https://images.unsplash.com/photo-1618151313441-bc79b11e5090?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEzfHxwb3RyYWl0fGVufDB8fHx8MTY3MTA1NjMzMw&amp;ixlib=rb-4.0.3&amp;w=200"
-                  className="home-icon26"
-                />
-                <span className="home-name1">Cory Smith</span>
-              </div>
-              <img alt="image" src="/logoipsum-2.svg" className="home-from1" />
-            </div>
-          </div>
-        </div>
-      </section>
       <section id="meehelpen" className="bg-blue section">
         <div className="section-container">
-          <h2 className="home-heading3 section-title">Meehelpen</h2>
+          <h2 className="home-heading2 section-title">Meehelpen</h2>
           <img
             alt="image"
             src="/jury-700w.webp"
             loading="lazy"
             className="home-image26"
           />
-          <div className="home-container58">
+          <div className="home-container60">
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSdnJjYTOCFjt-RaE2ZVklgpf5a1C7eCsnynX_MOnzpN-ib48A/viewform?embedded=true"
               frameborder="0"
@@ -1107,18 +1040,18 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="bg-green section">
+      <section className="home-faq bg-green section">
         <div className="section-container">
-          <div className="home-header11">
-            <h2 className="home-heading4 section-title">
+          <div className="home-header06">
+            <h2 className="home-heading3 section-title">
               Veel gestelde vragen
             </h2>
           </div>
-          <div className="home-content06">
+          <div className="home-content3">
             <div className="home-column">
               <div className="home-element">
-                <h3 className="home-header12">Kan ik me al inschrijven?</h3>
-                <p className="home-content07">
+                <h3 className="home-header07">Kan ik me al inschrijven?</h3>
+                <p className="home-content4">
                   <span>
                     Stay tuned! Binnenkort komt op deze website meer informatie.
                     Volg ons ook op
@@ -1132,7 +1065,7 @@ const Home = (props) => {
                     href="https://www.instagram.com/rffa_rotterdam/"
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="home-link31"
+                    className="home-link33"
                   >
                     Instagram
                   </a>
@@ -1148,7 +1081,7 @@ const Home = (props) => {
                     href="https://www.facebook.com/rffarotterdam/"
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="home-link32"
+                    className="home-link34"
                   >
                     Facebook
                     <span
@@ -1161,10 +1094,10 @@ const Home = (props) => {
                 </p>
               </div>
               <div className="home-element1">
-                <h3 className="home-header13">
+                <h3 className="home-header08">
                   Welke topsporters komen er naar het RFFA?
                 </h3>
-                <p className="home-content08">
+                <p className="home-content5">
                   <span>
                     Dat is nog een verrassing! Hou onze
                     <span
@@ -1177,7 +1110,7 @@ const Home = (props) => {
                     href="https://www.instagram.com/rffa_rotterdam/"
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="home-link33"
+                    className="home-link35"
                   >
                     Instagram
                     <span
@@ -1190,8 +1123,8 @@ const Home = (props) => {
                 </p>
               </div>
               <div className="home-element2">
-                <h3 className="home-header14">Welke onderdelen kan ik doen?</h3>
-                <p className="home-content09">
+                <h3 className="home-header09">Welke onderdelen kan ik doen?</h3>
+                <p className="home-content6">
                   We zijn druk aan het plannen hoe we zo veel mogelijk aan
                   kunnen bieden aan zoveel mogelijk deelnemers. Sowieso zal je
                   kunnen strijden in de Sprintcup (sprint), Werpcup
@@ -1224,63 +1157,59 @@ document.addEventListener("DOMContentLoaded", function() {
           ></Script>
         </div>
         <footer className="home-footer1">
-          <div className="home-container60">
+          <div className="home-container62">
             <img
               alt="image"
-              src="/logo%20rffa_white_border.svg"
+              src="/rffa_logo_website.svg"
               className="home-image27"
             />
-            <span className="home-text126">
+            <span className="home-text109">
               Het Rotterdam Festival for Athletics is een initiatief voor een
               jaarlijks atletiekfeest van PAC Rotterdam en Rotterdam Atletiek.
             </span>
           </div>
           <div className="home-column1">
-            <span className="home-header15">Social</span>
+            <span className="home-header10">Social</span>
             <div className="home-list">
               <a
                 href="https://www.instagram.com/rffa_rotterdam/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-link34"
+                className="home-link36"
               >
-                <div className="home-container61">
+                <div className="home-container63">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
-                    className="home-icon27"
+                    className="home-icon18"
                   >
                     <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
                   </svg>
-                  <span className="home-text127">Instagram</span>
+                  <span className="home-text110">Instagram</span>
                 </div>
               </a>
               <a
                 href="https://www.facebook.com/rffarotterdam/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-link35"
+                className="home-link37"
               >
-                <div className="home-container62">
+                <div className="home-container64">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
-                    className="home-icon29"
+                    className="home-icon20"
                   >
                     <path d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"></path>
                   </svg>
-                  <span className="home-text128">Facebook</span>
+                  <span className="home-text111">Facebook</span>
                 </div>
               </a>
             </div>
           </div>
           <button data-role="scroll-top" className="home-button button">
-            <img
-              alt="image"
-              src="/external/arrow.svg"
-              className="home-image28"
-            />
+            <img alt="image" src="/arrow.svg" className="home-image28" />
           </button>
         </footer>
-        <span className="home-text129">
+        <span className="home-text112">
           © 2023 Rotterdam Festival for Athletics - All rights reserved
         </span>
       </div>
