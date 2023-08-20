@@ -1,0 +1,24 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy main branch to public server
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout from main (used as dev-branch by TeleportHQ)
+      uses: actions/checkout@v3
+      with:
+        ref: main
+        fetch-depth: 0
+    - name: copy package_SEO.json to package.json
+      run: cp -f package_SEO.json package.json
+    - name: Commit files
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git commit -a -m "Add SEO information and push to public"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: public
