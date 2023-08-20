@@ -70,7 +70,7 @@ const Home = (props) => {
 </style>`}
         ></Script>
       </div>
-      <section id="top" className="home-video home-hero">
+      <section id="top" className="home-video">
         <video
           src="https://rffa.nl/assets/vid/RFFA-2023-Website-Background.mp4"
           loop
@@ -221,7 +221,7 @@ const Home = (props) => {
 
 <script>
   const nav = document.getElementById("navbar-container");
-  const header = document.querySelector(".home-hero");
+  const header = document.getElementById("top");
   const navHeight = nav.getBoundingClientRect().height;
 
   function updateNavColor(entries) {
