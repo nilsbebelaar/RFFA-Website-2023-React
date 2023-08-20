@@ -1196,10 +1196,6 @@
     font-size: 16px;
     line-height: 21px;
   }
-  .home-gallery {
-    padding-left: var(--dl-space-space-twounits);
-    padding-right: var(--dl-space-space-twounits);
-  }
   .home-container08 {
     flex-wrap: wrap;
     justify-content: center;
@@ -1360,12 +1356,6 @@
     color: var(--dl-color-gray-white);
     font-size: 16px;
     line-height: 24px;
-  }
-  .home-gallery {
-    padding-top: var(--dl-space-space-twounits);
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-twounits);
   }
   .home-heading1 {
     font-size: 36px;
