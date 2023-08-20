@@ -70,7 +70,7 @@ const Home = (props) => {
 </style>`}
         ></Script>
       </div>
-      <section id="top" className="home-video">
+      <section id="top" className="home-video home-hero">
         <video
           src="https://rffa.nl/assets/vid/RFFA-2023-Website-Background.mp4"
           loop
