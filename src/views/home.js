@@ -68,7 +68,8 @@ const Home = (props) => {
     }
 
     .bg-green .section-title {
-        color: var(--dl-color-primary-700)
+        color: var(--dl-color-primary-700);
+        font-weight: 700;
     }
 </style>`}
         ></Script>
