@@ -13,8 +13,24 @@ const GalleryCard1 = (props) => {
         loading="lazy"
         className="gallery-card1-image"
       />
-      <h2 className="gallery-card1-text">{props.title}</h2>
-      <span className="gallery-card1-text1">{props.subtitle}</span>
+      <div className="gallery-card1-container">
+        <h2 className="gallery-card1-text">{props.Title}</h2>
+        <span className="gallery-card1-text1">{props.Description}</span>
+        <a
+          href="https://www.atletiek.nu/wedstrijd/inschrijven/38027/"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="gallery-card1-link"
+        >
+          <img
+            src="https://www.atletiek.nu/favicon.ico"
+            alt="atletiek.nu"
+            loading="lazy"
+            className="gallery-card1-image1"
+          />
+          <span className="">Inschrijven</span>
+        </a>
+      </div>
     </div>
   )
 }
@@ -22,18 +38,18 @@ const GalleryCard1 = (props) => {
 GalleryCard1.defaultProps = {
   image_alt: 'image',
   rootClassName: '',
-  subtitle: 'Lorem ipsum dolor sit amet',
+  Description: 'Lorem ipsum dolor sit amet',
   image_src:
     'https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEyfHxmb3Jlc3R8ZW58MHx8fHwxNjI2MjUxMjg4&ixlib=rb-1.2.1&w=1500',
-  title: 'Project Title',
+  Title: 'Project Title',
 }
 
 GalleryCard1.propTypes = {
   image_alt: PropTypes.string,
   rootClassName: PropTypes.string,
-  subtitle: PropTypes.string,
+  Description: PropTypes.string,
   image_src: PropTypes.string,
-  title: PropTypes.string,
+  Title: PropTypes.string,
 }
 
 export default GalleryCard1

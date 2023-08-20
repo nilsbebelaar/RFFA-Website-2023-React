@@ -336,7 +336,7 @@ const Home = (props) => {
               <br></br>
               <br></br>
               <span>
-                Doe zelf mee, kijk naar nationale topatleten of leer de fijne
+                Doe zelf mee, kijk naar nationale topatleten en leer de fijne
                 kneepjes van de beste trainers van het land!
               </span>
             </p>
@@ -371,22 +371,25 @@ const Home = (props) => {
           <h1 className="home-text20 section-title">ZELF MEEDOEN</h1>
           <div className="home-gallery">
             <GalleryCard1
-              title="Strijd mee"
-              subtitle="Doe mee met de sprintCUP, runCUP, jumpCUP of throwCUP. Ontdek wie van jouw vrienden het beste is met 60 meter sprint, verspringen, 600 meter of kogelstoten."
               image_src="/sprintcup.webp"
               rootClassName="rootClassName"
+              Title="Strijd mee"
+              Description="Doe mee met de sprintCUP, runCUP, jumpCUP of throwCUP. Ontdek wie van jouw vrienden het beste is met 60 meter sprint, verspringen, 600 meter of kogelstoten."
+              image_alt="sprint"
             ></GalleryCard1>
             <GalleryCard1
-              title="Atletiekclinics"
-              subtitle="Krijg nieuwe technieken aangeleerd van talenten uit de atletiek. Er zijn 8 verschillende clinics verspreid over 4 blokken van 30 minuten."
               image_src="/clinic_4.webp"
               rootClassName="rootClassName1"
+              Title="Atletiekclinics"
+              Description="Krijg nieuwe technieken aangeleerd van toptrainers en talenten uit de atletiek. Er zijn 8 verschillende clinics verspreid over 4 blokken van 30 minuten."
+              image_alt="clinic steeple"
             ></GalleryCard1>
             <GalleryCard1
-              title="Estafette"
-              subtitle="Schrijf je als team in voor de 4x800m estafette. Welk team komt na 8 rondes als eerst over de finishlijn?"
               image_src="/estafette.webp"
               rootClassName="rootClassName2"
+              Title="Estafette"
+              Description="Schrijf je als team in voor de 4x800m estafette. Welk team komt na 8 rondes als eerst over de finishlijn?"
+              image_alt="4x800m estafette"
             ></GalleryCard1>
           </div>
         </div>
@@ -589,7 +592,7 @@ const Home = (props) => {
                 ></TimetableRow4>
                 <TimetableRow1
                   Title="RFFA jumpCUP (Ver)"
-                  link_url="https://www.atletiek.nu/wedstrijd/startlijst/848988/4170/"
+                  link_url="https://www.atletiek.nu/wedstrijd/startlijst/848984/4170/"
                   Link_text="Group B"
                   image_src="/events/ver.svg"
                   rootClassName="timetable-row1-root-class-name1"
@@ -680,7 +683,7 @@ const Home = (props) => {
                 <TimetableRow1
                   rootClassName="timetable-row1-root-class-name8"
                   Title="4 x 800m"
-                  link_url="https://www.atletiek.nu/wedstrijd/estafetteteams/38027/"
+                  link_url="https://www.atletiek.nu/wedstrijd/startlijst/858446/128/"
                   Link_text="Teams"
                   image_src="/events/estafette.svg"
                   Time="16:40"

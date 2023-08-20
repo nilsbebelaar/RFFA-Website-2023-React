@@ -494,9 +494,9 @@
   color: inherit;
 }
 .home-gallery {
+  gap: var(--dl-space-space-twounits);
   width: 100%;
   display: grid;
-  padding: var(--dl-space-space-unit);
   grid-gap: var(--dl-space-space-unit);
   align-items: flex-start;
   grid-template-columns: 1fr 1fr 1fr;
