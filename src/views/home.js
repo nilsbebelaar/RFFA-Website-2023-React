@@ -370,19 +370,19 @@ const Home = (props) => {
             <GalleryCard1
               title="Strijd mee"
               subtitle="Doe mee met de sprintCUP, runCUP, jumpCUP of throwCUP. Ontdek wie van jouw vrienden het beste is met 60 meter sprint, verspringen, 600 meter of kogelstoten."
-              image_src="/sprintcup-1500h.webp"
+              image_src="/sprintcup.webp"
               rootClassName="rootClassName"
             ></GalleryCard1>
             <GalleryCard1
               title="Atletiekclinics"
               subtitle="Krijg nieuwe technieken aangeleerd van talenten uit de atletiek. Er zijn 8 verschillende clinics verspreid over 4 blokken van 30 minuten."
-              image_src="/clinic_4-1500h.webp"
+              image_src="/clinic_4.webp"
               rootClassName="rootClassName1"
             ></GalleryCard1>
             <GalleryCard1
               title="Estafette"
               subtitle="Schrijf je als team in voor de 4x800m estafette. Welk team komt na 8 rondes als eerst over de finishlijn?"
-              image_src="/estafette-1500h.webp"
+              image_src="/estafette.webp"
               rootClassName="rootClassName2"
             ></GalleryCard1>
           </div>
@@ -1025,7 +1025,7 @@ const Home = (props) => {
           <h2 className="home-heading2 section-title">Meehelpen</h2>
           <img
             alt="image"
-            src="/jury-700w.webp"
+            src="/jury.webp"
             loading="lazy"
             className="home-image26"
           />
