@@ -1408,7 +1408,7 @@
 .home-text111:hover {
   opacity: .5;
 }
-.home-button {
+.home-link38 {
   display: flex;
   max-width: var(--dl-size-size-large);
   padding-top: var(--dl-space-space-unit);
@@ -1417,6 +1417,7 @@
   padding-right: var(--dl-space-space-fiveunits);
   flex-direction: row;
   padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
 }
 .home-image28 {
   width: 21px;
@@ -1819,7 +1820,7 @@
     margin-bottom: var(--dl-space-space-unit);
     padding-right: 0px;
   }
-  .home-button {
+  .home-link38 {
     justify-content: center;
   }
 }

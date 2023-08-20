@@ -945,7 +945,7 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      <div className="home-meet-greet section bg-green">
+      <div className="home-meet-greet bg-green section">
         <div className="home-container58 section-container">
           <section className="home-growth">
             <div className="home-content1">
@@ -1205,9 +1205,9 @@ document.addEventListener("DOMContentLoaded", function() {
               </a>
             </div>
           </div>
-          <button data-role="scroll-top" className="home-button button">
+          <a href="#top" data-role="scroll-top" className="home-link38 button">
             <img alt="image" src="/arrow.svg" className="home-image28" />
-          </button>
+          </a>
         </footer>
         <span className="home-text112">
           © 2023 Rotterdam Festival for Athletics - All rights reserved

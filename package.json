@@ -9,12 +9,11 @@
     "react-router-dom": "^5.2.0",
     "dangerous-html": "0.1.13",
     "react-helmet": "^6.1.0",
-    "prop-types": "15.7.2",
-    "seo-injector": "^1.0.7"
+    "prop-types": "15.7.2"
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build && npx seo-injector",
+    "build": "craco build",
     "test": "craco test --env=jsdom",
     "eject": "craco eject"
   },
