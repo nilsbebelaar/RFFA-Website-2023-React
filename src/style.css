@@ -233,7 +233,7 @@
 }
 .timetable-row {
   width: 100%;
-  padding: 5px;
+  padding: 8px;
   border-bottom: 1px solid var(--dl-color-gray-900);
   border-radius: var(--dl-radius-radius-radius4);
   background-color: var(--dl-color-gray-white);
@@ -265,14 +265,19 @@
 .timetable-title {
   color: var(--dl-color-primary-700);
   font-size: 18px;
+  margin-top: 4px;
+  margin-right: 10px;
+  margin-bottom: 4px;
 }
 .timetable-button {
   color: var(--dl-color-gray-white);
   padding: 2px 5px;
   font-size: 14px;
+  margin-top: 4px;
   font-weight: 400;
-  margin-left: 10px;
+  margin-right: 10px;
   border-radius: 4px;
+  margin-bottom: 4px;
   vertical-align: middle;
   background-color: var(--dl-color-primary-700);
 }
@@ -329,6 +334,9 @@
   text-align: center;
   font-weight: 400;
   line-height: 1.25;
+}
+.hidden {
+  display: isVisible;
 }
 .Content {
   font-size: 16px;
