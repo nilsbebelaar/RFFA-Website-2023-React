@@ -23,7 +23,7 @@ const Home = (props) => {
         />
         <meta
           property="og:image"
-          content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/e1e5ddc2-2ace-48ef-b801-2d2d7b336274/b09ad99e-e5b7-4899-8cf0-069267cca844?org_if_sml=1"
+          content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/e1e5ddc2-2ace-48ef-b801-2d2d7b336274/f34e9a89-f8fc-4d78-a54a-c2451cf80675?org_if_sml=1"
         />
       </Helmet>
       <div>
