@@ -23,8 +23,8 @@ const GalleryCard1 = (props) => {
           className="gallery-card1-link"
         >
           <img
-            src="https://www.atletiek.nu/favicon.ico"
             alt="atletiek.nu"
+            src="https://www.atletiek.nu/favicon.ico"
             loading="lazy"
             className="gallery-card1-image1"
           />

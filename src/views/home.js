@@ -372,25 +372,25 @@ const Home = (props) => {
           <h1 className="home-text20 section-title">ZELF MEEDOEN</h1>
           <div className="home-gallery">
             <GalleryCard1
-              image_src="/sprintcup.webp"
-              rootClassName="rootClassName"
               Title="Strijd mee"
-              Description="Doe mee met de sprintCUP, runCUP, jumpCUP of throwCUP. Ontdek wie van jouw vrienden het beste is met 60 meter sprint, verspringen, 600 meter of kogelstoten."
               image_alt="sprint"
+              image_src="/sprintcup.webp"
+              Description="Doe mee met de sprintCUP, runCUP, jumpCUP of throwCUP. Ontdek wie van jouw vrienden het beste is met 60 meter sprint, verspringen, 600 meter of kogelstoten."
+              rootClassName="rootClassName"
             ></GalleryCard1>
             <GalleryCard1
-              image_src="/clinic_4.webp"
-              rootClassName="rootClassName1"
               Title="Atletiekclinics"
-              Description="Krijg nieuwe technieken aangeleerd van toptrainers en talenten uit de atletiek. Er zijn 8 verschillende clinics verspreid over 4 blokken van 30 minuten."
               image_alt="clinic steeple"
+              image_src="/clinic_4.webp"
+              Description="Krijg nieuwe technieken aangeleerd van toptrainers en talenten uit de atletiek. Er zijn 8 verschillende clinics verspreid over 4 blokken van 30 minuten."
+              rootClassName="rootClassName1"
             ></GalleryCard1>
             <GalleryCard1
-              image_src="/estafette.webp"
-              rootClassName="rootClassName2"
               Title="Estafette"
-              Description="Schrijf je als team in voor de 4x800m estafette. Welk team komt na 8 rondes als eerst over de finishlijn?"
               image_alt="4x800m estafette"
+              image_src="/estafette.webp"
+              Description="Schrijf je als team in voor de 4x800m estafette. Welk team komt na 8 rondes als eerst over de finishlijn?"
+              rootClassName="rootClassName2"
             ></GalleryCard1>
           </div>
         </div>
@@ -538,46 +538,47 @@ const Home = (props) => {
                   image_src="/events/estafette.svg"
                 ></TimetableRow1>
                 <TimetableRow0
+                  Time="16:30"
                   Title="Prijsuitreiking"
                   image_src="/events/rffa_cup.svg"
                   rootClassName="timetable-row0-root-class-name"
-                  Time="16:30"
                 ></TimetableRow0>
               </div>
               <div id="timetable-2" className="timetable">
                 <TimetableRow1
+                  Time="13:00"
                   Title="RFFA sprintCUP (60m)"
                   link_url="https://www.atletiek.nu/wedstrijd/startlijst/848981/4169/"
                   Link_text="Series"
                   image_src="/events/sprint.svg"
                   rootClassName="timetable-row1-root-class-name2"
-                  Time="13:00"
                 ></TimetableRow1>
                 <TimetableRow1
+                  Time="13:10"
                   Title="RFFA throwCUP (Kogel)"
                   link_url="https://www.atletiek.nu/wedstrijd/startlijst/848990/4171/"
                   Link_text="Group A"
                   image_src="/events/kogel.svg"
                   rootClassName="timetable-row1-root-class-name5"
-                  Time="13:10"
                 ></TimetableRow1>
                 <TimetableRow1
+                  Time="14:10"
                   Title="RFFA jumpCUP (Ver)"
                   link_url="https://www.atletiek.nu/wedstrijd/startlijst/848988/4170/"
                   Link_text="Group A"
                   image_src="/events/ver.svg"
                   rootClassName="timetable-row1-root-class-name"
-                  Time="14:10"
                 ></TimetableRow1>
                 <TimetableRow1
+                  Time="14:45"
                   Title="RFFA runCUP (600m)"
                   link_url="https://www.atletiek.nu/wedstrijd/startlijst/856417/4256/"
                   Link_text="Group A"
                   image_src="/events/hardlopen.svg"
                   rootClassName="timetable-row1-root-class-name4"
-                  Time="14:45"
                 ></TimetableRow1>
                 <TimetableRow4
+                  Time="15:25"
                   Title="RFFA sprintCUP Finales (60m)"
                   image_src="/events/sprint.svg"
                   link_url_1="https://www.atletiek.nu/wedstrijd/startlijst/848982/4172/"
@@ -589,37 +590,36 @@ const Home = (props) => {
                   Link_text_3="U18/U20/SEN"
                   Link_text_4="Masters"
                   rootClassName="timetable-row4-root-class-name"
-                  Time="15:25"
                 ></TimetableRow4>
                 <TimetableRow1
+                  Time="15:40"
                   Title="RFFA jumpCUP (Ver)"
                   link_url="https://www.atletiek.nu/wedstrijd/startlijst/848984/4170/"
                   Link_text="Group B"
                   image_src="/events/ver.svg"
                   rootClassName="timetable-row1-root-class-name1"
-                  Time="15:40"
                 ></TimetableRow1>
                 <TimetableRow1
+                  Time="16:05"
                   Title="RFFA throwCUP (Kogel)"
                   link_url="https://www.atletiek.nu/wedstrijd/startlijst/848991/4171/"
                   Link_text="Group B"
                   image_src="/events/kogel.svg"
                   rootClassName="timetable-row1-root-class-name7"
-                  Time="16:05"
                 ></TimetableRow1>
                 <TimetableRow1
+                  Time="16:20"
                   Title="RFFA runCUP (600m)"
                   link_url="https://www.atletiek.nu/wedstrijd/startlijst/856418/4256/"
                   Link_text="Group B"
                   image_src="/events/hardlopen.svg"
                   rootClassName="timetable-row1-root-class-name6"
-                  Time="16:20"
                 ></TimetableRow1>
                 <TimetableRow0
+                  Time="16:30"
                   Title="Prijsuitreiking"
                   image_src="/events/rffa_cup.svg"
                   rootClassName="timetable-row0-root-class-name1"
-                  Time="16:30"
                 ></TimetableRow0>
               </div>
               <div id="timetable-3" className="timetable">
@@ -682,20 +682,20 @@ const Home = (props) => {
               </div>
               <div id="timetable-3" className="timetable">
                 <TimetableRow1
-                  rootClassName="timetable-row1-root-class-name8"
+                  Time="16:40"
                   Title="4 x 800m"
                   link_url="https://www.atletiek.nu/wedstrijd/startlijst/858446/128/"
                   Link_text="Teams"
                   image_src="/events/estafette.svg"
-                  Time="16:40"
+                  rootClassName="timetable-row1-root-class-name8"
                 ></TimetableRow1>
                 <TimetableRow1
-                  rootClassName="timetable-row1-root-class-name9"
+                  Time="17:00"
                   Title="5000m Finale Run2Day Baancircuit 2023"
                   link_url="https://www.atletiek.nu/wedstrijd/startlijst/848980/4216/"
                   Link_text="Mixed"
                   image_src="/events/hardlopen.svg"
-                  Time="17:00"
+                  rootClassName="timetable-row1-root-class-name9"
                 ></TimetableRow1>
               </div>
             </div>
@@ -926,26 +926,24 @@ document.addEventListener("DOMContentLoaded", function() {
             </span>
           </div>
           <div className="home-column1">
-            <span className="home-header10">Social</span>
+            <span className="home-header10">Contact</span>
             <div className="home-list">
               <a
-                href="https://www.instagram.com/rffa_rotterdam/"
-                target="_blank"
-                rel="noreferrer noopener"
+                href="mailto:organisation@rffa.nl?subject=Vraag RFFA 2023"
                 className="home-link13"
               >
                 <div className="home-container15">
                   <svg
-                    viewBox="0 0 877.7142857142857 1024"
-                    className="home-icon18"
+                    viewBox="0 0 1024 1024"
+                    className="home-icon18 footer-icon"
                   >
-                    <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
+                    <path d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"></path>
                   </svg>
-                  <span className="home-text41">Instagram</span>
+                  <span className="home-text41">organisation@rffa.nl</span>
                 </div>
               </a>
               <a
-                href="https://www.facebook.com/rffarotterdam/"
+                href="https://www.instagram.com/rffa_rotterdam/"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="home-link14"
@@ -953,20 +951,36 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div className="home-container16">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
-                    className="home-icon20"
+                    className="home-icon20 footer-icon"
+                  >
+                    <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
+                  </svg>
+                  <span className="home-text42">Instagram</span>
+                </div>
+              </a>
+              <a
+                href="https://www.facebook.com/rffarotterdam/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link15"
+              >
+                <div className="home-container17">
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    className="home-icon22 footer-icon"
                   >
                     <path d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"></path>
                   </svg>
-                  <span className="home-text42">Facebook</span>
+                  <span className="home-text43">Facebook</span>
                 </div>
               </a>
             </div>
           </div>
-          <a href="#top" data-role="scroll-top" className="home-link15 button">
+          <a href="#top" data-role="scroll-top" className="home-link16 button">
             <img alt="image" src="/arrow.svg" className="home-image4" />
           </a>
         </footer>
-        <span className="home-text43">
+        <span className="home-text44">
           © 2023 Rotterdam Festival for Athletics - All rights reserved
         </span>
       </div>

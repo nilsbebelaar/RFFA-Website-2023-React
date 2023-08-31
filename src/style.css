@@ -338,6 +338,13 @@
 .hidden {
   display: isVisible;
 }
+.footer-icon {
+  fill: var(--dl-color-primary-500);
+  width: 24px;
+  height: 24px;
+  align-self: center;
+  margin-right: var(--dl-space-space-halfunit);
+}
 .Content {
   font-size: 16px;
   font-family: Inter;
