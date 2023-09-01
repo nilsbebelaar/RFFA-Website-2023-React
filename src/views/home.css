@@ -904,6 +904,12 @@
   .home-branding {
     width: var(--dl-size-size-large);
   }
+  .home-desktop-menu {
+    display: none;
+  }
+  .home-burger-menu {
+    display: flex;
+  }
   .home-heading {
     font-size: 50px;
   }
@@ -993,11 +999,7 @@
   .home-navbar-interactive {
     padding-right: var(--dl-space-space-twounits);
   }
-  .home-desktop-menu {
-    display: none;
-  }
   .home-burger-menu {
-    display: flex;
     align-items: center;
     justify-content: center;
   }
