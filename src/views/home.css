@@ -901,6 +901,9 @@
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
   }
+  .home-navbar-interactive {
+    padding-right: var(--dl-space-space-twounits);
+  }
   .home-branding {
     width: var(--dl-size-size-large);
   }
@@ -995,9 +998,6 @@
 @media(max-width: 767px) {
   .home-video {
     max-height: 150vw;
-  }
-  .home-navbar-interactive {
-    padding-right: var(--dl-space-space-twounits);
   }
   .home-burger-menu {
     align-items: center;
