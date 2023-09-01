@@ -720,20 +720,20 @@ const Home = (props) => {
             ></MeetGreetCard>
             <MeetGreetCard
               rootClassName="meet-greet-card-root-class-name5"
-              image_src="/angela-1500w.jpg"
+              image_src="/athletes/angela-1500w.jpg"
               Title="Ramsey Angela"
               Description="400m horden, 400m"
             ></MeetGreetCard>
             <MeetGreetCard
               rootClassName="meet-greet-card-root-class-name6"
-              image_src="/boers-1500w.jpg"
+              image_src="/athletes/boers-1500w.jpg"
               image_alt="Hensley Paulina"
               Title="Isayah Boers"
               Description="400m"
             ></MeetGreetCard>
             <MeetGreetCard
               rootClassName="meet-greet-card-root-class-name9"
-              image_src="/sedney-1500w.jpg"
+              image_src="/athletes/sedney-1500w.jpg"
               image_alt="Hensley Paulina"
               Title="Zoë Sedney"
               Description="100m, 100m horden, 400m"
@@ -765,7 +765,7 @@ const Home = (props) => {
             ></MeetGreetCard>
             <MeetGreetCard
               rootClassName="meet-greet-card-root-class-name11"
-              image_src="/deblaauw-1500w.jpg"
+              image_src="/athletes/deblaauw-1500w.jpg"
               Title="Britt De Blaauw"
               Description="400m"
             ></MeetGreetCard>
