@@ -116,10 +116,10 @@ const Home = (props) => {
                 <a href="#tijdschema" className="home-link02 navbar-button">
                   Tijdschema
                 </a>
-                <span className="home-text navbar-button">
+                <a href="#meet-greet" className="home-link03 navbar-button">
                   Meet &amp; Greet
-                </span>
-                <a href="#meehelpen" className="home-link03 navbar-button">
+                </a>
+                <a href="#meehelpen" className="home-link04 navbar-button">
                   Meehelpen
                 </a>
               </nav>
@@ -148,17 +148,19 @@ const Home = (props) => {
                   </div>
                 </div>
                 <nav className="home-links1">
-                  <a href="#festival" className="home-link04">
+                  <a href="#festival" className="home-link05">
                     Festival
                   </a>
-                  <a href="#meedoen" className="home-link05">
+                  <a href="#meedoen" className="home-link06">
                     Meedoen
                   </a>
-                  <a href="#tijdschema" className="home-link06">
+                  <a href="#tijdschema" className="home-link07">
                     Tijdschema
                   </a>
-                  <span className="home-text01">Meet &amp; Greet</span>
-                  <a href="#meehelpen" className="home-link07">
+                  <a href="#meet-greet" className="home-link08">
+                    Meet &amp; Greet
+                  </a>
+                  <a href="#meehelpen" className="home-link09">
                     Meehelpen
                   </a>
                 </nav>
@@ -280,11 +282,11 @@ const Home = (props) => {
                 data-role="Nav"
                 className="home-nav2"
               >
-                <span className="home-text02">About</span>
-                <span className="home-text03">Features</span>
-                <span className="home-text04">Pricing</span>
-                <span className="home-text05">Team</span>
-                <span className="home-text06">Blog</span>
+                <span className="home-text">About</span>
+                <span className="home-text01">Features</span>
+                <span className="home-text02">Pricing</span>
+                <span className="home-text03">Team</span>
+                <span className="home-text04">Blog</span>
               </nav>
               <div className="home-container03">
                 <button className="home-login1 button">Login</button>
@@ -308,17 +310,17 @@ const Home = (props) => {
           <div className="home-header-container">
             <div className="home-header">
               <h1 className="home-heading">
-                <span className="home-text07">Beleef atletiek</span>
-                <span className="home-text08">
+                <span className="home-text05">Beleef atletiek</span>
+                <span className="home-text06">
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
                     }}
                   />
                 </span>
-                <span className="home-text09">op het</span>
-                <br className="home-text10"></br>
-                <span className="home-text11">
+                <span className="home-text07">op het</span>
+                <br className="home-text08"></br>
+                <span className="home-text09">
                   Rotterdam Festival for Athletics
                 </span>
               </h1>
@@ -329,10 +331,10 @@ const Home = (props) => {
       <div id="festival" className="bg-blue section">
         <div className="section-container">
           <section>
-            <h1 className="home-text12 section-title">
-              <span className="home-text13">9 september 2023</span>
+            <h1 className="home-text10 section-title">
+              <span className="home-text11">9 september 2023</span>
               <br></br>
-              <span className="home-text15">13:00 - 17:30</span>
+              <span className="home-text13">13:00 - 17:30</span>
               <br></br>
             </h1>
             <p className="head-content">
@@ -375,7 +377,7 @@ const Home = (props) => {
       </div>
       <div id="meedoen" className="bg-green section">
         <div className="section-container">
-          <h1 className="home-text24 section-title">ZELF MEEDOEN</h1>
+          <h1 className="home-text22 section-title">ZELF MEEDOEN</h1>
           <div className="home-gallery">
             <MeedoenCard
               Title="Strijd mee"
@@ -708,9 +710,9 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      <div className="home-meet-greet bg-green section">
+      <div id="meet-greet" className="home-meet-greet bg-green section">
         <div className="section-container">
-          <h1 className="home-text34 section-title">Meet &amp; Greet</h1>
+          <h1 className="home-text32 section-title">Meet &amp; Greet</h1>
           <div className="home-gallery1">
             <MeetGreetCard
               rootClassName="meet-greet-card-root-class-name7"
@@ -836,7 +838,7 @@ const Home = (props) => {
                     href="https://www.instagram.com/rffa_rotterdam/"
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="home-link10"
+                    className="home-link12"
                   >
                     Instagram
                   </a>
@@ -852,7 +854,7 @@ const Home = (props) => {
                     href="https://www.facebook.com/rffarotterdam/"
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="home-link11"
+                    className="home-link13"
                   >
                     Facebook
                     <span
@@ -881,7 +883,7 @@ const Home = (props) => {
                     href="https://www.instagram.com/rffa_rotterdam/"
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="home-link12"
+                    className="home-link14"
                   >
                     Instagram
                     <span
@@ -934,7 +936,7 @@ document.addEventListener("DOMContentLoaded", function() {
               src="/rffa_logo_website.svg"
               className="home-image2"
             />
-            <span className="home-text40">
+            <span className="home-text38">
               Het Rotterdam Festival for Athletics is een initiatief voor een
               jaarlijks atletiekfeest van PAC Rotterdam en Rotterdam Atletiek.
             </span>
@@ -944,7 +946,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <div className="home-list">
               <a
                 href="mailto:organisation@rffa.nl?subject=Vraag RFFA 2023"
-                className="home-link13"
+                className="home-link15"
               >
                 <div className="home-container15">
                   <svg
@@ -953,14 +955,14 @@ document.addEventListener("DOMContentLoaded", function() {
                   >
                     <path d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"></path>
                   </svg>
-                  <span className="home-text41">organisation@rffa.nl</span>
+                  <span className="home-text39">organisation@rffa.nl</span>
                 </div>
               </a>
               <a
                 href="https://www.instagram.com/rffa_rotterdam/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-link14"
+                className="home-link16"
               >
                 <div className="home-container16">
                   <svg
@@ -969,14 +971,14 @@ document.addEventListener("DOMContentLoaded", function() {
                   >
                     <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
                   </svg>
-                  <span className="home-text42">Instagram</span>
+                  <span className="home-text40">Instagram</span>
                 </div>
               </a>
               <a
                 href="https://www.facebook.com/rffarotterdam/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-link15"
+                className="home-link17"
               >
                 <div className="home-container17">
                   <svg
@@ -985,16 +987,16 @@ document.addEventListener("DOMContentLoaded", function() {
                   >
                     <path d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"></path>
                   </svg>
-                  <span className="home-text43">Facebook</span>
+                  <span className="home-text41">Facebook</span>
                 </div>
               </a>
             </div>
           </div>
-          <a href="#top" data-role="scroll-top" className="home-link16 button">
+          <a href="#top" data-role="scroll-top" className="home-link18 button">
             <img alt="image" src="/arrow.svg" className="home-image3" />
           </a>
         </footer>
-        <span className="home-text44">
+        <span className="home-text42">
           © 2023 Rotterdam Festival for Athletics - All rights reserved
         </span>
       </div>
