@@ -715,80 +715,80 @@ const Home = (props) => {
           <h1 className="home-text32 section-title">Meet &amp; Greet</h1>
           <div className="home-gallery1">
             <MeetGreetCard
-              rootClassName="meet-greet-card-root-class-name7"
-              image_src="/athletes/bonevacia1-1500w.jpg"
               Title="Liemarvin Bonevacia"
+              image_src="/athletes/bonevacia1-1500w.jpg"
               Description="400m"
+              rootClassName="meet-greet-card-root-class-name7"
             ></MeetGreetCard>
             <MeetGreetCard
-              rootClassName="meet-greet-card-root-class-name5"
-              image_src="/athletes/angela-1500w.jpg"
               Title="Ramsey Angela"
+              image_src="/athletes/angela-1500w.jpg"
               Description="400m horden, 400m"
+              rootClassName="meet-greet-card-root-class-name5"
             ></MeetGreetCard>
             <MeetGreetCard
-              rootClassName="meet-greet-card-root-class-name6"
-              image_src="/athletes/boers-1500w.jpg"
-              image_alt="Hensley Paulina"
               Title="Isayah Boers"
+              image_alt="Hensley Paulina"
+              image_src="/athletes/boers-1500w.jpg"
               Description="400m"
+              rootClassName="meet-greet-card-root-class-name6"
             ></MeetGreetCard>
             <MeetGreetCard
-              rootClassName="meet-greet-card-root-class-name9"
-              image_src="/athletes/sedney-1500w.jpg"
-              image_alt="Hensley Paulina"
               Title="Zoë Sedney"
+              image_alt="Hensley Paulina"
+              image_src="/athletes/sedney-1500w.jpg"
               Description="100m, 100m horden, 400m"
+              rootClassName="meet-greet-card-root-class-name9"
             ></MeetGreetCard>
             <MeetGreetCard
-              rootClassName="meet-greet-card-root-class-name8"
-              image_src="/athletes/kleinikkink-1500w.jpg"
               Title="Isaya Klein Ikkink"
+              image_src="/athletes/kleinikkink-1500w.jpg"
               Description="110m horden, 400m"
+              rootClassName="meet-greet-card-root-class-name8"
             ></MeetGreetCard>
             <MeetGreetCard
-              rootClassName="meet-greet-card-root-class-name4"
-              image_src="/athletes/burnet-1500w.jpg"
               Title="Taymir Burnet"
+              image_src="/athletes/burnet-1500w.jpg"
               Description="100m, 200m"
+              rootClassName="meet-greet-card-root-class-name4"
             ></MeetGreetCard>
             <MeetGreetCard
-              rootClassName="meet-greet-card-root-class-name3"
-              image_src="/athletes/paulina-1500w.jpg"
-              image_alt="Hensley Paulina"
               Title="Hensley Paulina"
-              Description="100m, 200m"
-            ></MeetGreetCard>
-            <MeetGreetCard
-              rootClassName="meet-greet-card-root-class-name10"
-              image_src="/athletes/punt-1500w.jpg"
-              Title="Ridzerd Punt"
-              Description="Hoogspringen"
-            ></MeetGreetCard>
-            <MeetGreetCard
-              rootClassName="meet-greet-card-root-class-name11"
-              image_src="/athletes/deblaauw-1500w.jpg"
-              Title="Britt De Blaauw"
-              Description="400m"
-            ></MeetGreetCard>
-            <MeetGreetCard
-              rootClassName="meet-greet-card-root-class-name"
-              image_src="/athletes/kranse-1500w.jpg"
               image_alt="Hensley Paulina"
-              Title="Sam Kranse"
-              Description="Polsstokhoogspringen"
-            ></MeetGreetCard>
-            <MeetGreetCard
-              rootClassName="meet-greet-card-root-class-name2"
-              image_src="/athletes/vanderwijst-1500w.jpg"
-              Title="Koen van der Wijst"
-              Description="Polsstokhoogspringen"
-            ></MeetGreetCard>
-            <MeetGreetCard
-              rootClassName="meet-greet-card-root-class-name1"
-              image_src="/athletes/revierre-1500w.jpg"
-              Title="Jozuah Revierre"
+              image_src="/athletes/paulina-1500w.jpg"
               Description="100m, 200m"
+              rootClassName="meet-greet-card-root-class-name3"
+            ></MeetGreetCard>
+            <MeetGreetCard
+              Title="Ridzerd Punt"
+              image_src="/athletes/punt-1500w.jpg"
+              Description="Hoogspringen"
+              rootClassName="meet-greet-card-root-class-name10"
+            ></MeetGreetCard>
+            <MeetGreetCard
+              Title="Britt De Blaauw"
+              image_src="/athletes/deblaauw-1500w.jpg"
+              Description="400m"
+              rootClassName="meet-greet-card-root-class-name11"
+            ></MeetGreetCard>
+            <MeetGreetCard
+              Title="Sam Kranse"
+              image_alt="Hensley Paulina"
+              image_src="/athletes/kranse-1500w.jpg"
+              Description="Polsstokhoogspringen"
+              rootClassName="meet-greet-card-root-class-name"
+            ></MeetGreetCard>
+            <MeetGreetCard
+              Title="Koen van der Wijst"
+              image_src="/athletes/vanderwijst-1500w.jpg"
+              Description="Polsstokhoogspringen"
+              rootClassName="meet-greet-card-root-class-name2"
+            ></MeetGreetCard>
+            <MeetGreetCard
+              Title="Jozuah Revierre"
+              image_src="/athletes/revierre-1500w.jpg"
+              Description="100m, 200m"
+              rootClassName="meet-greet-card-root-class-name1"
             ></MeetGreetCard>
           </div>
         </div>

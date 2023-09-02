@@ -23,20 +23,20 @@ const MeetGreetCard = (props) => {
 }
 
 MeetGreetCard.defaultProps = {
-  rootClassName: '',
   image_alt: 'image',
   image_src:
     'https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEyfHxmb3Jlc3R8ZW58MHx8fHwxNjI2MjUxMjg4&ixlib=rb-1.2.1&w=1500',
-  Title: 'Project Title',
   Description: 'Lorem ipsum dolor sit amet',
+  Title: 'Project Title',
+  rootClassName: '',
 }
 
 MeetGreetCard.propTypes = {
-  rootClassName: PropTypes.string,
   image_alt: PropTypes.string,
   image_src: PropTypes.string,
-  Title: PropTypes.string,
   Description: PropTypes.string,
+  Title: PropTypes.string,
+  rootClassName: PropTypes.string,
 }
 
 export default MeetGreetCard
