@@ -30,7 +30,9 @@ const TimetableRowclinic = (props) => {
           >
             <span className="">{props.name_1}</span>
           </a>
-          <h4 className="timetable-title">{props.by_1}</h4>
+          <h4 className="timetable-rowclinic-title1 timetable-title">
+            {props.by_1}
+          </h4>
         </div>
         {show2 && (
           <div className="timetable-rowclinic-container2">
@@ -42,7 +44,9 @@ const TimetableRowclinic = (props) => {
             >
               <span className="">{props.name_2}</span>
             </a>
-            <h4 className="timetable-title">{props.by_2}</h4>
+            <h4 className="timetable-rowclinic-title2 timetable-title">
+              {props.by_2}
+            </h4>
           </div>
         )}
         {show3 && (
@@ -55,7 +59,9 @@ const TimetableRowclinic = (props) => {
             >
               <span className="">{props.name_3}</span>
             </a>
-            <h4 className="timetable-title">{props.by_3}</h4>
+            <h4 className="timetable-rowclinic-title3 timetable-title">
+              {props.by_3}
+            </h4>
           </div>
         )}
         {show4 && (
@@ -68,7 +74,9 @@ const TimetableRowclinic = (props) => {
             >
               <span className="">{props.name_4}</span>
             </a>
-            <h4 className="timetable-title">{props.by_4}</h4>
+            <h4 className="timetable-rowclinic-title4 timetable-title">
+              {props.by_4}
+            </h4>
           </div>
         )}
       </div>

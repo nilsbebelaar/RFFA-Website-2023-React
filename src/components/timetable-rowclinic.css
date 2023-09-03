@@ -25,6 +25,10 @@
   align-self: center;
   text-decoration: none;
 }
+.timetable-rowclinic-title1 {
+  font-style: normal;
+  font-weight: 500;
+}
 .timetable-rowclinic-container2 {
   display: flex;
   flex-wrap: no-wrap;
@@ -34,6 +38,10 @@
 .timetable-rowclinic-link1 {
   align-self: center;
   text-decoration: none;
+}
+.timetable-rowclinic-title2 {
+  font-style: normal;
+  font-weight: 500;
 }
 .timetable-rowclinic-container3 {
   display: flex;
@@ -45,6 +53,10 @@
   align-self: center;
   text-decoration: none;
 }
+.timetable-rowclinic-title3 {
+  font-style: normal;
+  font-weight: 500;
+}
 .timetable-rowclinic-container4 {
   display: flex;
   flex-wrap: no-wrap;
@@ -54,6 +66,10 @@
 .timetable-rowclinic-link3 {
   align-self: center;
   text-decoration: none;
+}
+.timetable-rowclinic-title4 {
+  font-style: normal;
+  font-weight: 500;
 }
 
 
