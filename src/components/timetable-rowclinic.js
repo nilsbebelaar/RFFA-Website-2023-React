@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import './timetable-rowclinic.css'
 
 const TimetableRowclinic = (props) => {
-  const [show4, setShow4] = useState(false)
+  const [show4, setShow4] = useState(true)
   const [show3, setShow3] = useState(true)
   const [show2, setShow2] = useState(true)
   return (

@@ -637,13 +637,16 @@ const Home = (props) => {
                   by_1="Nargelis Statia &amp; Gioganny Gaarie"
                   by_2="Joris van Gool &amp; Maurice Afognon"
                   by_3="Morgann de Jong"
+                  by_4=" "
                   Title="RFFA Clinics ronde #1"
                   url_1="https://www.atletiek.nu/wedstrijd/startgroep/856405/"
                   url_2="https://www.atletiek.nu/wedstrijd/startgroep/860876/"
                   url_3="https://www.atletiek.nu/wedstrijd/startgroep/860877/"
+                  url_4=" "
                   name_1="Bootcamp"
                   name_2="Estafette"
                   name_3="Hurdles"
+                  name_4=" "
                   image_alt="Clinic"
                   image_src="/events/rffa_clinic.svg"
                   rootClassName="timetable-rowclinic-root-class-name"
@@ -734,17 +737,17 @@ const Home = (props) => {
           <div className="home-gallery1">
             <MeetGreetCard
               Title="Liemarvin Bonevacia"
+              image_alt="Liemarvin Bonevacia"
               image_src="/athletes/bonevacia1-1500w.jpg"
               Description="400m"
               rootClassName="meet-greet-card-root-class-name7"
-              image_alt="Liemarvin Bonevacia"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Ramsey Angela"
+              image_alt="Ramsey Angela"
               image_src="/athletes/angela-1500w.jpg"
               Description="400m horden, 400m"
               rootClassName="meet-greet-card-root-class-name5"
-              image_alt="Ramsey Angela"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Isayah Boers"
@@ -762,17 +765,17 @@ const Home = (props) => {
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Isaya Klein Ikkink"
+              image_alt="Isaya Klein Ikkink"
               image_src="/athletes/kleinikkink-1500w.jpg"
               Description="110m horden, 400m"
               rootClassName="meet-greet-card-root-class-name8"
-              image_alt="Isaya Klein Ikkink"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Taymir Burnet"
+              image_alt="Taymir Burnet"
               image_src="/athletes/burnet-1500w.jpg"
               Description="100m, 200m"
               rootClassName="meet-greet-card-root-class-name4"
-              image_alt="Taymir Burnet"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Hensley Paulina"
@@ -783,17 +786,17 @@ const Home = (props) => {
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Ridzerd Punt"
+              image_alt="Ridzerd Punt"
               image_src="/athletes/punt-1500w.jpg"
               Description="Hoogspringen"
               rootClassName="meet-greet-card-root-class-name10"
-              image_alt="Ridzerd Punt"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Britt De Blaauw"
+              image_alt="Britt De Blaauw"
               image_src="/athletes/deblaauw-1500w.jpg"
               Description="400m"
               rootClassName="meet-greet-card-root-class-name11"
-              image_alt="Britt De Blaauw"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Sam Kranse"
@@ -804,17 +807,17 @@ const Home = (props) => {
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Koen van der Wijst"
+              image_alt="Koen van der Wijst"
               image_src="/athletes/vanderwijst-1500w.jpg"
               Description="Polsstokhoogspringen"
               rootClassName="meet-greet-card-root-class-name13"
-              image_alt="Koen van der Wijst"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Jozuah Revierre"
+              image_alt="Jozuah Revierre"
               image_src="/athletes/revierre-1500w.jpg"
               Description="100m, 200m"
               rootClassName="meet-greet-card-root-class-name14"
-              image_alt="Jozuah Revierre"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Daan Hoomoedt"
@@ -825,17 +828,17 @@ const Home = (props) => {
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Joris van Gool"
+              image_alt="Joris van Gool"
               image_src="/athletes/vangool-1500w.jpg"
               Description="100m, 200m"
               rootClassName="meet-greet-card-root-class-name2"
-              image_alt="Joris van Gool"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Maurice Afognon"
+              image_alt="Maurice Afognon"
               image_src="/athletes/afognon-1500w.jpg"
               Description="100m, 200m"
               rootClassName="meet-greet-card-root-class-name1"
-              image_alt="Maurice Afognon"
             ></MeetGreetCard>
           </div>
         </div>
