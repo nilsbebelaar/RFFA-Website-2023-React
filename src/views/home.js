@@ -8,6 +8,7 @@ import MeedoenCard from '../components/meedoen-card'
 import TimetableRow1 from '../components/timetable-row1'
 import TimetableRow0 from '../components/timetable-row0'
 import TimetableRow4 from '../components/timetable-row4'
+import TimetableRowclinic from '../components/timetable-rowclinic'
 import MeetGreetCard from '../components/meet-greet-card'
 import './home.css'
 
@@ -631,64 +632,81 @@ const Home = (props) => {
                 ></TimetableRow0>
               </div>
               <div id="timetable-3" className="timetable">
-                <TimetableRow4
+                <TimetableRowclinic
                   Time="13:05"
+                  by_1="Nargelis Statia &amp; Gioganny Gaarie"
+                  by_2="Joris van Gool &amp; Maurice Afognon"
+                  by_3="Morgann de Jong"
                   Title="RFFA Clinics ronde #1"
+                  url_1="https://www.atletiek.nu/wedstrijd/startgroep/856405/"
+                  url_2="https://www.atletiek.nu/wedstrijd/startgroep/860876/"
+                  url_3="https://www.atletiek.nu/wedstrijd/startgroep/860877/"
+                  name_1="Bootcamp"
+                  name_2="Estafette"
+                  name_3="Hurdles"
+                  image_alt="Clinic"
                   image_src="/events/rffa_clinic.svg"
-                  link_url_1="https://www.atletiek.nu/wedstrijd/startlijst/856405/4251/"
-                  link_url_2="https://www.atletiek.nu/wedstrijd/startlijst/856401/4247/"
-                  link_url_3="https://www.atletiek.nu/wedstrijd/startlijst/856415/4250/"
-                  link_url_4="https://www.atletiek.nu/wedstrijd/startlijst/856413/4249/"
-                  Link_text_1="Bootcamp"
-                  Link_text_2="Long Jump"
-                  Link_text_3="Run"
-                  Link_text_4="Steeple"
-                  rootClassName="timetable-row4-root-class-name1"
-                ></TimetableRow4>
-                <TimetableRow4
+                  rootClassName="timetable-rowclinic-root-class-name"
+                ></TimetableRowclinic>
+                <TimetableRowclinic
                   Time="14:05"
+                  by_1=" "
+                  by_2="Zoë Sedney"
+                  by_3=" "
+                  by_4=" "
                   Title="RFFA Clinics ronde #2"
+                  url_1="https://www.atletiek.nu/wedstrijd/startgroep/856403/"
+                  url_2="https://www.atletiek.nu/wedstrijd/startgroep/856409/"
+                  url_3="https://www.atletiek.nu/wedstrijd/startgroep/856407/"
+                  url_4="https://www.atletiek.nu/wedstrijd/startgroep/856411/"
+                  name_1="High Jump"
+                  name_2="Hurdles"
+                  name_3="Sprint"
+                  name_4="Throw"
+                  image_alt="Clinic"
                   image_src="/events/rffa_clinic.svg"
-                  link_url_1="https://www.atletiek.nu/wedstrijd/startlijst/856403/4248/"
-                  link_url_2="https://www.atletiek.nu/wedstrijd/startlijst/856409/4246/"
-                  link_url_3="https://www.atletiek.nu/wedstrijd/startlijst/856407/4168/"
-                  link_url_4="https://www.atletiek.nu/wedstrijd/startlijst/856411/4118/"
-                  Link_text_1="High Jump"
-                  Link_text_2="Hurdles"
-                  Link_text_3="Sprint"
-                  Link_text_4="Throw"
-                  rootClassName="timetable-row4-root-class-name2"
-                ></TimetableRow4>
-                <TimetableRow4
+                  rootClassName="timetable-rowclinic-root-class-name1"
+                ></TimetableRowclinic>
+                <TimetableRowclinic
                   Time="15:05"
+                  by_1="Damian Felter"
+                  by_2=" "
+                  by_3="Jacqueline Goormachtigh"
+                  by_4=" "
                   Title="RFFA Clinics ronde #3"
+                  url_1="https://www.atletiek.nu/wedstrijd/startgroep/856402/"
+                  url_2="https://www.atletiek.nu/wedstrijd/startgroep/856416/"
+                  url_3="https://www.atletiek.nu/wedstrijd/startgroep/856412/"
+                  url_4=" "
+                  name_1="Long Jump"
+                  name_2="Run"
+                  name_3="Throw"
+                  name_4=" "
+                  image_alt="Clinic"
                   image_src="/events/rffa_clinic.svg"
-                  link_url_1="https://www.atletiek.nu/wedstrijd/startlijst/856406/4251/"
-                  link_url_2="https://www.atletiek.nu/wedstrijd/startlijst/856402/4247/"
-                  link_url_3="https://www.atletiek.nu/wedstrijd/startlijst/856416/4250/"
-                  link_url_4="https://www.atletiek.nu/wedstrijd/startlijst/856412/4118/"
-                  Link_text_1="Bootcamp"
-                  Link_text_2="Long Jump"
-                  Link_text_3="Run"
-                  Link_text_4="Throw"
-                  rootClassName="timetable-row4-root-class-name4"
-                ></TimetableRow4>
-                <TimetableRow4
+                  rootClassName="timetable-rowclinic-root-class-name2"
+                ></TimetableRowclinic>
+                <TimetableRowclinic
                   Time="16:05"
+                  by_1="Zoë Sedney"
+                  by_2="Ridzerd Punt"
+                  by_3="Dudley Boeldak"
+                  by_4="Britt de Blaauw"
                   Title="RFFA Clinics ronde #4"
+                  url_1="https://www.atletiek.nu/wedstrijd/startgroep/856414/"
+                  url_2="https://www.atletiek.nu/wedstrijd/startgroep/856404/"
+                  url_3="https://www.atletiek.nu/wedstrijd/startgroep/856401/"
+                  url_4="https://www.atletiek.nu/wedstrijd/startgroep/856408/"
+                  name_1="Estafette"
+                  name_2="High Jump"
+                  name_3="Long Jump"
+                  name_4="Sprint"
+                  image_alt="Clinic"
                   image_src="/events/rffa_clinic.svg"
-                  link_url_1="https://www.atletiek.nu/wedstrijd/startlijst/856404/4248/"
-                  link_url_2="https://www.atletiek.nu/wedstrijd/startlijst/856410/4246/"
-                  link_url_3="https://www.atletiek.nu/wedstrijd/startlijst/856408/4168/"
-                  link_url_4="https://www.atletiek.nu/wedstrijd/startlijst/856414/4249/"
-                  Link_text_1="High Jump"
-                  Link_text_2="Hurdles"
-                  Link_text_3="Sprint"
-                  Link_text_4="Steeple"
-                  rootClassName="timetable-row4-root-class-name3"
-                ></TimetableRow4>
+                  rootClassName="timetable-rowclinic-root-class-name3"
+                ></TimetableRowclinic>
               </div>
-              <div id="timetable-3" className="timetable">
+              <div id="timetable-4" className="timetable">
                 <TimetableRow1
                   Time="16:40"
                   Title="4 x 800m"
@@ -719,23 +737,25 @@ const Home = (props) => {
               image_src="/athletes/bonevacia1-1500w.jpg"
               Description="400m"
               rootClassName="meet-greet-card-root-class-name7"
+              image_alt="Liemarvin Bonevacia"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Ramsey Angela"
               image_src="/athletes/angela-1500w.jpg"
               Description="400m horden, 400m"
               rootClassName="meet-greet-card-root-class-name5"
+              image_alt="Ramsey Angela"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Isayah Boers"
-              image_alt="Hensley Paulina"
+              image_alt="Isayah Boers"
               image_src="/athletes/boers-1500w.jpg"
               Description="400m"
               rootClassName="meet-greet-card-root-class-name6"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Zoë Sedney"
-              image_alt="Hensley Paulina"
+              image_alt="Zoë Sedney"
               image_src="/athletes/sedney-1500w.jpg"
               Description="100m, 100m horden, 400m"
               rootClassName="meet-greet-card-root-class-name9"
@@ -745,12 +765,14 @@ const Home = (props) => {
               image_src="/athletes/kleinikkink-1500w.jpg"
               Description="110m horden, 400m"
               rootClassName="meet-greet-card-root-class-name8"
+              image_alt="Isaya Klein Ikkink"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Taymir Burnet"
               image_src="/athletes/burnet-1500w.jpg"
               Description="100m, 200m"
               rootClassName="meet-greet-card-root-class-name4"
+              image_alt="Taymir Burnet"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Hensley Paulina"
@@ -764,31 +786,56 @@ const Home = (props) => {
               image_src="/athletes/punt-1500w.jpg"
               Description="Hoogspringen"
               rootClassName="meet-greet-card-root-class-name10"
+              image_alt="Ridzerd Punt"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Britt De Blaauw"
               image_src="/athletes/deblaauw-1500w.jpg"
               Description="400m"
               rootClassName="meet-greet-card-root-class-name11"
+              image_alt="Britt De Blaauw"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Sam Kranse"
-              image_alt="Hensley Paulina"
+              image_alt="Sam Kranse"
               image_src="/athletes/kranse-1500w.jpg"
               Description="Polsstokhoogspringen"
-              rootClassName="meet-greet-card-root-class-name"
+              rootClassName="meet-greet-card-root-class-name12"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Koen van der Wijst"
               image_src="/athletes/vanderwijst-1500w.jpg"
               Description="Polsstokhoogspringen"
-              rootClassName="meet-greet-card-root-class-name2"
+              rootClassName="meet-greet-card-root-class-name13"
+              image_alt="Koen van der Wijst"
             ></MeetGreetCard>
             <MeetGreetCard
               Title="Jozuah Revierre"
               image_src="/athletes/revierre-1500w.jpg"
               Description="100m, 200m"
+              rootClassName="meet-greet-card-root-class-name14"
+              image_alt="Jozuah Revierre"
+            ></MeetGreetCard>
+            <MeetGreetCard
+              Title="Daan Hoomoedt"
+              image_alt="Daan Hoomoedt"
+              image_src="/athletes/hoomoedt-1500w.jpg"
+              Description="Hink-stapspringen"
+              rootClassName="meet-greet-card-root-class-name"
+            ></MeetGreetCard>
+            <MeetGreetCard
+              Title="Joris van Gool"
+              image_src="/athletes/vangool-1500w.jpg"
+              Description="100m, 200m"
+              rootClassName="meet-greet-card-root-class-name2"
+              image_alt="Joris van Gool"
+            ></MeetGreetCard>
+            <MeetGreetCard
+              Title="Maurice Afognon"
+              image_src="/athletes/afognon-1500w.jpg"
+              Description="100m, 200m"
               rootClassName="meet-greet-card-root-class-name1"
+              image_alt="Maurice Afognon"
             ></MeetGreetCard>
           </div>
         </div>
