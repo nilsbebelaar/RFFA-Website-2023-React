@@ -493,7 +493,7 @@
   font-size: 18px;
   line-height: 24px;
 }
-.home-text22 {
+.home-text24 {
   color: inherit;
 }
 .home-gallery {
@@ -567,7 +567,7 @@
   flex-direction: column;
   background-color: var(--dl-color-primary-100);
 }
-.home-text32 {
+.home-text34 {
   color: inherit;
 }
 .home-gallery1 {
@@ -752,7 +752,7 @@
   object-fit: cover;
   margin-bottom: var(--dl-space-space-unit);
 }
-.home-text38 {
+.home-text40 {
   color: var(--dl-color-primary-700);
   font-style: normal;
   text-align: center;
@@ -791,14 +791,14 @@
 .home-icon17 {
   fill: var(--dl-color-primary-500);
 }
-.home-text39 {
+.home-text41 {
   color: var(--dl-color-primary-500);
   cursor: pointer;
   font-size: 16px;
   transition: 0.3s;
   line-height: 32px;
 }
-.home-text39:hover {
+.home-text41:hover {
   opacity: .5;
 }
 .home-link16 {
@@ -813,14 +813,14 @@
 .home-icon19 {
   fill: var(--dl-color-primary-500);
 }
-.home-text40 {
+.home-text42 {
   color: var(--dl-color-primary-500);
   cursor: pointer;
   font-size: 16px;
   transition: 0.3s;
   line-height: 32px;
 }
-.home-text40:hover {
+.home-text42:hover {
   opacity: .5;
 }
 .home-link17 {
@@ -835,14 +835,14 @@
 .home-icon21 {
   fill: var(--dl-color-primary-500);
 }
-.home-text41 {
+.home-text43 {
   color: var(--dl-color-primary-500);
   cursor: pointer;
   font-size: 16px;
   transition: 0.3s;
   line-height: 32px;
 }
-.home-text41:hover {
+.home-text43:hover {
   opacity: .5;
 }
 .home-link18 {
@@ -861,7 +861,7 @@
   width: 21px;
   object-fit: cover;
 }
-.home-text42 {
+.home-text44 {
   text-align: center;
   padding-left: var(--dl-space-space-unit);
   margin-bottom: var(--dl-space-space-unit);
@@ -874,8 +874,8 @@
   .home-text10 {
     color: inherit;
   }
-  .home-text11 {
-    color: inherit;
+  .home-text13 {
+    line-height: 1;
   }
 }
 @media(max-width: 1200px) {
@@ -915,6 +915,10 @@
   }
   .home-heading {
     font-size: 50px;
+  }
+  .home-text10 {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
   }
   .home-content {
     padding-top: var(--dl-space-space-oneandhalfunits);
@@ -1030,6 +1034,8 @@
   }
   .home-text10 {
     color: inherit;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .home-text11 {
     color: inherit;
@@ -1176,6 +1182,10 @@
   }
   .home-text09 {
     font-style: normal;
+  }
+  .home-text10 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .home-caption1 {
     color: var(--dl-color-gray-white);
