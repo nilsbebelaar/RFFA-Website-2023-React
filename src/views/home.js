@@ -8,7 +8,10 @@ import MeedoenCard from '../components/meedoen-card'
 import TimetableRow1 from '../components/timetable-row1'
 import TimetableRow0 from '../components/timetable-row0'
 import TimetableRow4 from '../components/timetable-row4'
-import TimetableRowclinic from '../components/timetable-rowclinic'
+import TimetableClinic3 from '../components/timetable-clinic3'
+import TimetableClinic4 from '../components/timetable-clinic4'
+import TimetableClinic2 from '../components/timetable-clinic2'
+import TimetableClinic5 from '../components/timetable-clinic5'
 import MeetGreetCard from '../components/meet-greet-card'
 import './home.css'
 
@@ -634,11 +637,11 @@ const Home = (props) => {
                 ></TimetableRow0>
               </div>
               <div id="timetable-3" className="timetable">
-                <TimetableRowclinic
+                <TimetableClinic3
                   Time="13:05"
                   by_1="Nargelis Statia &amp; Gioganny Gaarie"
                   by_2="Joris van Gool &amp; Maurice Afognon"
-                  by_3="Morgann de Jong"
+                  by_3="Morgann de Jong &amp; Mark Heiden"
                   by_4=" "
                   Title="RFFA Clinics ronde #1"
                   url_1="https://www.atletiek.nu/wedstrijd/startgroep/856405/"
@@ -651,65 +654,62 @@ const Home = (props) => {
                   name_4=" "
                   image_alt="Clinic"
                   image_src="/events/rffa_clinic.svg"
-                  rootClassName="timetable-rowclinic-root-class-name"
-                ></TimetableRowclinic>
-                <TimetableRowclinic
-                  Time="14:05"
-                  by_1=" "
-                  by_2="Zoë Sedney"
-                  by_3=" "
-                  by_4=" "
-                  Title="RFFA Clinics ronde #2"
-                  url_1="https://www.atletiek.nu/wedstrijd/startgroep/856403/"
+                  rootClassName="timetable-clinic3-root-class-name"
+                ></TimetableClinic3>
+                <TimetableClinic4
+                  rootClassName="timetable-clinic4-root-class-name"
                   url_2="https://www.atletiek.nu/wedstrijd/startgroep/856409/"
+                  name_1="High Jump"
+                  Title="RFFA Clinics ronde #2"
+                  name_3="Sprint"
+                  Time="14:05"
+                  image_src="/events/rffa_clinic.svg"
+                  by_3="Valéria Montijn"
+                  name_2="Hurdles"
+                  url_1="https://www.atletiek.nu/wedstrijd/startgroep/856403/"
+                  by_2="Zoë Sedney"
+                  image_alt="Clinic"
+                  by_1="Wuill Vrolijk &amp; Marijn de Wit"
                   url_3="https://www.atletiek.nu/wedstrijd/startgroep/856407/"
                   url_4="https://www.atletiek.nu/wedstrijd/startgroep/856411/"
-                  name_1="High Jump"
-                  name_2="Hurdles"
-                  name_3="Sprint"
-                  name_4="Throw"
-                  image_alt="Clinic"
-                  image_src="/events/rffa_clinic.svg"
-                  rootClassName="timetable-rowclinic-root-class-name1"
-                ></TimetableRowclinic>
-                <TimetableRowclinic
-                  Time="15:05"
-                  by_1="Damian Felter"
-                  by_2=" "
-                  by_3="Jacqueline Goormachtigh"
                   by_4=" "
-                  Title="RFFA Clinics ronde #3"
-                  url_1="https://www.atletiek.nu/wedstrijd/startgroep/856402/"
-                  url_2="https://www.atletiek.nu/wedstrijd/startgroep/856416/"
-                  url_3="https://www.atletiek.nu/wedstrijd/startgroep/856412/"
-                  url_4=" "
+                  name_4="Throw"
+                ></TimetableClinic4>
+                <TimetableClinic2
+                  rootClassName="timetable-clinic2-root-class-name"
                   name_1="Long Jump"
-                  name_2="Run"
-                  name_3="Throw"
-                  name_4=" "
-                  image_alt="Clinic"
+                  Title="RFFA Clinics ronde #3"
+                  name_2="Throw"
+                  Time="15:05"
                   image_src="/events/rffa_clinic.svg"
-                  rootClassName="timetable-rowclinic-root-class-name2"
-                ></TimetableRowclinic>
-                <TimetableRowclinic
-                  Time="16:05"
-                  by_1="Zoë Sedney"
-                  by_2="Ridzerd Punt"
-                  by_3="Dudley Boeldak"
-                  by_4="Britt de Blaauw"
-                  Title="RFFA Clinics ronde #4"
-                  url_1="https://www.atletiek.nu/wedstrijd/startgroep/856414/"
+                  by_2="Jacqueline Goormachtigh"
+                  url_1="https://www.atletiek.nu/wedstrijd/startgroep/856402/"
+                  image_alt="Clinic"
+                  by_1="Damian Felter"
+                  url_2="https://www.atletiek.nu/wedstrijd/startgroep/856412/"
+                ></TimetableClinic2>
+                <TimetableClinic5
+                  rootClassName="timetable-clinic5-root-class-name"
+                  url_5="https://www.atletiek.nu/wedstrijd/startgroep/856416/"
+                  name_5="Run"
+                  by_5="Carla Ophorst"
                   url_2="https://www.atletiek.nu/wedstrijd/startgroep/856404/"
-                  url_3="https://www.atletiek.nu/wedstrijd/startgroep/856401/"
-                  url_4="https://www.atletiek.nu/wedstrijd/startgroep/856408/"
-                  name_1="Estafette"
                   name_2="High Jump"
+                  by_2="Ridzerd Punt"
+                  name_1="Estafette"
+                  Title="RFFA Clinics ronde #4"
                   name_3="Long Jump"
-                  name_4="Sprint"
-                  image_alt="Clinic"
+                  Time="16:05"
                   image_src="/events/rffa_clinic.svg"
-                  rootClassName="timetable-rowclinic-root-class-name3"
-                ></TimetableRowclinic>
+                  by_3="Dudley Boeldak"
+                  url_1="https://www.atletiek.nu/wedstrijd/startgroep/856414/"
+                  image_alt="Clinic"
+                  by_1="Zoë Sedney"
+                  url_3="https://www.atletiek.nu/wedstrijd/startgroep/856401/"
+                  name_4="Sprint"
+                  by_4="Britt de Blaauw"
+                  url_4="https://www.atletiek.nu/wedstrijd/startgroep/856408/"
+                ></TimetableClinic5>
               </div>
               <div id="timetable-4" className="timetable">
                 <TimetableRow1
