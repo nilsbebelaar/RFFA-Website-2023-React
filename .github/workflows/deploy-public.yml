@@ -13,6 +13,8 @@ jobs:
       with:
         ref: main
         fetch-depth: 0
+    - name: Remove 404 NOT FOUND error
+      run: cp -f src/index.js.fixed src/index.js
     - name: copy package_SEO.json to package.json
       run: cp -f package_SEO.json package.json
     - name: Commit files
