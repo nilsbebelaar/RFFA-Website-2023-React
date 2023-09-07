@@ -50,31 +50,31 @@ const TimetableClinic2 = (props) => {
 }
 
 TimetableClinic2.defaultProps = {
-  rootClassName: '',
   image_src: '/events/sprint.svg',
-  image_alt: 'Clinic icoon',
-  Time: 'Time',
-  Title: '100 Meter',
-  url_1: 'https://www.atletiek.nu/wedstrijd/chronoloog/38027/',
   by_1: 'Trainer',
-  url_2: 'https://www.atletiek.nu/wedstrijd/chronoloog/38027/',
-  by_2: 'Trainer',
+  rootClassName: '',
   name_1: 'Clinic',
   name_2: 'Clinic',
+  url_2: 'https://www.atletiek.nu/wedstrijd/chronoloog/38027/',
+  Time: 'Time',
+  by_2: 'Trainer',
+  Title: '100 Meter',
+  url_1: 'https://www.atletiek.nu/wedstrijd/chronoloog/38027/',
+  image_alt: 'Clinic icoon',
 }
 
 TimetableClinic2.propTypes = {
-  rootClassName: PropTypes.string,
   image_src: PropTypes.string,
-  image_alt: PropTypes.string,
-  Time: PropTypes.string,
-  Title: PropTypes.string,
-  url_1: PropTypes.string,
   by_1: PropTypes.string,
-  url_2: PropTypes.string,
-  by_2: PropTypes.string,
+  rootClassName: PropTypes.string,
   name_1: PropTypes.string,
   name_2: PropTypes.string,
+  url_2: PropTypes.string,
+  Time: PropTypes.string,
+  by_2: PropTypes.string,
+  Title: PropTypes.string,
+  url_1: PropTypes.string,
+  image_alt: PropTypes.string,
 }
 
 export default TimetableClinic2
